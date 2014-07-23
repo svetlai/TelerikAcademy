@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JS Apps - Sheep and Rams</title>
+    <link type="text/css" rel="stylesheet" href="css/stylesheepandrams.css" />
+</head>
+<body>
+<div id="wrapper">
+<h1>Sheep and Rams</h1>
+	<section>
+		<article>
+			<h1 id="how-to-title">How to play?</h1>
+			<div id="how-to">
+				<p>Sheep and Rams (also known as Bulls and Cows) is an old code-breaking game. A random four-digit number (secret number) with different digits is 
+				generated automatically. Your task is to guess that number. Enter four different digits in the field below. If your number matches any of the digits 
+				in the secret number, you get a ram if the matching digit is on the right position or sheep if the position doesn't match.</p>
+				<p>Example:<br/>
+				Secret number: 1234<br/>
+				Your guess: 3251</p>
+				<p>Result: 1 ram and 2 sheep (the ram is "2" and the sheep are "1" and "3")</p>
+			</div>
+			<input type="button" id="new-game" value="New Game" />
+			<p id="secret-number">
+				x x x x
+			</p>			
+			<label for="input-number"><h2>Enetr your four-digit number and click guess!</h2></label>
+	        <input type="text" id="input-number" maxlength="4" />
+			<input type="button" id="guess-btn" value="Guess" />
+
+		</article>
+	</section>
+	<div id="display-hw">
+		<div id="your-guesses">
+			<h2>Your Guesses</h1>
+			<table id="guess-attempts">
+				<tr>
+					<th>Guess</th>
+					<th>Sheep</th>
+					<th>Rams</th>
+				</tr>
+			</table>
+		</div>
+		<div id="high-scores">
+			<h2>High-Score Board</h1>
+			<ol id="high-score-board"></ol>
+		</div>
+	</div>
+	<p id="source-code-button">Click to view source code</p>
+		<pre  id="task"><code>
+//Using require.js
+//app.js
+//1. Create a simple number guessing game
+(function () {
+	'use strict';
+	require.config({
+		paths: {
+			"jquery": "../libs/jquery-2.1.1.min",
+		}
+	});
+	require(['modules/game-engine', 'modules/score', 'jquery'], function (SheepAndRams, Score) {
+			(function loadGame(SheepAndRams, Score){
+				$(document).ready(Score.updateHighScores);
+				
+				var newGameButton = $('#new-game')
+					.on('click', SheepAndRams.startGame);
+					
+				var sourceCode = $('#task').hide();
+
+				var sourceCodeButton = $('#source-code-button')
+						.on('click', function () {
+							if	(sourceCode.css('display') == 'none') {
+								sourceCode.show();
+							} else {
+								sourceCode.hide();
+							}
+						});
+				}(SheepAndRams, Score));
+		});
+}());
+//------------------------------------------------------------------------------------------------
+//game-engine.js
+define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquery'], function (secretNumberber, inputNumberber, Score) {
+	var SheepAndRams = (function(secretNumberber, inputNumberber, Score) {
+		var NUM_LENGTH = 4;
+			secretNumber = secretNumberber.get(NUM_LENGTH);
+
+		function startGame() {
+			secretNumber = secretNumberber.get(NUM_LENGTH);
+			Score.attempts = 0;
+
+			//clear previous attempts
+			$('#guess-attempts').find('.guess').empty();
+		}
+
+		function compareNumbers(firstNumber, secondNumber) {
+			var sheep = 0,
+				rams = 0;
+
+			for (var i = 0; i < secondNumber.length; i++) {
+				for (var j = 0; j < firstNumber.length; j++) {
+					if (firstNumber[j] === secondNumber[i]) {
+						if (i === j) {
+							rams++;
+							break;
+						}
+						else {
+							sheep++;
+							break;
+						}
+					}
+				}
+			}
+
+			return {
+				'sheep': sheep,
+				'rams': rams
+			}
+		}
+		
+		function isNumberGuessed(guesses, numberLength) {
+			var isGuessed = false;
+			
+			if (guesses.rams === numberLength) {
+				isGuessed = true;
+			}
+			
+			return isGuessed;
+		}
+		
+		function endGame(score) {
+			Score.addScoreToStorage(score);
+			Score.updateHighScores();
+		}
+
+		function displayAttempts(inputNumberber, guesses) {		
+			var attemptItem = $('&lt;td />')
+				.text(inputNumberber.join(''));
+			var sheepGuessed = $('&lt;td />')
+				.text(guesses.sheep)
+			var ramsGuessed = $('&lt;td />')
+				.text(guesses.rams);
+			
+			var tableRow = $('&lt;tr />')
+				.addClass('guess')
+				.append(attemptItem)
+				.append(sheepGuessed)
+				.append(ramsGuessed);
+				
+			var container = $('#guess-attempts')
+				.append(tableRow);	
+		}
+
+		var buttonGuess = $('#guess-btn')
+		.on('click', function() {
+			var inputNumber = inputNumberber.get(NUM_LENGTH);
+			
+			if (inputNumber) {
+				var	guesses = compareNumbers(inputNumber, secretNumber);
+			
+				displayAttempts(inputNumber, guesses);
+
+				var isGuessed = isNumberGuessed(guesses, NUM_LENGTH);
+
+				if (isGuessed) {
+					endGame(Score.updateScore());
+				} else {				
+					Score.updateScore();
+				}
+			}
+		});
+		
+		return {
+			startGame: startGame
+		};
+	}(secretNumberber, inputNumberber, Score));
+	
+	return SheepAndRams;
+});
+//------------------------------------------------------------------------------------------------
+//secret-number.js
+define(function () {
+	var SecretNumber = (function() {
+	
+		function getSecretNumber(numberLength) {
+			var secretNumber = [];
+
+			secretNumber[0] = getRandomValue(1, 9);
+			
+			while (secretNumber.length < numberLength) {
+				var randomNumber = getRandomValue(0, 9),
+					digitExists = isDigitInNumber(randomNumber, secretNumber);
+				
+				if (!digitExists) {
+					secretNumber.push(randomNumber);				
+				}	
+			}
+			return secretNumber;
+		}
+
+		function getRandomValue(min, max) {
+			return (Math.random() * (max - min) + min) | 0;
+		}
+		
+		function isDigitInNumber(digit, numberAsArray) {
+			var digitExists = false;
+
+			for (var j = 0; j < numberAsArray.length; j++) {
+				if (digit === numberAsArray[j]) {	
+					digitExists = true;
+					break;
+				}
+			}
+			
+			return digitExists;
+		}
+
+		return {
+			get: getSecretNumber
+		}
+	}());
+		
+	return SecretNumber;
+});
+//------------------------------------------------------------------------------------------------
+//input-number.js
+define(function () {
+	var InputNumber = (function() {
+			
+		function getInputNumber(numberLength) {
+			var input = $('#input-number')
+						.val();
+					
+			var isValid = isInputValid(input, numberLength);
+				
+			if (isValid) {
+				var inputNumber = input.split('')
+					.map(Number);	
+
+				return inputNumber;
+			} else {
+				alert('You must enter four different digits!');
+			}
+		}
+			
+		function isInputValid(input, inputLength) {
+			var isInputValid = true;
+			
+			if (input.length > inputLength || inputLength > input.length || isNaN(input)) {
+				isInputValid = false;
+			}  else {
+				var sorted = input.split('').sort(function(a, b) {
+						return a - b;
+					});
+					
+				for (var i = 1; i < sorted.length; i++) {		
+					var currentDigit = sorted[i];
+
+					if (currentDigit === sorted[i - 1]) {				
+						isInputValid = false;
+					}
+				}
+			}
+
+			return isInputValid;
+		}
+
+		return {
+			get: getInputNumber
+		}
+	}());
+		
+	return InputNumber;
+});
+//------------------------------------------------------------------------------------------------
+//score.js
+define(function () {
+	var Score = (function() {
+		var attempts = 0,
+			score = '',
+			scoreList = [];
+		
+		function updateScore() {	
+			attempts++;
+			
+			if (attempts === 1) {
+				score = attempts + ' ' + 'guess'
+			} else {
+				score = attempts + ' ' + 'guesses'
+			}
+			
+			return score;
+		}
+		
+		function sortScoresAscending (a, b) {
+			if (a.score < b.score) {
+					return -1;
+			}
+			
+			if (a.score > b.score) {
+				return 1;
+			}
+				
+			return 0;
+		}
+		
+		function addScoreToStorage (score) {
+			var	playerName = prompt('You scored: ' + score + '. Enter your name:') || 'Guest';
+			
+			scoreList.push({
+							name: playerName,
+							score: score
+						});
+						
+			if (localStorage['SheepAndRamsScore'] === undefined) {
+				localStorage.setItem('SheepAndRamsScore', JSON.stringify(scoreList));
+			} else {
+				var storageEntries = JSON.parse(localStorage.getItem('SheepAndRamsScore'));
+						storageEntries.push({
+							name: playerName,
+							score: score
+						});
+					
+					storageEntries.sort(sortScoresAscending);
+
+				localStorage.setItem('SheepAndRamsScore', JSON.stringify(storageEntries));
+			}
+		}
+		
+		function updateHighScores() {
+			var HIGH_SCORES_COUNT = 10,
+				highScoreBoard = $('#high-score-board');
+
+			//remove a child node to keep high-score board length lower than highScoresCount
+			while (highScoreBoard.children().length > 0) {
+				highScoreBoard.empty();
+			}
+			
+			//get all high-scores from localStorage		
+			var storageEntries = JSON.parse(localStorage.getItem('SheepAndRamsScore'));
+				
+			//add scores to high-scores board
+			if (storageEntries && storageEntries.length > 0)
+				for (var i = 0; i < storageEntries.length && i < HIGH_SCORES_COUNT; i++) {
+					var highScore = storageEntries[i];
+						var scoreListItem = $('&lt;li />')
+							.text(highScore['name'] + ' : ' + highScore['score'])
+							.appendTo(highScoreBoard);
+			}
+		}
+		
+		return {
+			attempts: attempts,
+			score: score,
+			updateScore: updateScore,
+			addScoreToStorage: addScoreToStorage,
+			updateHighScores: updateHighScores
+		}
+		
+	}());
+		
+	return Score;
+});
+		</code></pre>
+	<script src="libs/require.js" data-main="scripts/app"></script>
+	<footer>
+		<p>Sheep and Rams Game - a Telerik Academy homework project.</p>
+	</footer>
+</div>
+</body>
+</html>

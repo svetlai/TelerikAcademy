@@ -1,0 +1,162 @@
+/* CSS Stylesheet */
+body, section, article, h1, p, div {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family:Calibri;
+    font-size:14px;
+}
+#wrapper{
+    min-width:1000;
+}
+#wrapper > h1 {
+        text-align:center;
+		font-style:italic;
+		font-size: 1.8rem;
+		border-bottom: 2px solid black;
+}
+section {
+	display:inline-block;
+	width:700px;
+    padding:10px;
+}
+    section > h1 {
+        text-align:center;
+    }
+	article {
+		padding-bottom:10px;
+        margin-top:10px;
+		border-bottom:2px solid #333;
+		border-right:2px solid #333;
+		display: block;
+		text-align: center;
+	}
+		article h1 {
+			font-size:1.2rem;
+			text-align: left;
+		}
+		article h3 {
+			
+		}
+        article p {
+            margin:5px auto;
+			text-align: justify;
+			padding:5px 10px;
+        }
+		#task {
+
+			margin:10px;
+			background-color: #efefef;
+			border: 1px solid #333;
+			padding-left:20px;
+			padding-right:20px;
+			min-width:640px;
+            overflow-y:auto;
+		}
+			input[type=button] {				
+				padding: 10px 20px;
+				border-radius: 10px;
+				border: 1px solid grey;
+				font-size: 1.8rem;
+				outline: none;
+				cursor:pointer;
+			}
+			input[type=button]:hover {
+				background-color: #afafaf;
+			}
+            input[type=button].inline:last-of-type {
+	            clear:right;
+            }
+			
+            input[type=text] {
+				position:relative;
+				width: 70px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				border: 1px solid grey;
+				outline: none;
+				font-size: 1.8rem;
+				z-index: 1;
+            }
+			input[type=button]#new-game {
+				
+			}
+			#secret-number {
+				width: 80px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				border-bottom: 1px solid grey;
+				font-size: 1.8rem;
+			}
+#source-code-button	{
+	text-decoration:underline;
+	margin:0 5px;
+	padding: 5px;
+}
+#display-hw {
+	display: inline-block;
+	vertical-align:top;
+	position:relative;
+	margin-left:10px;
+    margin-top:20px;
+	
+}
+
+	table#guess-attempts td, 
+	table#guess-attempts th {
+		border: 1px solid black;
+	}
+
+	td, 
+	th {
+		padding: 5px 10px;
+		text-align: center;
+	}
+
+	table#guess-attempts th{
+		border-top: 0;
+	}
+
+	table#guess-attempts th:first-of-type {
+		border-left: 0;
+	}
+	table#guess-attempts th:last-of-type {
+		border-right: 0;
+	}
+	
+	#your-guesses {
+		position:relative;
+		display: inline-block;
+		margin-right: 50px;
+		vertical-align: top;
+		text-align: center;
+	}
+	
+	#high-scores {
+	border-left: 1px solid black;
+	padding-left: 25px;
+	position:relative;
+	display: inline-block;
+	text-align: center;
+	}
+		#your-guesses h2,
+		#high-scores h2 {
+			text-decoration: underline;
+			font-style:italic;
+		}
+footer {
+	margin-top: 10px;
+	border-top: 2px solid black;
+}	
+
+	footer p{
+		font-style: italic;
+		font-size: 0.8;
+		text-align:right;
+		padding: 5px 10px;
+	}	
+
+
+
+

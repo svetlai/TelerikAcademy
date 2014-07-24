@@ -13,17 +13,19 @@ define(function () {
 
 				return inputNumber;
 			} else {
-				alert('You must enter four different digits!');
+				alert('You must enter four different digits and the first one cannot be 0.');
 			}
 		}
 			
 		function isInputValid(input, inputLength) {
 			var isInputValid = true;
 			
-		//In case you don't want to allow the input number to start with a 0, uncomment these lines:
-			// if (Math.floor(input / 1000) === 0) {
-				// isInputValid = false;
-			// }	
+//Some rules say it's allowed for the input number to start with a 0.
+//In case you want to allow it, comment these lines:
+			if (Math.floor(input / 1000) === 0) {
+				isInputValid = false;
+			}
+//and edit the alert message on line 16.
 			
 			if (input.length > inputLength || inputLength > input.length || isNaN(input)) {
 				isInputValid = false;

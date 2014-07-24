@@ -81,7 +81,8 @@ define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquer
 				var	guesses = compareNumbers(inputNumber, secretNumber);
 			
 				displayAttempts(inputNumber, guesses);
-
+				inputField.select();
+				
 				var isGuessed = isNumberGuessed(guesses, NUM_LENGTH);
 
 				if (isGuessed) {
@@ -95,7 +96,6 @@ define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquer
 		$(document).keyup(function (ev) {
 			if (inputField.is(":focus") && (ev.keyCode === 13)) {
 				buttonGuess.click();
-				inputField.select();
 			}
 		});
 		

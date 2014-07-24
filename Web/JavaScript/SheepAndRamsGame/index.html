@@ -162,7 +162,8 @@ define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquer
 				var	guesses = compareNumbers(inputNumber, secretNumber);
 			
 				displayAttempts(inputNumber, guesses);
-
+				inputField.select();
+				
 				var isGuessed = isNumberGuessed(guesses, NUM_LENGTH);
 
 				if (isGuessed) {
@@ -176,7 +177,6 @@ define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquer
 		$(document).keyup(function (ev) {
 			if (inputField.is(":focus") && (ev.keyCode === 13)) {
 				buttonGuess.click();
-				inputField.select();
 			}
 		});
 		
@@ -315,7 +315,7 @@ define(function () {
 		}
 		
 		function addScoreToStorage (score) {
-			var	playerName = prompt('You scored: ' + score + '. Enter your name:') || 'Guest';
+			var	playerName = replaceTag(prompt('You scored: ' + score + '. Enter your name:') || 'Guest');
 			
 			scoreList.push({
 							name: playerName,
@@ -336,6 +336,14 @@ define(function () {
 				localStorage.setItem('SheepAndRamsScore', JSON.stringify(storageEntries));
 			}
 		}
+		
+		function replaceTag(input) {
+            input = input.replace('<', '&lt;');
+            input = input.replace('>', '&gt;');
+			input = input.replace('&' '&amp;');
+			
+            return input;
+        }
 		
 		function updateHighScores() {
 			var HIGH_SCORES_COUNT = 10,

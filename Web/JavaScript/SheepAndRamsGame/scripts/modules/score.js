@@ -6,12 +6,7 @@ define(function () {
 		
 		function updateScore() {	
 			attempts++;
-			
-			if (attempts === 1) {
-				score = attempts + ' ' + 'guess'
-			} else {
-				score = attempts + ' ' + 'guesses'
-			}
+			score = attempts
 			
 			return score;
 		}
@@ -45,7 +40,7 @@ define(function () {
 							score: score
 						});
 					
-					storageEntries.sort(sortScoresAscending);
+					storageEntries = storageEntries.sort(sortScoresAscending);
 
 				localStorage.setItem('SheepAndRamsScore', JSON.stringify(storageEntries));
 			}
@@ -54,7 +49,7 @@ define(function () {
 		function replaceTag(input) {
             input = input.replace('<', '&lt;');
             input = input.replace('>', '&gt;');
-			input = input.replace('&' '&amp;');
+			input = input.replace('&', '&amp;');
 			
             return input;
         }
@@ -74,10 +69,10 @@ define(function () {
 			//add scores to high-scores board
 			if (storageEntries && storageEntries.length > 0)
 				for (var i = 0; i < storageEntries.length && i < HIGH_SCORES_COUNT; i++) {
-					var highScore = storageEntries[i];
-						var scoreListItem = $('<li />')
-							.text(highScore['name'] + ' : ' + highScore['score'])
-							.appendTo(highScoreBoard);
+					var highScore = storageEntries[i],
+						scoreListItem = $('<li />')
+										.text(highScore['name'] + ' : ' + highScore['score'] + ' guesses')
+										.appendTo(highScoreBoard);
 			}
 		}
 		

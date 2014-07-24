@@ -20,6 +20,11 @@ define(function () {
 		function isInputValid(input, inputLength) {
 			var isInputValid = true;
 			
+		//In case you don't want to allow the input number to start with a 0, uncomment these lines:
+			// if (Math.floor(input / 1000) === 0) {
+				// isInputValid = false;
+			// }	
+			
 			if (input.length > inputLength || inputLength > input.length || isNaN(input)) {
 				isInputValid = false;
 			}  else {

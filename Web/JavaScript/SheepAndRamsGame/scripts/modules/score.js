@@ -29,7 +29,7 @@ define(function () {
 		}
 		
 		function addScoreToStorage (score) {
-			var	playerName = prompt('You scored: ' + score + '. Enter your name:') || 'Guest';
+			var	playerName = replaceTag(prompt('You scored: ' + score + '. Enter your name:') || 'Guest');
 			
 			scoreList.push({
 							name: playerName,
@@ -50,6 +50,14 @@ define(function () {
 				localStorage.setItem('SheepAndRamsScore', JSON.stringify(storageEntries));
 			}
 		}
+		
+		function replaceTag(input) {
+            input = input.replace('<', '&lt;');
+            input = input.replace('>', '&gt;');
+			input = input.replace('&' '&amp;');
+			
+            return input;
+        }
 		
 		function updateHighScores() {
 			var HIGH_SCORES_COUNT = 10,

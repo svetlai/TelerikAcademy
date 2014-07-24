@@ -79,7 +79,6 @@
 }());
 //------------------------------------------------------------------------------------------------
 //game-engine.js
-//game-engine.js
 define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquery'], function (secretNumberber, inputNumberber, Score) {
 	var SheepAndRams = (function(secretNumberber, inputNumberber, Score) {
 		var NUM_LENGTH = 4;
@@ -292,12 +291,7 @@ define(function () {
 		
 		function updateScore() {	
 			attempts++;
-			
-			if (attempts === 1) {
-				score = attempts + ' ' + 'guess'
-			} else {
-				score = attempts + ' ' + 'guesses'
-			}
+			score = attempts
 			
 			return score;
 		}
@@ -362,7 +356,7 @@ define(function () {
 				for (var i = 0; i < storageEntries.length && i < HIGH_SCORES_COUNT; i++) {
 					var highScore = storageEntries[i];
 						var scoreListItem = $('&lt;li />')
-							.text(highScore['name'] + ' : ' + highScore['score'])
+							.text(highScore['name'] + ' : ' + highScore['score'] + ' guesses')
 							.appendTo(highScoreBoard);
 			}
 		}

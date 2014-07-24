@@ -128,9 +128,11 @@ section {
 	#your-guesses {
 		position:relative;
 		display: inline-block;
-		margin-right: 50px;
+		padding-right:50px;
 		vertical-align: top;
 		text-align: center;
+		max-height: 460px;
+		overflow-y: auto;
 	}
 	
 	#high-scores {

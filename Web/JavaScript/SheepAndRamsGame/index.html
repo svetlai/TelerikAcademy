@@ -24,7 +24,7 @@
 				x x x x
 			</p>			
 			<label for="input-number"><h2>Enetr your four-digit number and click guess!</h2></label>
-	        <input type="text" id="input-number" maxlength="4" />
+	        <input type="text" id="input-number" maxlength="4" autofocus/>
 			<input type="button" id="guess-btn" value="Guess" />
 
 		</article>
@@ -79,14 +79,18 @@
 }());
 //------------------------------------------------------------------------------------------------
 //game-engine.js
+//game-engine.js
 define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquery'], function (secretNumberber, inputNumberber, Score) {
 	var SheepAndRams = (function(secretNumberber, inputNumberber, Score) {
 		var NUM_LENGTH = 4;
-			secretNumber = secretNumberber.get(NUM_LENGTH);
+			secretNumber = secretNumberber.get(NUM_LENGTH),
+			inputField = $("#input-number");
 
 		function startGame() {
 			secretNumber = secretNumberber.get(NUM_LENGTH);
 			Score.attempts = 0;
+			inputField.val('')
+					  .focus();
 
 			//clear previous attempts
 			$('#guess-attempts').find('.guess').empty();
@@ -131,7 +135,7 @@ define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquer
 			Score.addScoreToStorage(score);
 			Score.updateHighScores();
 		}
-
+		
 		function displayAttempts(inputNumberber, guesses) {		
 			var attemptItem = $('&lt;td />')
 				.text(inputNumberber.join(''));
@@ -166,6 +170,13 @@ define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquer
 				} else {				
 					Score.updateScore();
 				}
+			}
+		});
+		
+		$(document).keyup(function (ev) {
+			if (inputField.is(":focus") && (ev.keyCode === 13)) {
+				buttonGuess.click();
+				inputField.select();
 			}
 		});
 		

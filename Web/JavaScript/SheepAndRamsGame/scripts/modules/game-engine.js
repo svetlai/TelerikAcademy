@@ -2,11 +2,14 @@
 define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquery'], function (secretNumberber, inputNumberber, Score) {
 	var SheepAndRams = (function(secretNumberber, inputNumberber, Score) {
 		var NUM_LENGTH = 4;
-			secretNumber = secretNumberber.get(NUM_LENGTH);
+			secretNumber = secretNumberber.get(NUM_LENGTH),
+			inputField = $("#input-number");
 
 		function startGame() {
 			secretNumber = secretNumberber.get(NUM_LENGTH);
 			Score.attempts = 0;
+			inputField.val('')
+					  .focus();
 
 			//clear previous attempts
 			$('#guess-attempts').find('.guess').empty();
@@ -86,6 +89,13 @@ define(['modules/secret-number', 'modules/input-number', 'modules/score', 'jquer
 				} else {				
 					Score.updateScore();
 				}
+			}
+		});
+		
+		$(document).keyup(function (ev) {
+			if (inputField.is(":focus") && (ev.keyCode === 13)) {
+				buttonGuess.click();
+				inputField.select();
 			}
 		});
 		

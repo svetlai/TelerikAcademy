@@ -1,6 +1,6 @@
 # Telerik Academy
 
-## Programming with C#
+## Programming with C# ##
 
 ### C# - Part 1
 

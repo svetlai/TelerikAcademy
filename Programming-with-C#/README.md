@@ -10,3 +10,6 @@
 * [Console Input and Output Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-1/04-Console-Input-Output)
 * [Conditional Statements Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-1/05-Conditional-Statements)
 * [Loops Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-1/06-Loops)
+
+### C# - Part 2
+1. [Arrays Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/01-Arrays)

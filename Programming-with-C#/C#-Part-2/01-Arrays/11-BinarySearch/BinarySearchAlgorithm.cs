@@ -18,7 +18,8 @@
             Console.Write("Enter a sequence of integer numbers separated by space: ");
 
             int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
-            
+            Array.Sort(input);
+
             Console.Write("Enter a number to search for: ");
 
             int value;

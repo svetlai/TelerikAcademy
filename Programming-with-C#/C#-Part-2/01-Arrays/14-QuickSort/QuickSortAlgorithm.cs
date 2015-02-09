@@ -8,37 +8,47 @@
     /// </summary>
     public class QuickSortAlgorithm
     {
+        private const string TextCharacters = ",.!?'\"\\/(){}[]-_;: ";
         private static readonly string Border = new string('-', 60);
-
+  
         public static void Main()
         {
             Console.WriteLine("Problem 14. Quick sort \nWrite a program that sorts an array of strings using the [Quick sort](http://en.wikipedia.org/wiki/Quicksort) algorithm.\n");
 
-            Console.Write("Enter a sequence of integer numbers separated by space: ");
+            Console.WriteLine("Enter a sequence of strings separated by space or press enter to test with a sample input (sample input: grapes pinaple orange banana mango apple): ");
 
-            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
+            string[] input;
+            if (Console.ReadKey().Key == ConsoleKey.Enter)
+            {
+                input = new string[] { "grapes", "pinaple", "orange", "banana", "mango", "apple" };
+            }
+            else
+            {
+                input = Console.ReadLine().Split(TextCharacters.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            }
+
             QuickSort(input, 0, input.Length - 1);
 
             Console.WriteLine(Border);
-            Console.WriteLine("{0,30}", "sorted");
-            Console.WriteLine("{0,30}", string.Join(" ", input));
+            Console.WriteLine("{0,50}", "sorted");
+            Console.WriteLine("{0,50}", string.Join(" ", input));
             Console.WriteLine(Border);
         }
 
-        public static void QuickSort(int[] toSort, int left, int right)
+        public static void QuickSort(string[] toSort, int left, int right)
         {
             int i = left;
             int j = right;
-            int pivot = toSort[(left + right) / 2];
+            string pivot = toSort[(left + right) / 2];
 
             while (i <= j)
             {
-                while (toSort[i] < pivot)
+                while (toSort[i].CompareTo(pivot) < 0)
                 {
                     i++;
                 }
 
-                while (toSort[j] > pivot)
+                while (toSort[j].CompareTo(pivot) > 0)
                 {
                     j--;
                 }
@@ -46,7 +56,7 @@
                 if (i <= j)
                 {
                     // swap
-                    int temp = toSort[i];
+                    string temp = toSort[i];
                     toSort[i] = toSort[j];
                     toSort[j] = temp;
 
@@ -65,11 +75,6 @@
             {
                 QuickSort(toSort, i, right);
             }
-        }
-
-        private static int[] ConvertStringOfIntsToArray(string text)
-        {
-            return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
         }
     }
 }

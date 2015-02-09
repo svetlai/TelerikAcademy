@@ -15,7 +15,7 @@
         {
             Console.WriteLine("Problem 11. Binary search \nWrite a program that finds the index of given element in a sorted array of integers by using the [Binary search](http://en.wikipedia.org/wiki/Binary_search_algorithm) algorithm.\n");
 
-            Console.Write("Enter a sequence of integer numbers separated by space: ");
+            Console.Write("Enter a sequence of increasing integer numbers separated by space: ");
 
             int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
             Array.Sort(input);

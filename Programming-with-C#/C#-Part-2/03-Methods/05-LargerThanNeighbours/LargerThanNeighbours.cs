@@ -1,6 +1,7 @@
 ﻿namespace LargerThanNeighbours
 {
     using System;
+    using System.Text;
 
     /// <summary>
     /// Problem 5. Larger than neighbours
@@ -14,18 +15,22 @@
 
         public static void Main()
         {
-            Console.WriteLine("Problem 5. Larger than neighbours \nWrite a method that checks if the element at given position in given array of integers is larger than its two neighbours (when such exist).\n");
+            StringBuilder print = new StringBuilder();
 
-            Console.WriteLine("Example:");
+            print.AppendLine("Problem 5. Larger than neighbours \nWrite a method that checks if the element at given position in given array of integers is larger than its two neighbours (when such exist).\n");
+         
             int[] array = { 4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3 };
             int position = 3;
             bool larger = IsLargerThanNeighbours(array, position);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,10} | {2}", "input", "position", "result");
-            Console.WriteLine("{0,30} | {1,10} | {2}", string.Join(" ", array), position, larger);
-            Console.WriteLine(Border);
+            print.AppendLine("Example:")
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,30} | {1,10} | {2}", "input", "position", "result"))
+                .AppendLine(string.Format("{0,30} | {1,10} | {2}", string.Join(" ", array), position, larger))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
 
             // test with your input
             Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
@@ -36,9 +41,12 @@
             larger = IsLargerThanNeighbours(array, position);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,10} | {2}", string.Join(" ", array), position, larger);
-            Console.WriteLine(Border);
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,30} | {1,10} | {2}", string.Join(" ", array), position, larger))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
         }
 
         public static bool IsLargerThanNeighbours(int[] array, int index)
@@ -46,6 +54,11 @@
             if (index < 0 || index >= array.Length)
             {
                 throw new IndexOutOfRangeException(IndexOutOfRangeMsg);
+            }
+
+            if (array.Length == 1)
+            {
+                return true;
             }
 
             if (index == 0 && array[index] > array[index + 1] 

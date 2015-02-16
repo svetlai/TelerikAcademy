@@ -1,6 +1,9 @@
 ﻿namespace FirstLargerThanNeighbours
 {
     using System;
+    using System.Text;
+
+    using LargerThanNeighbours;
 
     /// <summary>
     /// Problem 6. First larger than neighbours
@@ -15,17 +18,21 @@
 
         public static void Main()
         {
-            Console.WriteLine("Problem 6. First larger than neighbours \nWrite a method that returns the index of the first element in array that is larger than its neighbours, or `-1`, if there�s no such element. \nUse the method from the previous exercise.\n");
+            StringBuilder print = new StringBuilder();
 
-            Console.WriteLine("Example:");
+            print.AppendLine("Problem 6. First larger than neighbours \nWrite a method that returns the index of the first element in array that is larger than its neighbours, or `-1`, if there�s no such element. \nUse the method from the previous exercise.\n");
+
             int[] array = { 1, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3 };
             int larger = FindFirstLargerThanNeighbours(array);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,10}", "input", "result");
-            Console.WriteLine("{0,30} | {1,10}", string.Join(" ", array), larger);
-            Console.WriteLine(Border);
+            print.AppendLine("Example:")
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,30} | {1,10}", "input", "result"))
+                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", array), larger))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
 
             // test with your input
             Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
@@ -34,39 +41,25 @@
             larger = FindFirstLargerThanNeighbours(array);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,10}", string.Join(" ", array), larger);
-            Console.WriteLine(Border);
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", array), larger))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
         }
 
         public static int FindFirstLargerThanNeighbours(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
-                if (IsLargerThanNeighbours(array, i))
+                if (LargerThanNeighbours.IsLargerThanNeighbours(array, i))
                 {
                     return i;
                 }
             }
 
             return -1;
-        }
-
-        public static bool IsLargerThanNeighbours(int[] array, int index)
-        {
-            if (index < 0 || index >= array.Length)
-            {
-                throw new IndexOutOfRangeException(IndexOutOfRangeMsg);
-            }
-
-            if (index == 0 && array[index] > array[index + 1]
-                || index == (array.Length - 1) && array[index] > array[index - 1]
-                || array[index] > array[index + 1] && array[index] > array[index - 1])
-            {
-                return true;
-            }
-
-            return false;
         }
 
         private static int[] ConvertStringOfIntsToArray(string text)

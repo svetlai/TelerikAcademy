@@ -2,6 +2,7 @@
 {
     using System;
     using System.Linq;
+    using System.Text;
 
     /// <summary>
     /// Problem 14. Integer calculations
@@ -14,28 +15,34 @@
 
         public static void Main()
         {
-            Console.WriteLine("Problem 14. Integer calculations \nWrite methods to calculate `minimum`, `maximum`, `average`, `sum` and `product` of given set of integer numbers. \nUse variable number of arguments.");
-            
-            Console.WriteLine("Example: ");
-            Console.WriteLine(Border);
-            Console.WriteLine("Input: {1,-30} | Minimum: {0} ", FindMinimum(1, 2, 3, 4), "1, 2, 3, 4");
-            Console.WriteLine("Input: {1,-30} | Maximum: {0}", FindMaximum(5, 2, 4), "5, 2, 4");
-            Console.WriteLine("Input: {1,-30} | Average: {0}", FindAverage(8, 6, 3, 8, 2, 7), "8, 6, 3, 8, 2, 7");
-            Console.WriteLine("Input: {1,-30} | Sum: {0}", FindSum(6, 2, 8, 2, 5), "6, 2, 8, 2, 5");
-            Console.WriteLine("Input: {1,-30} | Product: {0}", FindProduct(1, 6, 3, 5, 2, 7), "1, 6, 3, 5, 2, 7");
-            Console.WriteLine(Border);
+            StringBuilder print = new StringBuilder();
+
+            print.AppendLine("Problem 14. Integer calculations \nWrite methods to calculate `minimum`, `maximum`, `average`, `sum` and `product` of given set of integer numbers. \nUse variable number of arguments.")
+                .AppendLine("Example: ")
+                .AppendLine(Border)
+                .AppendLine(string.Format("Input: {1,-30} | Minimum: {0} ", FindMinimum(1, 2, 3, 4), "1, 2, 3, 4"))
+                .AppendLine(string.Format("Input: {1,-30} | Maximum: {0}", FindMaximum(5, 2, 4), "5, 2, 4"))
+                .AppendLine(string.Format("Input: {1,-30} | Average: {0}", FindAverage(8, 6, 3, 8, 2, 7), "8, 6, 3, 8, 2, 7"))
+                .AppendLine(string.Format("Input: {1,-30} | Sum: {0}", FindSum(6, 2, 8, 2, 5), "6, 2, 8, 2, 5"))
+                .AppendLine(string.Format("Input: {1,-30} | Product: {0}", FindProduct(1, 6, 3, 5, 2, 7), "1, 6, 3, 5, 2, 7"))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
 
             // test with your input
             Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
             int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
 
-            Console.WriteLine(Border);
-            Console.WriteLine("Input: {1,-30} | Minimum: {0} ", FindMinimum(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Maximum: {0}", FindMaximum(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Average: {0}", FindAverage(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Sum: {0}", FindSum(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Product: {0}", FindProduct(input), string.Join(", ", input));
-            Console.WriteLine(Border);
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("Input: {1,-30} | Minimum: {0} ", FindMinimum(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Maximum: {0}", FindMaximum(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Average: {0}", FindAverage(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Sum: {0}", FindSum(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Product: {0}", FindProduct(input), string.Join(", ", input)))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
         }
 
         public static int FindMinimum(params int[] numbers)

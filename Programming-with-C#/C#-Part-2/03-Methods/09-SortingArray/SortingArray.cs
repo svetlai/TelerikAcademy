@@ -1,6 +1,7 @@
 ﻿namespace SortingArray
 {
     using System;
+    using System.Text;
 
     /// <summary>
     /// Problem 9. Sorting array
@@ -15,17 +16,21 @@
 
         public static void Main()
         {
-            Console.WriteLine(" Problem 9. Sorting array \nWrite a method that return the maximal element in a portion of array of integers starting at given index. \nUsing it write another method that sorts an array in ascending / descending order.");
+            StringBuilder print = new StringBuilder();
 
-            Console.WriteLine("Example: ");
+            print.AppendLine(" Problem 9. Sorting array \nWrite a method that return the maximal element in a portion of array of integers starting at given index. \nUsing it write another method that sorts an array in ascending / descending order.");
+
             int[] input = { 1, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3 };
             int[] sorted = SortArray(input);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,10}", "input", "result");
-            Console.WriteLine("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted));
-            Console.WriteLine(Border);
+            print.AppendLine("Example:")
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,30} | {1,10}", "input", "result"))
+                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted)))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
 
             // test with your input
             Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
@@ -34,9 +39,12 @@
             sorted = SortArray(input, true);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted));
-            Console.WriteLine(Border);
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted)))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
         }
 
         public static int FindPositionOfMaxElementInSubArray(int[] array, int startIndex, int endIndex)

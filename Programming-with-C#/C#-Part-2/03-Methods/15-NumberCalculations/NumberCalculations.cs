@@ -3,6 +3,7 @@
     using System;
     using System.Globalization;
     using System.Linq;
+    using System.Text;
     using System.Threading;
 
     /// <summary>
@@ -16,30 +17,38 @@
 
         public static void Main()
         {
-            Console.WriteLine("Problem 15.* Number calculations \nModify your last program and try to make it work for any number type, not just integer (e.g. decimal, float, byte, etc.) \nUse generic method (read in Internet about generic methods in C#).");
+            StringBuilder print = new StringBuilder();
+
+            print.AppendLine("Problem 15.* Number calculations \nModify your last program and try to make it work for any number type, not just integer (e.g. decimal, float, byte, etc.) \nUse generic method (read in Internet about generic methods in C#).");
 
             Thread.CurrentThread.CurrentCulture = CultureInfo.InstalledUICulture;
 
-            Console.WriteLine("Example: ");
-            Console.WriteLine(Border);
-            Console.WriteLine("Input double: {1,-30} | Minimum: {0} ", FindMinimum<double>(1.5, 2.3, 3, 4), "1.5, 2.3, 3, 4");
-            Console.WriteLine("Input byte: {1,-30}   | Maximum: {0}", FindMaximum<byte>(5, 2, 4), "5, 2, 4");
-            Console.WriteLine("Input float: {1,-30}  | Average: {0}", FindAverage<float>(8f, 6.2f, 3f, 8f, 2f, 7f), "8f, 6.2f, 3f, 8f, 2f, 7f");
-            Console.WriteLine("Input decimal: {1,-30}| Sum: {0}", FindSum<decimal>(6.3m, 2.1m, 8m, 2m, 5m), "6.3m, 2.1m, 8m, 2m, 5m");
-            Console.WriteLine("Input int: {1,-30}    | Product: {0}", FindProduct<int>(1, 3, 5), "1, 6, 3, 5, 2, 7");
-            Console.WriteLine(Border);
+            print.AppendLine("Problem 14. Integer calculations \nWrite methods to calculate `minimum`, `maximum`, `average`, `sum` and `product` of given set of integer numbers. \nUse variable number of arguments.")
+                .AppendLine("Example: ")
+                .AppendLine(Border)
+                .AppendLine(string.Format("Input double: {1,-30} | Minimum: {0} ", FindMinimum<double>(1.5, 2.3, 3, 4), "1.5, 2.3, 3, 4"))
+                .AppendLine(string.Format("Input byte: {1,-30}   | Maximum: {0}", FindMaximum<byte>(5, 2, 4), "5, 2, 4"))
+                .AppendLine(string.Format("Input float: {1,-30}  | Average: {0}", FindAverage<float>(8f, 6.2f, 3f, 8f, 2f, 7f), "8f, 6.2f, 3f, 8f, 2f, 7f"))
+                .AppendLine(string.Format("Input decimal: {1,-30}| Sum: {0}", FindSum<decimal>(6.3m, 2.1m, 8m, 2m, 5m), "6.3m, 2.1m, 8m, 2m, 5m"))
+                .AppendLine(string.Format("Input int: {1,-30}    | Product: {0}", FindProduct<int>(1, 3, 5), "1, 6, 3, 5, 2, 7"))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
 
             // test with your input
             Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
             int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
 
-            Console.WriteLine(Border);
-            Console.WriteLine("Input: {1,-30} | Minimum: {0} ", FindMinimum(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Maximum: {0}", FindMaximum(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Average: {0}", FindAverage(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Sum: {0}", FindSum(input), string.Join(", ", input));
-            Console.WriteLine("Input: {1,-30} | Product: {0}", FindProduct(input), string.Join(", ", input));
-            Console.WriteLine(Border);
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("Input: {1,-30} | Minimum: {0} ", FindMinimum(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Maximum: {0}", FindMaximum(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Average: {0}", FindAverage(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Sum: {0}", FindSum(input), string.Join(", ", input)))
+                .AppendLine(string.Format("Input: {1,-30} | Product: {0}", FindProduct(input), string.Join(", ", input)))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
         }
 
         public static T FindMinimum<T>(params T[] input) where T : IComparable

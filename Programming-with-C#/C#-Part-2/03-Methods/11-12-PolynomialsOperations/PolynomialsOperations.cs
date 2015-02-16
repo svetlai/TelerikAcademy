@@ -1,6 +1,7 @@
 ﻿namespace Polynomials
 {
     using System;
+    using System.Text;
 
     /// <summary>
     /// Problem 11. Adding polynomials
@@ -16,8 +17,10 @@
 
         public static void Main()
         {
-            Console.WriteLine("Problem 11. Adding polynomials \nWrite a method that adds two polynomials. \nRepresent them as arrays of their coefficients.");
-            Console.WriteLine("Problem 12. Subtracting polynomials \nExtend the previous program to support also subtraction and multiplication of polynomials.");
+            StringBuilder print = new StringBuilder();
+
+            print.AppendLine("Problem 11. Adding polynomials \nWrite a method that adds two polynomials. \nRepresent them as arrays of their coefficients.")
+                .AppendLine("Problem 12. Subtracting polynomials \nExtend the previous program to support also subtraction and multiplication of polynomials.");
 
             Polynomial first = new Polynomial(new int[] { 2, 3, 1 });
             Polynomial second = new Polynomial(new int[] { 4, 1 });
@@ -27,17 +30,18 @@
             Polynomial multiplied = first * second;
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,20} | {1,20}", "first", "second");
-            Console.WriteLine("{0,20} | {1,20}", first.ToString(), second.ToString());
+            print.AppendLine("Example:")
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,20} | {1,20}", "first", "second"))
+                .AppendLine(string.Format("{0,20} | {1,20}", first.ToString(), second.ToString()))
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", "added", "subtracted", "multiplied"))
+                .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", added.ToString(), subtracted.ToString(), multiplied.ToString()))
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", string.Join(" ", added.Coefficients), string.Join(" ", subtracted.Coefficients), string.Join(" ", multiplied.Coefficients)))
+                .AppendLine(Border);
 
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,20} | {1,20} | {2,20}", "added", "subtracted", "multiplied");
-            Console.WriteLine("{0,20} | {1,20} | {2,20}", added.ToString(), subtracted.ToString(), multiplied.ToString());
-            Console.WriteLine(Border);
-
-            Console.WriteLine("{0,20} | {1,20} | {2,20}", string.Join(" ", added.Coefficients), string.Join(" ", subtracted.Coefficients), string.Join(" ", multiplied.Coefficients));
-            Console.WriteLine(Border);
+            Console.WriteLine(print.ToString());
 
             // test with your input
             Console.Write("Try it yourself! \nEnter first polynomial coefficients as integer numbers separated by space: ");
@@ -51,17 +55,18 @@
             multiplied = first * second;
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,20} | {1,20}", "first", "second");
-            Console.WriteLine("{0,20} | {1,20}", first.ToString(), second.ToString());
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,20} | {1,20}", "first", "second"))
+                .AppendLine(string.Format("{0,20} | {1,20}", first.ToString(), second.ToString()))
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", "added", "subtracted", "multiplied"))
+                .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", added.ToString(), subtracted.ToString(), multiplied.ToString()))
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", string.Join(" ", added.Coefficients), string.Join(" ", subtracted.Coefficients), string.Join(" ", multiplied.Coefficients)))
+                .AppendLine(Border);
 
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,20} | {1,20} | {2,20}", "added", "subtracted", "multiplied");
-            Console.WriteLine("{0,20} | {1,20} | {2,20}", added.ToString(), subtracted.ToString(), multiplied.ToString());
-            Console.WriteLine(Border);
-
-            Console.WriteLine("{0,20} | {1,20} | {2,20}", string.Join(" ", added.Coefficients), string.Join(" ", subtracted.Coefficients), string.Join(" ", multiplied.Coefficients));
-            Console.WriteLine(Border);
+            Console.WriteLine(print.ToString());
         }
 
         private static int[] ConvertStringOfIntsToArray(string text)

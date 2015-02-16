@@ -3,6 +3,7 @@
     using System;
     using System.Linq;
     using System.Numerics;
+    using System.Text;
 
     /// <summary>
     /// Problem 8. Number as array
@@ -16,9 +17,10 @@
 
         public static void Main()
         {
-            Console.WriteLine("Problem 8. Number as array \nWrite a method that adds two positive integer numbers represented as arrays of digits (each array element `arr[i]` contains a digit; the last digit is kept in `arr[0]`). \nEach of the numbers that will be added could have up to `10 000` digits.");
+            StringBuilder print = new StringBuilder();
 
-            Console.WriteLine("Example: ");
+            print.AppendLine("Problem 8. Number as array \nWrite a method that adds two positive integer numbers represented as arrays of digits (each array element `arr[i]` contains a digit; the last digit is kept in `arr[0]`). \nEach of the numbers that will be added could have up to `10 000` digits.");
+
             string firstNumber = "1584";
             string secondNumber = "236";
 
@@ -27,10 +29,13 @@
             string result = AddTwoArraysOfDigits(first, second);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,-10} /{1,10} | {2,-10} /{3,10} | {4,10}", "first number", "as array", "second number", "as array", "result");
-            Console.WriteLine("{0,-10}  {1,12} | {2,-10}   {3,12} | {4,10}", firstNumber, string.Join(" ", first), secondNumber, string.Join(" ", second), result);
-            Console.WriteLine(Border);
+            print.AppendLine("Example: ")
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,-10} /{1,10} | {2,-10} /{3,10} | {4,10}", "first number", "as array", "second number", "as array", "result"))
+                .AppendLine(string.Format("{0,-10}  {1,12} | {2,-10}   {3,12} | {4,10}", firstNumber, string.Join(" ", first), secondNumber, string.Join(" ", second), result))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
 
             // test with your input
             Console.Write("Try it yourself! \nEnter an integer number: ");
@@ -44,9 +49,12 @@
             result = AddTwoArraysOfDigits(first, second);
 
             // print
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,-10}  {1,12} | {2,-10}   {3,12} | {4,10}", firstNumber, string.Join(" ", first), secondNumber, string.Join(" ", second), result);
-            Console.WriteLine(Border);
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,-10}  {1,12} | {2,-10}   {3,12} | {4,10}", firstNumber, string.Join(" ", first), secondNumber, string.Join(" ", second), result))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
         }
 
         public static string AddTwoArraysOfDigits(char[] first, char[] second)

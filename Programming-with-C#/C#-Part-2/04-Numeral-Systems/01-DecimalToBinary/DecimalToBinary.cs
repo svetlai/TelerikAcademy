@@ -1,9 +1,9 @@
-﻿namespace DecimalToBinary
+namespace DecimalToBinary
 {
     using System;
+    using System.Text;
 
     using Helper;
-    using System.Text;
 
     /// <summary>
     /// Problem 1. Decimal to binary

@@ -82,8 +82,7 @@
                             hexDigit = "F";
                             break;
                         default:
-                            result.Append("Input not in the correct format.");
-                            return result.ToString();
+                            throw new ArgumentException("Input not in the correct format.");
                     }
                 }
 

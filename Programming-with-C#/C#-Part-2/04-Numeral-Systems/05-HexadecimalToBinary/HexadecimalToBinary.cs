@@ -41,7 +41,7 @@
 
             Console.WriteLine("Binary: {0}", binary);
 
-            // test with the built in conversion
+            // test with the built in conversion 
             // Console.WriteLine("Binary: {0}", Convert.ToString(Convert.ToInt32(hexNumber, 16), 2).PadLeft(32, '0'));
         }
 

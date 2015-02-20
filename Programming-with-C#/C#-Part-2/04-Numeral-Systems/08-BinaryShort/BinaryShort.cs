@@ -44,7 +44,7 @@
 
             // decimal to binary: 
             // 5 = 5 / 2 = 2 reminder 1; 
-            // 2 / 2 = 1 reminder 0; 
+            // 2 / 2 = 1 reminder 0;
             // 1 / 2 = 0 reminder 1 = 101 (reversed);
             while (shortNumber != 0)
             {

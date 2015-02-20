@@ -50,7 +50,7 @@
 
             Console.WriteLine("Hex: {0}", hexNumber);
 
-            // test with the built in conversion
+            // test with the built in conversion 
             // Console.WriteLine(Convert.ToString(Convert.ToInt32(binaryNumber, 2), 16));
         }
 

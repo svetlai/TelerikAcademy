@@ -2,6 +2,7 @@
 {
     using System;
     using System.Linq;
+    using System.Text;
 
     /// <summary>
     /// Problem 4. Maximal sequence 
@@ -13,31 +14,12 @@
     /// </summary>
     public class MaximalSequence
     {
-        private static readonly string Border = new string('-', 60);
-
         public static void Main()
         {
-            Console.WriteLine("Maximal sequence \nWrite a program that finds the **maximal sequence** of equal elements in an array.");
+            int[] input = { 2, 1, 1, 2, 3, 3, 2, 2, 2, 1 };
+            int[] maximalSequence = GetMaximalSequence(input);
 
-            // display examples
-            Console.WriteLine("Example:");
-            int[] array = { 2, 1, 1, 2, 3, 3, 2, 2, 2, 1 };
-            int[] maximalSequence = GetMaximalSequence(array);
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,15}", "input", "result");
-            Console.WriteLine("{0,30} | {1,15}", string.Join(" ", array), string.Join(" ", maximalSequence));
-            Console.WriteLine(Border);
-
-            // test with your input
-            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
-            
-            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());         
-            int[] result = GetMaximalSequence(input);
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,15}", string.Join(" ", input), string.Join(" ", result));
-            Console.WriteLine(Border);
+            DisplayExample(input, maximalSequence);
         }
 
         /// <summary>
@@ -51,7 +33,7 @@
             int bestElement = currentElement;
             int count = 1;
             int max = 1;
-            
+
             for (int i = 1; i < array.Length; i++)
             {
                 if (currentElement == array[i])
@@ -77,6 +59,36 @@
         private static int[] ConvertStringOfIntsToArray(string text)
         {
             return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample(int[] input, int[] maximalSequence)
+        {
+            StringBuilder print = new StringBuilder();
+            string border = new string('-', 60);
+
+            print.AppendLine("Problem 4. Maximal sequence \nWrite a program that finds the **maximal sequence** of equal elements in an array.");
+
+            // display examples
+            print.AppendLine("Example:")
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,15}", "input", "result"))
+                .AppendLine(string.Format("{0,30} | {1,15}", string.Join(" ", input), string.Join(" ", maximalSequence)))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
+
+            // test with your input
+            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
+
+            input = ConvertStringOfIntsToArray(Console.ReadLine());
+            maximalSequence = GetMaximalSequence(input);
+
+            print.Clear()
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,15}", string.Join(" ", input), string.Join(" ", maximalSequence)))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
         }
     }
 }

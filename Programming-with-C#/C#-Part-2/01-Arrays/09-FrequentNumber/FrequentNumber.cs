@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// Problem 9. Frequent number
@@ -13,30 +14,12 @@
     /// </summary>
     public class FrequentNumber
     {
-        private static readonly string Border = new string('-', 60);
-
         public static void Main()
         {
-            Console.WriteLine("Problem 9. Frequent number \nWrite a program that finds the most frequent number in an array.");
+            int[] input = { 4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3 };
+            KeyValuePair<int, int> mostFrequent = GetMostFrequentNumber(input);
 
-            Console.WriteLine("Example:");
-            int[] array = { 4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3 };
-            KeyValuePair<int, int> mostFrequent = GetMostFrequentNumber(array);
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,15}", "input", "result");
-            Console.WriteLine("{0,30} | {1} ({2} times)", string.Join(" ", array), mostFrequent.Key, mostFrequent.Value);
-            Console.WriteLine(Border);
-
-            // test with your input
-            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
-
-            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
-            KeyValuePair<int, int> result = GetMostFrequentNumber(input);
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1} ({2} times)", string.Join(" ", input), result.Key, result.Value);
-            Console.WriteLine(Border);
+            DisplayExample(input, mostFrequent);
         }
 
         public static KeyValuePair<int, int> GetMostFrequentNumber(int[] array)
@@ -74,6 +57,35 @@
         private static int[] ConvertStringOfIntsToArray(string text)
         {
             return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample(int[] input, KeyValuePair<int, int> mostFrequent)
+        {
+            StringBuilder print = new StringBuilder();
+            string border = new string('-', 60);
+
+            print.AppendLine("Problem 9. Frequent number \nWrite a program that finds the most frequent number in an array.");
+
+            print.AppendLine("Example:")
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,15}", "input", "result"))
+                .AppendLine(string.Format("{0,30} | {1} ({2} times)", string.Join(" ", input), mostFrequent.Key, mostFrequent.Value))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
+
+            // test with your input
+            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
+
+            input = ConvertStringOfIntsToArray(Console.ReadLine());
+            mostFrequent = GetMostFrequentNumber(input);
+
+            print.Clear()
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1} ({2} times)", string.Join(" ", input), mostFrequent.Key, mostFrequent.Value))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
         }
     }
 }

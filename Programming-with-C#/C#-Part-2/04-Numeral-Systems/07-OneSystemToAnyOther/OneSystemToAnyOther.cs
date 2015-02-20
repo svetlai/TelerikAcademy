@@ -18,53 +18,12 @@
 
         public static void Main()
         {
-            StringBuilder print = new StringBuilder();
-
-            print.AppendLine("Problem 7. One system to any other \nWrite a program to convert from any numeral system of given base `s` to any other numeral system of base `d` (2 <= `s`, `d` <=; 16).\n");
-         
             int s = 12;
             int d = 3;
             string input = "A121";
             string result = ConvertNumeralSystemSToNumeralSystemD(s, d, input);
 
-            // print
-            print.AppendLine("Example:")
-                .AppendLine(Border)
-                .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", "S", "D", "input", "result"))
-                .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", s, d, input, result))
-                .AppendLine(Border);
-
-            Console.WriteLine(print.ToString());
-
-            // test with your input
-            Console.Write("Try it yourself! \nPlease enter a base S so that 2 <= S <= 16: ");
-
-            if (!int.TryParse(Console.ReadLine(), out s) || s < 2 || s > 16)
-            {
-                Console.WriteLine(FormatExceptionMsg);
-                return;
-            }
-
-            Console.Write("Please enter a base D so that 2 <= D <= 16: ");
-
-            if (!int.TryParse(Console.ReadLine(), out d) || d < 2 || d > 16)
-            {
-                Console.WriteLine(FormatExceptionMsg);
-                return;
-            }
-
-            Console.Write("Please enter a number from numeral system S to convert to numeral system D: ");
-            input = Console.ReadLine();
-
-            result = ConvertNumeralSystemSToNumeralSystemD(s, d, input);
-
-            // print
-            print.Clear()
-                .AppendLine(Border)
-                .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", s, d, input, result))
-                .AppendLine(Border);
-
-            Console.WriteLine(print.ToString());
+            DisplayExample(s, d, input, result);
 
             // test with the built in conversion
             // Console.WriteLine(Test());
@@ -141,6 +100,52 @@
             string binaryToHex = ConvertNumeralSystemSToNumeralSystemD(2, 16, Convert.ToString(256, 2));
 
             return builtInBinary == binary && builtInToInt == toInt && builtInHex == binaryToHex;
+        }
+
+        private static void DisplayExample(int s, int d, string input, string result)
+        {
+            StringBuilder print = new StringBuilder();
+
+            print.AppendLine("Problem 7. One system to any other \nWrite a program to convert from any numeral system of given base `s` to any other numeral system of base `d` (2 <= `s`, `d` <=; 16).\n");
+
+            // print
+            print.AppendLine("Example:")
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", "S", "D", "input", "result"))
+                .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", s, d, input, result))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
+
+            // test with your input
+            Console.Write("Try it yourself! \nPlease enter a base S so that 2 <= S <= 16: ");
+
+            if (!int.TryParse(Console.ReadLine(), out s) || s < 2 || s > 16)
+            {
+                Console.WriteLine(FormatExceptionMsg);
+                return;
+            }
+
+            Console.Write("Please enter a base D so that 2 <= D <= 16: ");
+
+            if (!int.TryParse(Console.ReadLine(), out d) || d < 2 || d > 16)
+            {
+                Console.WriteLine(FormatExceptionMsg);
+                return;
+            }
+
+            Console.Write("Please enter a number from numeral system S to convert to numeral system D: ");
+            input = Console.ReadLine();
+
+            result = ConvertNumeralSystemSToNumeralSystemD(s, d, input);
+
+            // print
+            print.Clear()
+                .AppendLine(Border)
+                .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", s, d, input, result))
+                .AppendLine(Border);
+
+            Console.WriteLine(print.ToString());
         }
     }
 }

@@ -18,12 +18,8 @@
         private const string FormatExceptionMsg = "Input not in the correct format.";
         private static readonly string Border = new string('-', 60);
 
-        public static void Main(string[] args)
+        public static void Main()
         {
-            StringBuilder print = new StringBuilder();
-
-            print.AppendLine("Problem 9.* Binary floating-point \nWrite a program that shows the internal binary representation of given 32-bit signed floating-point number in IEEE 754 format (the C# type `float`).");
-
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
             float input = -27.25f;
@@ -32,6 +28,39 @@
             string sign = GetSign(binary);
             string exponent = GetExponent(binary);
             string mantissa = GetMantissa(binary);
+
+            DisplayExample(input, binary, sign, exponent, mantissa);
+        }
+
+        public static string ConvertFloatToBinary(float floatNumber)
+        {
+            byte[] bytes = BitConverter.GetBytes(floatNumber);
+            int decimalNumber = BitConverter.ToInt32(bytes, 0);
+            string binary = Convert.ToString(decimalNumber, 2);
+
+            return binary;
+        }
+
+        public static string GetSign(string binary)
+        {
+            return binary[0].ToString();
+        }
+
+        public static string GetExponent(string binary)
+        {
+            return binary.Substring(1, 8);
+        }
+
+        public static string GetMantissa(string binary)
+        {
+            return binary.Substring(9);
+        }
+
+        private static void DisplayExample(float input, string binary, string sign, string exponent, string mantissa)
+        {
+            StringBuilder print = new StringBuilder();
+
+            print.AppendLine("Problem 9.* Binary floating-point \nWrite a program that shows the internal binary representation of given 32-bit signed floating-point number in IEEE 754 format (the C# type `float`).");
 
             // print example
             print.AppendLine("Example:")
@@ -64,30 +93,6 @@
                 .AppendLine(Border);
 
             Console.WriteLine(print.ToString());
-        }
-
-        public static string ConvertFloatToBinary(float floatNumber)
-        {
-            byte[] bytes = BitConverter.GetBytes(floatNumber);
-            int decimalNumber = BitConverter.ToInt32(bytes, 0);
-            string binary = Convert.ToString(decimalNumber, 2);
-
-            return binary;
-        }
-
-        public static string GetSign(string binary)
-        {
-            return binary[0].ToString();
-        }
-
-        public static string GetExponent(string binary)
-        {
-            return binary.Substring(1, 8);
-        }
-
-        public static string GetMantissa(string binary)
-        {
-            return binary.Substring(9);
         }
     }
 }

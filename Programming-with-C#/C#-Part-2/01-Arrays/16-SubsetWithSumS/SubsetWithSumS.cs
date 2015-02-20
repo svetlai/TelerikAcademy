@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// Problem 16.* Subset with sum S
@@ -15,16 +16,11 @@
     public class SubsetWithSumS
     {
         private const string FormatExceptionMessage = "Input not in the correct format.";
-        private static readonly string Border = new string('-', 60);
         private static bool hasSubsetSum = false;
         private static List<int[]> allSubsets = new List<int[]>();
 
         public static void Main()
         {
-            Console.WriteLine("Problem 16.* Subset with sum S \nWe are given an array of integers and a number `S`.\nWrite a program to find if there exists a subset of the elements of the array that has a sum `S`.");
-
-            // display examples
-            Console.WriteLine("Example:");
             int[] array = { 2, 1, 2, 4, 3, 5, 2, 6 };
             int sum = 14;
 
@@ -34,31 +30,7 @@
 
             string result = hasSubsetSum ? "yes" : "no";
 
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,3} | {2, 3}", "input", "S", "result");
-            Console.WriteLine("{0,30} | {1,3} | {2, 3}", string.Join(" ", array), sum, result);
-            Console.WriteLine(Border);
-
-            // test with your input
-            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
-
-            hasSubsetSum = false;
-            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
-
-            Console.Write("Enter a sum S: ");
-
-            if (!int.TryParse(Console.ReadLine(), out sum))
-            {
-                Console.WriteLine(FormatExceptionMessage);
-                return;
-            }
-
-            CurrentSum(input, sum, 0, 0, 0, currentSubset);
-            result = hasSubsetSum ? "yes" : "no";
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,3} | {2, 3}", string.Join(" ", input), sum, result);
-            Console.WriteLine(Border);
+            DisplayExample(array, sum, currentSubset, result);
         }
 
         // Using Толя's approach: http://stackoverflow.com/questions/14575931/sum-of-k-elements-in-array-that-equates-to-n
@@ -103,6 +75,47 @@
         private static int[] ConvertStringOfIntsToArray(string text)
         {
             return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample(int[] input, int sum, int[] currentSubset, string result)
+        {
+            StringBuilder print = new StringBuilder();
+            string border = new string('-', 60);
+
+            print.AppendLine("Problem 16.* Subset with sum S \nWe are given an array of integers and a number `S`.\nWrite a program to find if there exists a subset of the elements of the array that has a sum `S`.");
+
+            // display examples
+            print.AppendLine("Example:")
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,3} | {2, 3}", "input", "S", "result"))
+                .AppendLine(string.Format("{0,30} | {1,3} | {2, 3}", string.Join(" ", input), sum, result))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
+
+            // test with your input
+            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
+
+            hasSubsetSum = false;
+            input = ConvertStringOfIntsToArray(Console.ReadLine());
+
+            Console.Write("Enter a sum S: ");
+
+            if (!int.TryParse(Console.ReadLine(), out sum))
+            {
+                Console.WriteLine(FormatExceptionMessage);
+                return;
+            }
+
+            CurrentSum(input, sum, 0, 0, 0, currentSubset);
+            result = hasSubsetSum ? "yes" : "no";
+
+            print.Clear()
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,3} | {2, 3}", string.Join(" ", input), sum, result))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
         }
     }
 }

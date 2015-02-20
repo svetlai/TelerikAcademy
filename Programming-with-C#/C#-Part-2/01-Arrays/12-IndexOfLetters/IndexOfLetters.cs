@@ -14,6 +14,23 @@
 
         public static void Main()
         {
+            DisplayExample();
+        }
+
+        public static char[] GetAlphabetCapitalLetters()
+        {
+            char[] letters = new char[AllLettersCount];
+
+            for (int i = 65, j = 0; i <= 90 && j < AllLettersCount; i++, j++)
+            {
+                letters[j] = Convert.ToChar(i);
+            }
+
+            return letters;
+        }
+
+        private static void DisplayExample()
+        {
             Console.WriteLine("Problem 12. Index of letters \nWrite a program that creates an array containing all letters from the alphabet (`A-Z`). \nRead a word from the console and print the index of each of its letters in the array.\n");
 
             char[] letters = GetAlphabetCapitalLetters();
@@ -30,18 +47,6 @@
             }
 
             Console.WriteLine("Indexes: [{0}]", string.Join(", ", letterIndexes));
-        }
-
-        public static char[] GetAlphabetCapitalLetters()
-        {
-            char[] letters = new char[AllLettersCount];
-
-            for (int i = 65, j = 0; i <= 90 && j < AllLettersCount; i++, j++)
-            {
-                letters[j] = Convert.ToChar(i);
-            }
-
-            return letters;
         }
     }
 }

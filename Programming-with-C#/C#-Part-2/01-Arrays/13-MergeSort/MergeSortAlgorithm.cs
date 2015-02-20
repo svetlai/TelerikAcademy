@@ -8,21 +8,9 @@
     /// </summary>
     public class MergeSortAlgorithm
     {
-        private static readonly string Border = new string('-', 60);
-
         public static void Main()
         {
-            Console.WriteLine("Problem 13.* Merge sort \nWrite a program that sorts an array of integers using the [Merge sort](http://en.wikipedia.org/wiki/Merge_sort) algorithm.\n");
-
-            Console.Write("Enter a sequence of integer numbers separated by space: ");
-
-            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
-            MergeSort(input, 0, input.Length - 1);
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30}", "sorted");
-            Console.WriteLine("{0,30}", string.Join(" ", input));
-            Console.WriteLine(Border);
+            DisplayExample();
         }
 
         public static void MergeSort(int[] toSort, int startIndex, int endIndex)
@@ -90,6 +78,23 @@
         private static int[] ConvertStringOfIntsToArray(string text)
         {
             return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample()
+        {
+            Console.WriteLine("Problem 13.* Merge sort \nWrite a program that sorts an array of integers using the [Merge sort](http://en.wikipedia.org/wiki/Merge_sort) algorithm.\n");
+
+            Console.Write("Enter a sequence of integer numbers separated by space: ");
+
+            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
+            MergeSort(input, 0, input.Length - 1);
+
+            string border = new string('-', 60);
+
+            Console.WriteLine(border);
+            Console.WriteLine("{0,30}", "sorted");
+            Console.WriteLine("{0,30}", string.Join(" ", input));
+            Console.WriteLine(border);
         }
     }
 }

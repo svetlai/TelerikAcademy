@@ -13,15 +13,8 @@
     /// </summary>
     public class PolynomialsOperations
     {
-        private static readonly string Border = new string('-', 60);
-
         public static void Main()
         {
-            StringBuilder print = new StringBuilder();
-
-            print.AppendLine("Problem 11. Adding polynomials \nWrite a method that adds two polynomials. \nRepresent them as arrays of their coefficients.")
-                .AppendLine("Problem 12. Subtracting polynomials \nExtend the previous program to support also subtraction and multiplication of polynomials.");
-
             Polynomial first = new Polynomial(new int[] { 2, 3, 1 });
             Polynomial second = new Polynomial(new int[] { 4, 1 });
 
@@ -29,17 +22,33 @@
             Polynomial subtracted = first - second;
             Polynomial multiplied = first * second;
 
+            DisplayExample(first, second, added, subtracted, multiplied);
+        }
+
+        private static int[] ConvertStringOfIntsToArray(string text)
+        {
+            return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample(Polynomial first, Polynomial second, Polynomial added, Polynomial subtracted, Polynomial multiplied)
+        {
+            StringBuilder print = new StringBuilder();
+            string border = new string('-', 60);
+
+            print.AppendLine("Problem 11. Adding polynomials \nWrite a method that adds two polynomials. \nRepresent them as arrays of their coefficients.")
+                .AppendLine("Problem 12. Subtracting polynomials \nExtend the previous program to support also subtraction and multiplication of polynomials.");
+
             // print
             print.AppendLine("Example:")
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,20} | {1,20}", "first", "second"))
                 .AppendLine(string.Format("{0,20} | {1,20}", first.ToString(), second.ToString()))
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", "added", "subtracted", "multiplied"))
                 .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", added.ToString(), subtracted.ToString(), multiplied.ToString()))
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", string.Join(" ", added.Coefficients), string.Join(" ", subtracted.Coefficients), string.Join(" ", multiplied.Coefficients)))
-                .AppendLine(Border);
+                .AppendLine(border);
 
             Console.WriteLine(print.ToString());
 
@@ -56,22 +65,17 @@
 
             // print
             print.Clear()
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,20} | {1,20}", "first", "second"))
                 .AppendLine(string.Format("{0,20} | {1,20}", first.ToString(), second.ToString()))
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", "added", "subtracted", "multiplied"))
                 .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", added.ToString(), subtracted.ToString(), multiplied.ToString()))
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,20} | {1,20} | {2,20}", string.Join(" ", added.Coefficients), string.Join(" ", subtracted.Coefficients), string.Join(" ", multiplied.Coefficients)))
-                .AppendLine(Border);
+                .AppendLine(border);
 
             Console.WriteLine(print.ToString());
-        }
-
-        private static int[] ConvertStringOfIntsToArray(string text)
-        {
-            return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
         }
     }
 }

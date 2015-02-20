@@ -9,32 +9,10 @@
     public class BinarySearchAlgorithm
     {
         private const string FormatExceptionMessage = "Input not in the correct format.";
-        private static readonly string Border = new string('-', 60);
 
         public static void Main()
         {
-            Console.WriteLine("Problem 11. Binary search \nWrite a program that finds the index of given element in a sorted array of integers by using the [Binary search](http://en.wikipedia.org/wiki/Binary_search_algorithm) algorithm.\n");
-
-            Console.Write("Enter a sequence of increasing integer numbers separated by space: ");
-
-            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
-            Array.Sort(input);
-
-            Console.Write("Enter a number to search for: ");
-
-            int value;
-            if (!int.TryParse(Console.ReadLine(), out value))
-            {
-                Console.WriteLine(FormatExceptionMessage);
-            }
-
-            int foundIndex = BinarySearch(input, value);
-            string found = foundIndex > -1 ? foundIndex.ToString() : "not found";
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,3}", "input", "found at index:");
-            Console.WriteLine("{0,30} | {1,3}", string.Join(" ", input), found);
-            Console.WriteLine(Border);
+            DisplayExample();
         }
 
         /// <summary>
@@ -75,6 +53,34 @@
         private static int[] ConvertStringOfIntsToArray(string text)
         {
             return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample()
+        {
+            Console.WriteLine("Problem 11. Binary search \nWrite a program that finds the index of given element in a sorted array of integers by using the [Binary search](http://en.wikipedia.org/wiki/Binary_search_algorithm) algorithm.\n");
+
+            Console.Write("Enter a sequence of increasing integer numbers separated by space: ");
+
+            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
+            Array.Sort(input);
+
+            Console.Write("Enter a number to search for: ");
+
+            int value;
+            if (!int.TryParse(Console.ReadLine(), out value))
+            {
+                Console.WriteLine(FormatExceptionMessage);
+            }
+
+            int foundIndex = BinarySearch(input, value);
+            string found = foundIndex > -1 ? foundIndex.ToString() : "not found";
+
+            string border = new string('-', 60);
+
+            Console.WriteLine(border);
+            Console.WriteLine("{0,30} | {1,3}", "input", "found at index:");
+            Console.WriteLine("{0,30} | {1,3}", string.Join(" ", input), found);
+            Console.WriteLine(border);
         }
     }
 }

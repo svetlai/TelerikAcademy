@@ -12,39 +12,13 @@
     {
         private const string IndexOutOfRangeMsg = "Index was out of range. Please select an index between 0 and the total length of the array.";
         private const string StartEndIndexMsg = "The end index must be larger than the start index.";
-        private static readonly string Border = new string('-', 60);
 
         public static void Main()
         {
-            StringBuilder print = new StringBuilder();
-
-            print.AppendLine(" Problem 9. Sorting array \nWrite a method that return the maximal element in a portion of array of integers starting at given index. \nUsing it write another method that sorts an array in ascending / descending order.");
-
             int[] input = { 1, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3 };
             int[] sorted = SortArray(input);
 
-            // print
-            print.AppendLine("Example:")
-                .AppendLine(Border)
-                .AppendLine(string.Format("{0,30} | {1,10}", "input", "result"))
-                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted)))
-                .AppendLine(Border);
-
-            Console.WriteLine(print.ToString());
-
-            // test with your input
-            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
-
-            input = ConvertStringOfIntsToArray(Console.ReadLine());
-            sorted = SortArray(input, true);
-
-            // print
-            print.Clear()
-                .AppendLine(Border)
-                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted)))
-                .AppendLine(Border);
-
-            Console.WriteLine(print.ToString());
+            DisplayExample(input, sorted);
         }
 
         public static int FindPositionOfMaxElementInSubArray(int[] array, int startIndex, int endIndex)
@@ -104,6 +78,37 @@
         private static int[] ConvertStringOfIntsToArray(string text)
         {
             return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample(int[] input, int[] sorted)
+        {
+            StringBuilder print = new StringBuilder();
+            string border = new string('-', 60);
+
+            print.AppendLine(" Problem 9. Sorting array \nWrite a method that return the maximal element in a portion of array of integers starting at given index. \nUsing it write another method that sorts an array in ascending / descending order.");
+
+            // print
+            print.AppendLine("Example:")
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,10}", "input", "result"))
+                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted)))
+                .AppendLine(border);
+
+            Console.WriteLine(print.ToString());
+
+            // test with your input
+            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
+
+            input = ConvertStringOfIntsToArray(Console.ReadLine());
+            sorted = SortArray(input, true);
+
+            // print
+            print.Clear()
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,10}", string.Join(" ", input), string.Join(" ", sorted)))
+                .AppendLine(border);
+
+            Console.WriteLine(print.ToString());
         }
     }
 }

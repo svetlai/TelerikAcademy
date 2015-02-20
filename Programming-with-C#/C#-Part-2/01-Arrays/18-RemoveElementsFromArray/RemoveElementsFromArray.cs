@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// Problem 18.* Remove elements from array
@@ -18,31 +19,13 @@
 
         public static void Main()
         {
-            Console.WriteLine("Problem 18.* Remove elements from array \nWrite a program that reads an array of integers and removes from it a minimal number of elements in such a way that the remaining array is sorted in increasing order. \nPrint the remaining sorted array.");
-
-            // display examples
-            Console.WriteLine("Example:");
-            int[] array = { 6, 1, 4, 3, 0, 3, 6, 4, 5 };
+            int[] input = { 6, 1, 4, 3, 0, 3, 6, 4, 5 };
             List<int> currentSubset = new List<int>();
             int[] longest = new int[0];
 
-            FindLongestIncreasingSubset(array, 0, currentSubset, ref longest);
-
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,15}", "input", "result");
-            Console.WriteLine("{0,30} | {1,15}", string.Join(" ", array), string.Join(" ", longest));
-            Console.WriteLine(Border);
-
-            // test with your input
-            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
-
-            int[] input = ConvertStringOfIntsToArray(Console.ReadLine());
-            longest = new int[0];
             FindLongestIncreasingSubset(input, 0, currentSubset, ref longest);
 
-            Console.WriteLine(Border);
-            Console.WriteLine("{0,30} | {1,15}", string.Join(" ", input), string.Join(" ", longest));
-            Console.WriteLine(Border);
+            DisplayExample(input, longest, currentSubset);
         }
 
         public static void FindLongestIncreasingSubset(int[] array, int startIndex, List<int> currentSubset, ref int[] longest)
@@ -69,6 +52,37 @@
         private static int[] ConvertStringOfIntsToArray(string text)
         {
             return Array.ConvertAll(text.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
+        }
+
+        private static void DisplayExample(int[] input, int[] longest, List<int> currentSubset)
+        {
+            StringBuilder print = new StringBuilder();
+            string border = new string('-', 60);
+
+            print.AppendLine("Problem 18.* Remove elements from array \nWrite a program that reads an array of integers and removes from it a minimal number of elements in such a way that the remaining array is sorted in increasing order. \nPrint the remaining sorted array.");
+
+            // display examples
+            print.AppendLine("Example:")
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,15}", "input", "result"))
+                .AppendLine(string.Format("{0,30} | {1,15}", string.Join(" ", input), string.Join(" ", longest)))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
+
+            // test with your input
+            Console.Write("Try it yourself! \nEnter a sequence of integer numbers separated by space: ");
+
+            input = ConvertStringOfIntsToArray(Console.ReadLine());
+            longest = new int[0];
+            FindLongestIncreasingSubset(input, 0, currentSubset, ref longest);
+
+            print.Clear()
+                .AppendLine(border)
+                .AppendLine(string.Format("{0,30} | {1,15}", string.Join(" ", input), string.Join(" ", longest)))
+                .AppendLine(border);
+
+            Console.Write(print.ToString());
         }
     }
 }

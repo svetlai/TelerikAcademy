@@ -4,6 +4,10 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    /// <summary>
+    /// Problem 6. binary to hexadecimal
+    /// Write a program to convert binary numbers to hexadecimal numbers (directly).
+    /// </summary>
     public class BinaryToHexadecimal
     {
         private static readonly Dictionary<string, char> BinaryToHex = new Dictionary<string, char>()
@@ -26,10 +30,6 @@
             { "1111", 'F' },
         };
 
-        /// <summary>
-        /// Problem 6. binary to hexadecimal
-        /// Write a program to convert binary numbers to hexadecimal numbers (directly).
-        /// </summary>
         public static void Main()
         {
             Console.WriteLine("Problem 6. binary to hexadecimal \nWrite a program to convert binary numbers to hexadecimal numbers (directly). \n");

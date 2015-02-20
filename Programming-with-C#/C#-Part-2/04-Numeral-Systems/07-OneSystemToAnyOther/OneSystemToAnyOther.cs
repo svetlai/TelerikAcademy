@@ -14,7 +14,6 @@
     {
         private const string Digits = "0123456789ABCDEF";
         private const string FormatExceptionMsg = "Input not in the correct format.";
-        private static readonly string Border = new string('-', 60);
 
         public static void Main()
         {
@@ -105,15 +104,16 @@
         private static void DisplayExample(int s, int d, string input, string result)
         {
             StringBuilder print = new StringBuilder();
+            string border = new string('-', 60);
 
             print.AppendLine("Problem 7. One system to any other \nWrite a program to convert from any numeral system of given base `s` to any other numeral system of base `d` (2 <= `s`, `d` <=; 16).\n");
 
             // print
             print.AppendLine("Example:")
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", "S", "D", "input", "result"))
                 .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", s, d, input, result))
-                .AppendLine(Border);
+                .AppendLine(border);
 
             Console.WriteLine(print.ToString());
 
@@ -141,9 +141,9 @@
 
             // print
             print.Clear()
-                .AppendLine(Border)
+                .AppendLine(border)
                 .AppendLine(string.Format("{0,3} | {1,3} | {2,15} | {3} ", s, d, input, result))
-                .AppendLine(Border);
+                .AppendLine(border);
 
             Console.WriteLine(print.ToString());
         }

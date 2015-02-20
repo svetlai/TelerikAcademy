@@ -55,8 +55,8 @@
             
             if (isNegative)
             {
-                result = ExtensionMethods.SubtractBinaryNumbers(result, "1", NumberOfBits);
                 result = ExtensionMethods.InvertBinaryNumber(result, NumberOfBits);
+                result = ExtensionMethods.AddBinaryNumbers(result, "1", NumberOfBits);
             }
 
             return result;

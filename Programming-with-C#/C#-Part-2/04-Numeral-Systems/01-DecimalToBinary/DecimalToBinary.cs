@@ -3,6 +3,7 @@
     using System;
 
     using Helper;
+    using System.Text;
 
     /// <summary>
     /// Problem 1. Decimal to binary
@@ -39,7 +40,7 @@
             bool isNegative = decimalNumber < 0;
             decimalNumber = Math.Abs(decimalNumber);
 
-            string result = string.Empty;
+            StringBuilder sb = new StringBuilder();
 
             // decimal to binary: 
             // 5 = 5 / 2 = 2 reminder 1; 
@@ -47,16 +48,16 @@
             // 1 / 2 = 0 reminder 1 = 101 (reversed);
             while (decimalNumber != 0)
             {
-                result += decimalNumber % 2;
+                sb.Append(decimalNumber % 2);
                 decimalNumber = decimalNumber / 2;
             }
 
-            result = ExtensionMethods.ReverseString(result);
+            string result = ExtensionMethods.ReverseString(sb.ToString());
             
             if (isNegative)
             {
-                result = ExtensionMethods.SubtractBinaryNumbers(result, "1", NumberOfBits);
                 result = ExtensionMethods.InvertBinaryNumber(result, NumberOfBits);
+                result = ExtensionMethods.AddBinaryNumbers(result, "1", NumberOfBits);
             }
 
             return result;

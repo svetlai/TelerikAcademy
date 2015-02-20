@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
 
     /// <summary>
     /// Problem 6. binary to hexadecimal
@@ -55,8 +56,8 @@
 
         public static string ConvertBinaryToHexadecimal(string binaryNumber, int numberOfBits = 32)
         {
+            StringBuilder result = new StringBuilder();
             binaryNumber = binaryNumber.PadLeft(numberOfBits, '0');
-            string result = string.Empty;
 
             for (int i = 0; i < numberOfBits / 4; i++)
             {
@@ -67,10 +68,11 @@
                     throw new ArgumentException("Input was not in the correct format.");
                 }
 
-                result += BinaryToHex[hexDigitInBinary];
+                result.Append(BinaryToHex[hexDigitInBinary]);
             }
 
-            return result.TrimStart('0');
+            return result.ToString()
+                .TrimStart('0');
         }
     }
 }

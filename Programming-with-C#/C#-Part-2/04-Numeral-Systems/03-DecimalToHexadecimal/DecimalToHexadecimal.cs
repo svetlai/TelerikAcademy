@@ -1,7 +1,8 @@
 ﻿namespace DecimalToHexadecimal
 {
     using System;
-    
+    using System.Text;
+
     using BinaryToHexadecimal;
     using DecimalToBinary;   
     using Helper;
@@ -49,7 +50,7 @@
             // 430 / 16 = 26, reminder 14 --> E;
             // 26 / 16 = 1, reminder 10 -- > A;
             // 1 / 16 = 0, reminder 1 = 1AE3 (reversed);
-            string result = string.Empty;
+            StringBuilder result = new StringBuilder();
             string hexDigit;
 
             while (decimalNumber != 0)
@@ -81,18 +82,16 @@
                             hexDigit = "F";
                             break;
                         default:
-                            result = "Input not in the correct format.";
-                            return result;
+                            result.Append("Input not in the correct format.");
+                            return result.ToString();
                     }
                 }
 
                 decimalNumber = decimalNumber / 16;
-                result += hexDigit;
+                result.Append(hexDigit);
             }
 
-            result = ExtensionMethods.ReverseString(result);
-
-            return result;
+            return ExtensionMethods.ReverseString(result.ToString());
         }
     }
 }

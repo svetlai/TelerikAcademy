@@ -5,6 +5,8 @@
     using System.Text;
     using System.Threading;
 
+    using DecimalToBinary;
+
     /// <summary>
     /// Problem 9.* Binary floating-point
     /// Write a program that shows the internal binary representation of given 32-bit signed floating-point number in IEEE 754 format (the C# type `float`).
@@ -32,11 +34,12 @@
             DisplayExample(input, binary, sign, exponent, mantissa);
         }
 
+        // using LukeH's approach: http://stackoverflow.com/questions/8272733/how-do-i-turn-a-binary-string-into-a-float-or-double
         public static string ConvertFloatToBinary(float floatNumber)
         {
             byte[] bytes = BitConverter.GetBytes(floatNumber);
             int decimalNumber = BitConverter.ToInt32(bytes, 0);
-            string binary = Convert.ToString(decimalNumber, 2);
+            string binary = DecimalToBinary.ConvertDecimalToBinary(decimalNumber); // Convert.ToString(decimalNumber, 2);
 
             return binary;
         }
@@ -69,7 +72,7 @@
                 .AppendLine(string.Format("{0,10} | {1,4} | {2,10} | {3}", input, sign, exponent, mantissa))
                 .AppendLine(Border);
 
-            Console.WriteLine(print.ToString());
+            Console.Write(print.ToString());
 
             // read input from the console
             Console.Write("Try it yourself! \nPlease enter a floating-point number: ");
@@ -92,7 +95,7 @@
                 .AppendLine(string.Format("{0,10} | {1,4} | {2,10} | {3}", input, sign, exponent, mantissa))
                 .AppendLine(Border);
 
-            Console.WriteLine(print.ToString());
+            Console.Write(print.ToString());
         }
     }
 }

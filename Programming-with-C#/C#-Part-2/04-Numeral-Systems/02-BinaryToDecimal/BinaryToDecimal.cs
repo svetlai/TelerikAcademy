@@ -39,7 +39,7 @@
             binaryNumber = binaryNumber.PadLeft(numberOfBits, '0');
             bool isNegative = false;
 
-            // check if binary number is negative; if yes - subtract one and invert it (two-component)
+            // check if binary number is negative; if yes - subtract one and invert it (two's-component)
             if (binaryNumber[0] == '1')
             {
                 binaryNumber = ExtensionMethods.SubtractBinaryNumbers(binaryNumber, "1", numberOfBits);

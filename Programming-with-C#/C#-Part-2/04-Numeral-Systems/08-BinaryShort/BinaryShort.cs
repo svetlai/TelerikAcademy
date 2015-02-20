@@ -1,6 +1,7 @@
 ﻿namespace BinaryShort
 {
     using System;
+    using System.Text;
 
     using Helper;
 
@@ -39,7 +40,7 @@
             bool isNegative = shortNumber < 0;
             shortNumber = Math.Abs(shortNumber);
 
-            string result = string.Empty;
+            StringBuilder sb = new StringBuilder();
 
             // decimal to binary: 
             // 5 = 5 / 2 = 2 reminder 1; 
@@ -47,16 +48,16 @@
             // 1 / 2 = 0 reminder 1 = 101 (reversed);
             while (shortNumber != 0)
             {
-                result += shortNumber % 2;
+                sb.Append(shortNumber % 2);
                 shortNumber = (short)(shortNumber / 2);
             }
 
-            result = ExtensionMethods.ReverseString(result);
+            string result = ExtensionMethods.ReverseString(sb.ToString());
 
             if (isNegative)
             {
-                result = ExtensionMethods.SubtractBinaryNumbers(result, "1", NumberOfBits);
                 result = ExtensionMethods.InvertBinaryNumber(result, NumberOfBits);
+                result = ExtensionMethods.AddBinaryNumbers(result, "1", NumberOfBits);
             }
 
             return result;

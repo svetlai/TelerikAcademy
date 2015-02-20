@@ -26,7 +26,7 @@
 
         public static string InvertBinaryNumber(this string binaryNumber, int numberOfBits = 32)
         {
-            char[] binary = binaryNumber.PadRight(numberOfBits, '0').ToCharArray();
+            char[] binary = binaryNumber.PadLeft(numberOfBits, '0').ToCharArray();
 
             for (int i = 0; i < binary.Length; i++)
             {

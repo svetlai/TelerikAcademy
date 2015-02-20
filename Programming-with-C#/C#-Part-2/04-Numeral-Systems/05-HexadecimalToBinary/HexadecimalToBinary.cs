@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// Problem 5. Hexadecimal to binary
@@ -51,7 +52,7 @@
                 hexNumber = hexNumber.Substring(2);
             }
 
-            string binaryNumber = string.Empty;
+            StringBuilder binaryNumber = new StringBuilder();
 
             for (int i = 0; i < hexNumber.Length; i++)
             {
@@ -60,10 +61,10 @@
                     throw new ArgumentException("Input was not in the correct format.");
                 }
 
-                binaryNumber += HexToBinary[hexNumber[i]];
+                binaryNumber.Append(HexToBinary[hexNumber[i]]);
             }
 
-            return binaryNumber;
+            return binaryNumber.ToString();
         }
     }
 }

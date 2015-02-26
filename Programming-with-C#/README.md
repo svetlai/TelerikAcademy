@@ -18,3 +18,5 @@
 * [Numeral Systems Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/04-Numeral-Systems)
 * [Using Classes and Objects Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/05-Using-Classes-And-Objects)
 * [Strings and Text Processing Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/06-Strings-Text-Processing)
+* [Exception Handling Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/07-Exception-Handling)
+* [Text Files Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/08-Text-Files)

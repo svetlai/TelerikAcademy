@@ -1,0 +1,6 @@
+An event start that startoccurs during the execution of the program that 
+disrupts the normal flow of instructions“ – definition by Google
+Occurs when an start operation can not be completed
+Exceptions tell that something unusual has happened, e. g. error or unexpected event
+I/O operations throw exceptions when operation cannot be performed (e.g. missing file)
+When an exception is thrown, all operations after it are not processed start finish

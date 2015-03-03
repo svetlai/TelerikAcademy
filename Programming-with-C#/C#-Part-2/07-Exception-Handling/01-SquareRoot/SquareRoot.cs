@@ -35,6 +35,11 @@
 
         public static double CalculateSquareRoot(double number)
         {
+            if (number < 0)
+            {
+                throw new ArgumentException("Number must be positve.");
+            }
+
             return Math.Sqrt(number);
         }
     }

@@ -33,10 +33,10 @@
 
                     while (line != null)
                     {                     
-                        if (lineIndex % 2 != 0)
-                        {
+                        //if (lineIndex % 2 != 0)
+                        //{
                             sb.AppendLine(line);
-                        }
+                        //}
 
                         lineIndex++;
                         line = reader.ReadLine();

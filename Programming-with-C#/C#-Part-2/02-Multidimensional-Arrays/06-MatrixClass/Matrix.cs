@@ -1,4 +1,4 @@
-﻿namespace MatrixClass
+namespace MatrixClass
 {
     using System;
 

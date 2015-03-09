@@ -12,6 +12,7 @@
 * [Loops Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-1/06-Loops)
 
 ### C# - Part 2
+
 1. [Arrays Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/01-Arrays)
 * [Multidimensional Arrays Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/02-Multidimensional-Arrays)
 * [Methods Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/03-Methods)
@@ -20,3 +21,7 @@
 * [Strings and Text Processing Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/06-Strings-Text-Processing)
 * [Exception Handling Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/07-Exception-Handling)
 * [Text Files Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/08-Text-Files)
+
+### Object-Oriented Programming
+
+1. [Defining Classes Part 1 Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/01-Defining-Classes-Part-1)

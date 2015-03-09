@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-12-MobileDevice.Tests", "01-12-MobileDevice.Tests\01-12-MobileDevice.Tests.csproj", "{B94DF7D1-9448-4804-BA2E-4B53A8307E4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-12-MobileDevice.Models", "01-12-MobileDevice.Models\01-12-MobileDevice.Models.csproj", "{30FC77D3-E662-450A-A4A0-42A25A60EDBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B94DF7D1-9448-4804-BA2E-4B53A8307E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94DF7D1-9448-4804-BA2E-4B53A8307E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94DF7D1-9448-4804-BA2E-4B53A8307E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94DF7D1-9448-4804-BA2E-4B53A8307E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FC77D3-E662-450A-A4A0-42A25A60EDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FC77D3-E662-450A-A4A0-42A25A60EDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FC77D3-E662-450A-A4A0-42A25A60EDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FC77D3-E662-450A-A4A0-42A25A60EDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

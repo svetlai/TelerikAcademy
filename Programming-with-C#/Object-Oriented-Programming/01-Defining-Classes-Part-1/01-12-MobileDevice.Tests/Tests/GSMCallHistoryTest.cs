@@ -5,11 +5,11 @@
     using System.Text;
 
     using MobileDevice.Models;
+    using MobileDevice.Tests.Helper;
 
     public class GSMCallHistoryTest
     {
         private const decimal PricePerMinute = 0.37m;
-        private static readonly string Border = new string('-', 60);
 
         public static void TestCallHistory()
         {
@@ -27,24 +27,24 @@
                 sb.AppendLine(call.ToString());
             }
 
-            sb.AppendLine(Border);
+            sb.AppendLine(Constants.Border);
 
             decimal totalPrice = lumia.CalculateTotalCallPrice(PricePerMinute);
             sb.AppendFormat("Total price all: {0}", totalPrice)
                 .AppendLine()
-                .AppendLine(Border);
+                .AppendLine(Constants.Border);
 
             sb.AppendLine("To remove: ");
             Call longestCall = FindLongestCall(lumia);
             lumia.CallHistory.Remove(longestCall);
 
             sb.AppendLine(longestCall.ToString())
-                .AppendLine(Border);
+                .AppendLine(Constants.Border);
 
             totalPrice = lumia.CalculateTotalCallPrice(PricePerMinute);
             sb.AppendFormat("Total price after removal: {0}", totalPrice)
                 .AppendLine()
-                .AppendLine(Border);
+                .AppendLine(Constants.Border);
 
             lumia.CallHistory.Clear();
             sb.AppendLine("Call history after clearing: ");

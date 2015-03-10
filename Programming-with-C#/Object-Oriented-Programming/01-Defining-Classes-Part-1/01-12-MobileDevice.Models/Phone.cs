@@ -3,26 +3,29 @@
     using System;
     using System.Text;
 
-    public class Phone
+    public abstract class Phone
     {
         private const string ModelNullExceptionMessage = "Model cannot be empty.";
         private const string ManufacturerNullExceptionMessage = "Manufacturer cannot be empty.";
+        private const string OwnerNullExceptionMessage = "Owner cannot be empty.";
         private const string PriceNegativeExceptionMessage = "Price cannot be less than 0.";
 
         private string model;
         private Manufacturer manufacturer;
+        private Owner owner;
         private decimal? price;
 
-        public Phone(string model, Manufacturer manufacturer)
-            : this(model, manufacturer, null)
+        protected Phone(string model, Manufacturer manufacturer)
+            : this(model, manufacturer, null, null)
         {
         }
 
-        public Phone(string model, Manufacturer manufacturer, decimal? price)
+        protected Phone(string model, Manufacturer manufacturer, decimal? price, Owner owner)
         {
             this.Model = model;
             this.Manufacturer = manufacturer;
             this.Price = price;
+            this.Owner = owner;
         }
 
         public string Model 
@@ -58,6 +61,19 @@
                 }
 
                 this.manufacturer = value;
+            }
+        }
+
+        public Owner Owner
+        {
+            get
+            {
+                return this.owner;
+            }
+
+            private set
+            {
+                this.owner = value;
             }
         }
 

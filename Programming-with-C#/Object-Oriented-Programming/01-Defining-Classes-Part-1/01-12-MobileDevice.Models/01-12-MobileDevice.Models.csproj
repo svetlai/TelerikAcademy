@@ -7,8 +7,8 @@
     <ProjectGuid>{30FC77D3-E662-450A-A4A0-42A25A60EDBC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01_12_Mobile</RootNamespace>
-    <AssemblyName>_01_12_Mobile</AssemblyName>
+    <RootNamespace>MobileDevice.Models</RootNamespace>
+    <AssemblyName>MobileDevice.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,6 +46,7 @@
     <Compile Include="Display.cs" />
     <Compile Include="GSM.cs" />
     <Compile Include="Manufacturer.cs" />
+    <Compile Include="Owner.cs" />
     <Compile Include="Phone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

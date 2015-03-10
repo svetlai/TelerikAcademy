@@ -25,6 +25,9 @@
             gsms[1] = nexus;
             gsms[2] = lumia;
 
+            sb.AppendLine("GSM tests:")
+                .AppendLine();
+
             foreach (var gsm in gsms)
             {
                 sb.AppendLine(gsm.ToString());

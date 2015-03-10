@@ -16,22 +16,37 @@
         private IList<Call> callHistory;
 
         public GSM(string model, Manufacturer manufacturer)
-            : this(model, manufacturer, null, null, null)
+            : base(model, manufacturer)
         {
         }
 
         public GSM(string model, Manufacturer manufacturer, decimal? price)
-            : this(model, manufacturer, price, null, null)
+            : this(model, manufacturer, price, null, null, null)
+        {
+        }
+
+        public GSM(string model, Manufacturer manufacturer, Owner owner)
+            : this(model, manufacturer, null, owner, null, null)
+        {
+        }
+
+        public GSM(string model, Manufacturer manufacturer, decimal? price, Owner owner)
+            : this(model, manufacturer, price, owner, null, null)
         {
         }
 
         public GSM(string model, Manufacturer manufacturer, decimal? price, Battery battery, Display display)
-            : this(model, manufacturer, price, battery, display, new List<Call>())
+            : this(model, manufacturer, price, null, battery, display, new List<Call>())
         {
         }
 
-        public GSM(string model, Manufacturer manufacturer, decimal? price, Battery battery, Display display, IList<Call> callHistory)
-            : base(model, manufacturer, price)
+        public GSM(string model, Manufacturer manufacturer, decimal? price, Owner owner, Battery battery, Display display)
+            : this(model, manufacturer, price, owner, battery, display, new List<Call>())
+        {
+        }
+
+        public GSM(string model, Manufacturer manufacturer, decimal? price, Owner owner, Battery battery, Display display, IList<Call> callHistory)
+            : base(model, manufacturer, price, owner)
         {
             this.Battery = battery;
             this.Display = display;

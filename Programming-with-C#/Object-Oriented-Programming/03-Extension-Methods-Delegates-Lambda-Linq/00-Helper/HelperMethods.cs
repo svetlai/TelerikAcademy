@@ -1,16 +1,16 @@
-﻿namespace MobileDevice.Tests.Helper
+﻿namespace Helper
 {
     using System;
     using System.IO;
 
-    public static class ExtensionMethods
+    public static class HelperMethods
     {
-        public static void DisplayTaskDescription(this string path)
+        public static void DisplayTaskDescription(string path)
         {
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(ReadTaskDescription(path));
             Console.WriteLine(Constants.TaskDescriptionEndBorder);
-            Console.ResetColor();      
+            Console.ResetColor();
         }
 
         private static string ReadTaskDescription(string path)

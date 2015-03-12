@@ -25,7 +25,7 @@
 
         public static void Main()
         {
-            ExtensionMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
+            HelperMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
 
             Path path3D = CreateNewPath();
 

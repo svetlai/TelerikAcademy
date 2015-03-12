@@ -3,9 +3,9 @@
     using System;
     using System.IO;
 
-    public static class ExtensionMethods
+    public static class HelperMethods
     {
-        public static void DisplayTaskDescription(this string path)
+        public static void DisplayTaskDescription(string path)
         {
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(ReadTaskDescription(path));

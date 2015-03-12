@@ -14,7 +14,7 @@
     {
         public static void Main()
         {
-            ExtensionMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
+            HelperMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
 
             Type type = typeof(TestVersionAttribute);
             DisplayTypeAttributes(type);          

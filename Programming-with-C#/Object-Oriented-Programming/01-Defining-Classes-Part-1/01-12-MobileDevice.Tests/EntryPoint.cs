@@ -50,7 +50,7 @@
     {
         public static void Main()
         {
-            ExtensionMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
+            HelperMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
 
             GSMTest.TestGSM();
             GSMCallHistoryTest.TestCallHistory();

@@ -99,14 +99,14 @@
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Model: {0}", this.model);
+            sb.AppendFormat("Model: {0}", this.Model);
             sb.AppendLine();
-            sb.AppendFormat("Manufacturer: {0}", this.manufacturer.Name);
+            sb.AppendFormat("Manufacturer: {0}", this.Manufacturer.Name);
             sb.AppendLine();
 
             if (this.price != null)
             {
-                sb.AppendFormat("Price: {0}", this.price);
+                sb.AppendFormat("Price: {0}", this.Price);
                 sb.AppendLine();
             }
 

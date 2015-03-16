@@ -1,6 +1,7 @@
 ﻿namespace MobileDevice.Models
 {
     using System;
+    using System.Text;
 
     public class Battery
     {
@@ -68,6 +69,11 @@
             {
                 this.batteryType = value;
             }
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Battery: {0} | Hours idle: {1} | Hours talk: {2}", this.BatteryType, this.HoursIdle, this.HoursTalk);
         }
     }
 }

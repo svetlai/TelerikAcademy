@@ -76,7 +76,7 @@
         // Problem 9
         public static void TestStudentsGroupsLinq()
         {
-            var secondGroupStudents = StudentQueries.GetSecondGroupLinq(students);
+            var secondGroupStudents = Student.GetSecondGroupLinq(students);
 
             sb.AppendLine("09. Student groups: ");
 
@@ -91,7 +91,7 @@
         {
             sb.AppendLine("\n10. Student groups extensions: ");
 
-            var secondGroupStudentsExtension = StudentQueries.GetSecondGroupExtensionMethods(students);
+            var secondGroupStudentsExtension = Student.GetSecondGroupExtensionMethods(students);
 
             foreach (var student in secondGroupStudentsExtension)
             {
@@ -104,7 +104,7 @@
         {
             sb.AppendLine("\n11. Students by email: ");
 
-            var studentsByEmail = StudentQueries.ExtractStudentsByEmail(students);
+            var studentsByEmail = Student.ExtractStudentsByEmail(students);
 
             foreach (var student in studentsByEmail)
             {
@@ -117,7 +117,7 @@
         {
             sb.AppendLine("\n12. Students by phone: ");
 
-            var studentsByPhone = StudentQueries.ExtractStudentsByPhone(students);
+            var studentsByPhone = Student.ExtractStudentsByPhone(students);
 
             foreach (var student in studentsByPhone)
             {
@@ -130,7 +130,7 @@
         {
             sb.AppendLine("\n13. Students by excellent mark: ");
 
-            var studentsByExcellentMark = StudentQueries.ExtractStudentsByExcellentMark(students);
+            var studentsByExcellentMark = Student.ExtractStudentsByExcellentMark(students);
 
             foreach (var student in studentsByExcellentMark)
             {
@@ -143,7 +143,7 @@
         {
             sb.AppendLine("\n14. Students by poor mark: ");
 
-            var studentsByPoorMark = StudentQueries.ExtractStudentsByCountOfMarks(students, 2, 2);
+            var studentsByPoorMark = Student.ExtractStudentsByCountOfMarks(students, 2, 2);
 
             foreach (var student in studentsByPoorMark)
             {
@@ -156,7 +156,7 @@
         {
             sb.AppendLine("\n15. Students' marks by year of enrollment: ");
 
-            var marksByYearOfEnrollment = StudentQueries.ExtractStudentsByYearOfEnrollment(students);
+            var marksByYearOfEnrollment = Student.ExtractStudentsByYearOfEnrollment(students);
 
             sb.AppendLine(string.Join(", ", marksByYearOfEnrollment));
         }
@@ -166,7 +166,7 @@
         {
             sb.AppendLine("\n16. Students in Mathematics: ");
 
-            var studentsByGroup = StudentQueries.ExtractStudentsByGroup(students, groups, "Mathematics", 3);
+            var studentsByGroup = Student.ExtractStudentsByGroup(students, groups, "Mathematics", 3);
 
             foreach (var student in studentsByGroup)
             {
@@ -179,7 +179,7 @@
         {
             sb.AppendLine("\n18. Students grouped by group name - LINQ: ");
 
-            var groupsOfStudents = StudentQueries.ExtractStudentsGroupedByGroupNameLinq(students);
+            var groupsOfStudents = Student.ExtractStudentsGroupedByGroupNameLinq(students);
 
             foreach (var group in groupsOfStudents)
             {
@@ -195,7 +195,7 @@
         {
             sb.AppendLine("\n19. Students grouped by group name - expressions: ");
 
-            var groupsOfStudentsExpressions = StudentQueries.ExtractStudentsGroupedByGroupNameExpressions(students);
+            var groupsOfStudentsExpressions = Student.ExtractStudentsGroupedByGroupNameExpressions(students);
 
             foreach (var group in groupsOfStudentsExpressions)
             {

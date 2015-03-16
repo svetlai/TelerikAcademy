@@ -55,5 +55,10 @@
                 this.numberOfColors = value;
             }
         }
+
+        public override string ToString()
+        {
+            return string.Format("Display Size: {0} | Number of colors: {1}", this.Size, this.NumberOfColors);
+        }
     }
 }

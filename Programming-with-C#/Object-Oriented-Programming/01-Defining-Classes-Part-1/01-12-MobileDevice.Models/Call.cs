@@ -74,7 +74,7 @@
 
         public override string ToString()
         {
-            return string.Format("Time of call: {0} | Dailed number: {1} | Duration: {2}s", this.time, this.dailedNumber, this.duration);
+            return string.Format("Time of call: {0} | Dailed number: {1} | Duration: {2}s", this.Time, this.DailedNumber, this.Duration);
         }
     }
 }

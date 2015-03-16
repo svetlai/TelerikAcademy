@@ -36,21 +36,16 @@
         }
 
         public GSM(string model, Manufacturer manufacturer, decimal? price, Battery battery, Display display)
-            : this(model, manufacturer, price, null, battery, display, new List<Call>())
+            : this(model, manufacturer, price, null, battery, display)
         {
         }
 
         public GSM(string model, Manufacturer manufacturer, decimal? price, Owner owner, Battery battery, Display display)
-            : this(model, manufacturer, price, owner, battery, display, new List<Call>())
-        {
-        }
-
-        public GSM(string model, Manufacturer manufacturer, decimal? price, Owner owner, Battery battery, Display display, IList<Call> callHistory)
             : base(model, manufacturer, price, owner)
         {
             this.Battery = battery;
             this.Display = display;
-            this.CallHistory = callHistory;
+            this.CallHistory = new List<Call>();
         }
 
         public static GSM IPhone4S
@@ -94,7 +89,7 @@
                 return this.callHistory;
             }
 
-            set
+            private set
             {
                 this.callHistory = value;
             }
@@ -108,13 +103,12 @@
 
             if (this.battery != null)
             {
-                sb.AppendFormat("Battery: {0} | Hours idle: {1} | Hours talk: {2}", this.battery.BatteryType, this.battery.HoursIdle, this.battery.HoursTalk);
-                sb.AppendLine();
+                sb.AppendLine(this.Battery.ToString());
             }
 
             if (this.display != null)
             {
-                sb.AppendFormat("Display Size: {0} | Number of colors: {1}", this.display.Size, this.display.NumberOfColors);
+                sb.Append(this.Display.ToString());
             }
 
             return sb.ToString();
@@ -122,23 +116,23 @@
 
         public void AddCall(Call call)
         {
-            this.callHistory.Add(call);
+            this.CallHistory.Add(call);
         }
 
         public void RemoveCall(Call call)
         {
-            this.callHistory.Remove(call);
+            this.CallHistory.Remove(call);
         }
 
         public void ClearCallHistory()
         {
-            this.callHistory.Clear();
+            this.CallHistory.Clear();
         }
 
         public decimal CalculateTotalCallPrice(decimal pricePerMinute)
         {
             decimal totalPrice = 0;
-            foreach (var call in this.callHistory)
+            foreach (var call in this.CallHistory)
             {
                 totalPrice += (call.Duration / SecondsInOneMinute) * pricePerMinute;
             }

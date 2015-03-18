@@ -13,7 +13,7 @@
         private string firstName;
         private string lastName;
         private string fn;
-        private string tel;
+        private string phoneNumber;
         private string email;
         private IEnumerable<int> marks;
         private int groupNumber;
@@ -93,12 +93,12 @@
         {
             get
             {
-                return this.tel;
+                return this.phoneNumber;
             }
 
             set
             {
-                this.tel = value;
+                this.phoneNumber = value;
             }
         }
 

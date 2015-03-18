@@ -5,6 +5,7 @@ namespace MatrixClass
     public class Matrix : IMatrix
     {
         private const string SameLengthExceptionMsg = "Matrices must have the same rows and cols length in order to perform mathematical operations on them.";
+        private const string MultiplyLengthExceptionMsg = "The first matrix' rows/columns must equalt the second matrix' columns/rows length in order to multiply them.";
         private const string NoRowsExceptionMsg = "The Matrix must have at least one row.";
         private const string NoColsExceptionMsg = "The Matrix must have at least one column.";
         private const string OutOfRangeExceptionMsg = "Index is out of range.";
@@ -101,11 +102,6 @@ namespace MatrixClass
                 throw new ArgumentException(SameLengthExceptionMsg);
             }
 
-            if (first.Rows != second.Rows || first.Cols != second.Cols)
-            {
-                throw new ArgumentException(SameLengthExceptionMsg);
-            }
-
             Matrix result = new Matrix(first.Rows, first.Cols);
 
             for (int row = 0; row < result.Rows; row++)
@@ -121,23 +117,18 @@ namespace MatrixClass
 
         public static Matrix operator *(Matrix first, Matrix second)
         {
-            if (first.Rows != second.Rows || first.Cols != second.Cols)
+            if (first.Rows != second.Cols || first.Cols != second.Rows)
             {
-                throw new ArgumentException(SameLengthExceptionMsg);
+                throw new ArgumentException(MultiplyLengthExceptionMsg);
             }
 
-            if (first.Rows != second.Rows || first.Cols != second.Cols)
-            {
-                throw new ArgumentException(SameLengthExceptionMsg);
-            }
-
-            Matrix result = new Matrix(first.Rows, first.Cols);
+            Matrix result = new Matrix(first.Rows, second.Cols);
 
             for (int row = 0; row < result.Rows; row++)
             {
                 for (int col = 0; col < result.Cols; col++)
                 {
-                    result[row, col] = first[row, col] * second[row, col];
+                    result[row, col] = first[row, col] * second[col, row];
                 }
             }
 

@@ -43,7 +43,7 @@
             Matrix<double> subtracted = matrix - secondMatrix;
             Matrix<double> multiplied = matrix * secondMatrix;
 
-            int index = matrix[1, 1];
+            double index = matrix[1, 1];
 
             string trueMatrix = matrix ? "Matrix is true." : "Matrix is false.";
 
@@ -77,7 +77,8 @@
             {
                 for (int col = 0; col < matrix.Cols; col++)
                 {
-                    matrix[row, col] = random.Next(0, 20);
+                    dynamic num = random.Next(0, 20);
+                    matrix[row, col] = (T)num;
                 }
             }
 

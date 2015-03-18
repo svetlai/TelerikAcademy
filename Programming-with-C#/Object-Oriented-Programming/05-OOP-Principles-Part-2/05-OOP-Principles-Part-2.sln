@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Shapes", "01-Shapes\01-Shapes.csproj", "{EAFAF875-E040-4510-B310-758A6EF3125B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-Helper", "00-Helper\00-Helper.csproj", "{1051BD19-1F1C-4D4A-B284-5B2C1045E904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-BankAccounts", "02-BankAccounts\02-BankAccounts.csproj", "{B26D9F96-52CF-410B-A294-C7FA2ADA4707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-RangeExceptions", "03-RangeExceptions\03-RangeExceptions.csproj", "{600AB2BC-B0B8-4557-A127-62D8239FD03B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAFAF875-E040-4510-B310-758A6EF3125B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFAF875-E040-4510-B310-758A6EF3125B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFAF875-E040-4510-B310-758A6EF3125B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFAF875-E040-4510-B310-758A6EF3125B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1051BD19-1F1C-4D4A-B284-5B2C1045E904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1051BD19-1F1C-4D4A-B284-5B2C1045E904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1051BD19-1F1C-4D4A-B284-5B2C1045E904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1051BD19-1F1C-4D4A-B284-5B2C1045E904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B26D9F96-52CF-410B-A294-C7FA2ADA4707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26D9F96-52CF-410B-A294-C7FA2ADA4707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26D9F96-52CF-410B-A294-C7FA2ADA4707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26D9F96-52CF-410B-A294-C7FA2ADA4707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{600AB2BC-B0B8-4557-A127-62D8239FD03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600AB2BC-B0B8-4557-A127-62D8239FD03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600AB2BC-B0B8-4557-A127-62D8239FD03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600AB2BC-B0B8-4557-A127-62D8239FD03B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

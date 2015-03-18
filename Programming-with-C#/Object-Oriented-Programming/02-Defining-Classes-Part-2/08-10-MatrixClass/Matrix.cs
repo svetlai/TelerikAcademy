@@ -5,20 +5,21 @@
 
     public class Matrix<T>
     {
-        private const string SameLengthExceptionMsg = "Matrices must have the same rows and cols length in order to perform mathematical operations on them.";
+        private const string SameLengthExceptionMsg = "Matrices must have the same rows and columns length in order to perform mathematical operations on them.";
+        private const string MultiplyLengthExceptionMsg = "The first matrix' columns must equal the second matrix' rows length in order to multiply them.";
         private const string NoRowsExceptionMsg = "The Matrix must have at least one row.";
         private const string NoColsExceptionMsg = "The Matrix must have at least one column.";
         private const string OutOfRangeExceptionMsg = "Index is out of range.";
 
         private int rows;
         private int cols;
-        private int[,] matrix;
+        private T[,] matrix;
 
         public Matrix(int rows, int cols)
         {
             this.Rows = rows;
             this.Cols = cols;
-            this.matrix = new int[rows, cols];
+            this.matrix = new T[rows, cols];
         }
 
         public int Rows
@@ -57,7 +58,7 @@
             }
         }
 
-        public int this[int rowIndex, int colIndex]
+        public T this[int rowIndex, int colIndex]
         {
             get
             {
@@ -120,7 +121,7 @@
             {
                 for (int col = 0; col < result.Cols; col++)
                 {
-                    result[row, col] = first[row, col] + second[row, col];
+                    result[row, col] = (dynamic)first[row, col] + second[row, col];
                 }
             }
 
@@ -134,18 +135,13 @@
                 throw new ArgumentException(SameLengthExceptionMsg);
             }
 
-            if (first.Rows != second.Rows || first.Cols != second.Cols)
-            {
-                throw new ArgumentException(SameLengthExceptionMsg);
-            }
-
             Matrix<T> result = new Matrix<T>(first.Rows, first.Cols);
 
             for (int row = 0; row < result.Rows; row++)
             {
                 for (int col = 0; col < result.Cols; col++)
                 {
-                    result[row, col] = first[row, col] - second[row, col];
+                    result[row, col] = (dynamic)first[row, col] - second[row, col];
                 }
             }
 
@@ -154,23 +150,21 @@
 
         public static Matrix<T> operator *(Matrix<T> first, Matrix<T> second)
         {
-            if (first.Rows != second.Rows || first.Cols != second.Cols)
+            if (first.Cols != second.Rows)
             {
-                throw new ArgumentException(SameLengthExceptionMsg);
+                throw new ArgumentException(MultiplyLengthExceptionMsg);
             }
 
-            if (first.Rows != second.Rows || first.Cols != second.Cols)
-            {
-                throw new ArgumentException(SameLengthExceptionMsg);
-            }
-
-            Matrix<T> result = new Matrix<T>(first.Rows, first.Cols);
+            Matrix<T> result = new Matrix<T>(first.Rows, second.Cols);
 
             for (int row = 0; row < result.Rows; row++)
             {
                 for (int col = 0; col < result.Cols; col++)
                 {
-                    result[row, col] = first[row, col] * second[row, col];
+                    for (int secondRow = 0; secondRow < result.Cols; secondRow++)
+                    {
+                        result[row, col] = (dynamic)first[row, col] * second[secondRow, col];
+                    }                 
                 }
             }
 

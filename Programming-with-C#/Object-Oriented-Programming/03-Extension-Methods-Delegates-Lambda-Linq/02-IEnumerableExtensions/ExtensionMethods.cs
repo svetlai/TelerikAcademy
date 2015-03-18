@@ -10,7 +10,7 @@
     {
         public static T Sum<T>(this IEnumerable<T> collection)
         {
-            dynamic sum = default(T);
+            T sum = default(T);
 
             foreach (var item in collection)
             {
@@ -22,7 +22,7 @@
 
         public static T Product<T>(this IEnumerable<T> collection)
         {
-            dynamic product = 1;
+            T product = 1;
 
             foreach (var item in collection)
             {
@@ -34,7 +34,7 @@
 
         public static T Min<T>(this IEnumerable<T> collection)
         {
-            dynamic min = decimal.MaxValue;
+            T min = decimal.MaxValue;
 
             foreach (var item in collection)
             {
@@ -46,7 +46,7 @@
 
         public static T Max<T>(this IEnumerable<T> collection)
         {
-            dynamic max = decimal.MinValue;
+            T max = decimal.MinValue;
 
             foreach (var item in collection)
             {
@@ -58,7 +58,7 @@
 
         public static T Average<T>(this IEnumerable<T> collection)
         {
-            dynamic sum = default(T);
+            T sum = default(T);
             int count = 0;
 
             foreach (var item in collection)

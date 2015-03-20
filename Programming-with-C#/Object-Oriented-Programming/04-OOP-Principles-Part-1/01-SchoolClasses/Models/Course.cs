@@ -16,9 +16,9 @@
         public Course(string identifier)
         {
             this.Identifier = identifier;
-            this.Students = new List<Student>();
-            this.Teachers = new List<Teacher>();
-            this.Comments = new List<Comment>();
+            this.Students = new HashSet<Student>();
+            this.Teachers = new HashSet<Teacher>();
+            this.Comments = new HashSet<Comment>();
         }
 
         // TODO: unique

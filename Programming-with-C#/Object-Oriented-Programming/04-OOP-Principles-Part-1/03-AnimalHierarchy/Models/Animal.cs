@@ -63,7 +63,7 @@
 
         public Gender Gender { get; set; }
 
-        public static double CalculateAverageAge<T>(ICollection<T> animals) where T : Animal
+        public static double CalculateAverageAge(IEnumerable<Animal> animals) 
         {
             return animals.Average(a => a.Age);
         }

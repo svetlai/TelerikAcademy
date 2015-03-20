@@ -18,7 +18,7 @@
         {
             this.FirstName = firstName;
             this.LastName = lastName;
-            this.Comments = new List<Comment>();
+            this.Comments = new HashSet<Comment>();
         }
 
         [Required]

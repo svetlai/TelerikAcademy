@@ -14,7 +14,7 @@
         public School(string name)
         {
             this.Name = name;
-            this.courses = new List<Course>();
+            this.courses = new HashSet<Course>();
         }
 
         [Required]

@@ -10,7 +10,7 @@
         public Teacher(string firstName, string lastName)
             : base(firstName, lastName)
         {
-            this.Disciplines = new List<Discipline>();
+            this.Disciplines = new HashSet<Discipline>();
             this.Courses = new HashSet<Course>();
         }
 

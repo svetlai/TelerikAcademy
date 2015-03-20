@@ -30,11 +30,11 @@
             var kittens = CreateRandomCatsCollection<Kitten>(10);
             var tomcats = CreateRandomCatsCollection<Tomcat>(10);
 
-            double catsAverageAge = Animal.CalculateAverageAge<Cat>(cats);
-            double dogsAverageAge = Animal.CalculateAverageAge<Dog>(dogs);
-            double frogsAverageAge = Animal.CalculateAverageAge<Frog>(frogs);
-            double kittensAverageAge = Animal.CalculateAverageAge<Kitten>(kittens);
-            double tomcatsAverageAge = Animal.CalculateAverageAge<Tomcat>(tomcats);
+            double catsAverageAge = Animal.CalculateAverageAge(cats);
+            double dogsAverageAge = Animal.CalculateAverageAge(dogs);
+            double frogsAverageAge = Animal.CalculateAverageAge(frogs);
+            double kittensAverageAge = Animal.CalculateAverageAge(kittens);
+            double tomcatsAverageAge = Animal.CalculateAverageAge(tomcats);
 
             sb.AppendLine("Cats average age: " + catsAverageAge)
                 .AppendLine("Dogs average age: " + dogsAverageAge)
@@ -70,7 +70,6 @@
             {
                 var name = randomGenerator.RandomString(3, 10);
                 var age = randomGenerator.RandomNumber(1, 10);
-                Gender gender = (Gender)randomGenerator.RandomNumber(0, 2);
                 object[] initializationParameters = new object[] { name, age };
                 var animal = (T)Activator.CreateInstance(typeof(T), initializationParameters);
                 animals.Add(animal);

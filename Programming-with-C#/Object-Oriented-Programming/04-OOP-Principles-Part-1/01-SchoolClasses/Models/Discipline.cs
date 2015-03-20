@@ -22,7 +22,7 @@
             this.Name = name;
             this.NumberOfLectures = numberOfLectures;
             this.NumberOfExercises = numberOfExercises;
-            this.Comments = new List<Comment>();
+            this.Comments = new HashSet<Comment>();
         }
 
         [Required]

@@ -21,7 +21,8 @@
             this.Comments = new HashSet<Comment>();
         }
 
-        // TODO: unique
+        // TODO : unique
+        // [Index("Identifier", IsUnique = true)]
         [Required]
         [MaxLength(50)]
         public string Identifier

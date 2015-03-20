@@ -14,7 +14,7 @@
         private string lastName;
         private ICollection<Comment> comments;
 
-        public Person(string firstName, string lastName)
+        protected Person(string firstName, string lastName)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -61,7 +61,7 @@
             }
         }
 
-        public ICollection<Comment> Comments
+        public virtual ICollection<Comment> Comments
         {
             get
             {

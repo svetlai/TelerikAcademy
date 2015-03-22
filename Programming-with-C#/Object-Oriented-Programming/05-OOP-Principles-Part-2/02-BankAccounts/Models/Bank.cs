@@ -61,7 +61,7 @@
             }
         }
 
-        public ICollection<Account> Accounts
+        public virtual ICollection<Account> Accounts
         {
             get
             {

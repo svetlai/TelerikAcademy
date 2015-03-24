@@ -17,7 +17,8 @@
             HelperMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
 
             var school = CreateSchool("TilirikAcademy");
-            PrintSchool(school);
+ 
+            Console.Write(school.ToString());
         }
 
         public static School CreateSchool(string schoolName)
@@ -41,9 +42,9 @@
             goshoPeshov.AddDiscipline(oopDiscipline);
             mishoToshov.AddDiscipline(htmlDiscipline);
 
-            var mimiKostova = new Student("Mimi", "Kostova", "123");
-            var didiPeshova = new Student("Didi", "Peshova", "567");
-            var sisiGoshova = new Student("Sisi", "Goshova", "587");
+            var mimiKostova = new Student("Mimi", "Kostova", 123);
+            var didiPeshova = new Student("Didi", "Peshova", 567);
+            var sisiGoshova = new Student("Sisi", "Goshova", 587);
 
             csharp.AddTeacher(toshoGoshov);
             csharp.AddTeacher(goshoPeshov);
@@ -63,43 +64,6 @@
             oop.AddComment(new Comment("OOP Principles", "Huh?", sisiGoshova));
 
             return school;
-        }
-
-        public static void PrintSchool(School school)
-        {
-            Console.WriteLine(school.Name);
-
-            foreach (var course in school.Courses)
-            {
-                Console.WriteLine(course.Identifier);
-
-                foreach (var teacher in course.Teachers)
-                {
-                    Console.WriteLine("Teacher: " + teacher.FirstName + " " + teacher.LastName);
-
-                    foreach (var discipline in teacher.Disciplines)
-                    {
-                        Console.WriteLine("Discipline: " + discipline.Name + " Lectures: " + discipline.NumberOfLectures + " Exercises: " + discipline.NumberOfExercises);
-                    }
-                }
-
-                foreach (var student in course.Students)
-                {
-                    Console.WriteLine("Student: " + student.FirstName + " " + student.LastName);
-
-                    foreach (var comment in student.Comments)
-                    {
-                        Console.WriteLine("Comment: " + comment.Title + " " + comment.Contents + " " + comment.Author);
-                    }
-                }
-
-                foreach (var comment in course.Comments)
-                {
-                    Console.WriteLine("Comment: " + comment.Title + " " + comment.Contents + " " + comment.Author);
-                }
-
-                Console.WriteLine();
-            }
         }
     }
 }

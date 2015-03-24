@@ -1,40 +1,63 @@
 ﻿namespace SchoolClasses.Models
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text;
 
     using SchoolClasses.Contracts;
 
     public class Course : IHaveComments
     {
-        private string identifier;
+        private const string NameNullExceptionMsg = "Name cannot be empty.";
+
+        private Guid id;
+        private string name;
         private ICollection<Student> students;
         private ICollection<Teacher> teachers;
         private ICollection<Comment> comments;
 
-        public Course(string identifier)
+        public Course(string name)
         {
-            this.Identifier = identifier;
+            this.Id = Guid.NewGuid();
+            this.name = name;
             this.Students = new HashSet<Student>();
             this.Teachers = new HashSet<Teacher>();
             this.Comments = new HashSet<Comment>();
         }
 
-        // TODO : unique
-        // [Index("Identifier", IsUnique = true)]
         [Required]
-        [MaxLength(50)]
-        public string Identifier
+        public Guid Id
         {
             get
             {
-                return this.identifier;
+                return this.id;
             }
 
             private set
             {
-                this.identifier = value;
+                this.id = value;
+            }
+        }
+
+        [Required]
+        [MaxLength(50)]
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+
+            private set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(NameNullExceptionMsg);
+                }
+
+                this.name = value;
             }
         }
 
@@ -107,6 +130,32 @@
         public void RemoveComment(Comment comment)
         {
             this.Comments.Remove(comment);
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+
+            sb.AppendLine("Course: " + this.Name);
+
+            foreach (var teacher in this.Teachers)
+            {
+                sb.Append(teacher.ToString());
+            }
+
+            foreach (var student in this.Students)
+            {
+                sb.Append(student.ToString());
+            }
+
+            foreach (var comment in this.Comments)
+            {
+                sb.Append(comment.ToString());
+            }
+
+            sb.AppendLine();
+
+            return sb.ToString();
         }
     }
 }

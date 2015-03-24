@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Text;
 
     public class School
     {
@@ -58,6 +59,21 @@
         public void RemoveCourse(Course course)
         {
             this.Courses.Remove(course);
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+
+            sb.AppendLine(this.Name)
+                .AppendLine();
+
+            foreach (var course in this.Courses)
+            {
+                sb.Append(course.ToString());
+            }
+
+            return sb.ToString();
         }
     }
 }

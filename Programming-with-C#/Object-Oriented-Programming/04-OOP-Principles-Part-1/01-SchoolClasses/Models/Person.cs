@@ -83,5 +83,10 @@
         {
             this.Comments.Remove(comment);
         }
+
+        public override string ToString()
+        {
+            return this.FirstName + " " + this.LastName;
+        }
     }
 }

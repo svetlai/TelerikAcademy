@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Text;
 
     using SchoolClasses.Contracts;
 
@@ -106,6 +107,20 @@
         public void RemoveComment(Comment comment)
         {
             this.Comments.Remove(comment);
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+
+            sb.AppendLine("Discipline: " + this.Name + " Lectures: " + this.NumberOfLectures + " Exercises: " + this.NumberOfExercises);
+
+            foreach (var comment in this.Comments)
+            {
+                sb.Append(comment.ToString());
+            }
+
+            return sb.ToString();
         }
     }
 }

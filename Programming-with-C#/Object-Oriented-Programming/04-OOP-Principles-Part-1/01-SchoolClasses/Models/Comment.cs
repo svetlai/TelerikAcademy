@@ -70,5 +70,10 @@
                 this.author = value;
             }
         }
+
+        public override string ToString()
+        {
+            return "Comment: " + this.Title + " " + this.Contents + " by " + this.Author;
+        }
     }
 }

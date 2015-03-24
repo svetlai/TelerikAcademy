@@ -1,6 +1,7 @@
 ﻿namespace SchoolClasses.Models
 {
     using System.Collections.Generic;
+    using System.Text;
 
     public class Teacher : Person
     {
@@ -58,6 +59,20 @@
         public void RemoveCourse(Course course)
         {
             this.Courses.Remove(course);
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+
+            sb.AppendLine("Teacher: " + base.ToString());
+
+            foreach (var discipline in this.Disciplines)
+            {
+                sb.Append(discipline.ToString());
+            }
+
+            return sb.ToString();
         }
     }
 }

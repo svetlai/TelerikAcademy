@@ -22,7 +22,7 @@
         {
             this.Name = name;
             this.Address = address;
-            this.Accounts = new List<Account>();
+            this.Accounts = new HashSet<Account>();
         }
 
         public string Name

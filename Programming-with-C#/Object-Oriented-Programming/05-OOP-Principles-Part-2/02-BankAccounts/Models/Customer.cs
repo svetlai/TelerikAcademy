@@ -21,7 +21,7 @@
             this.Address = address;
             this.Email = email;
             this.PhoneNumber = phoneNumber;
-            this.Accounts = new List<Account>();
+            this.Accounts = new HashSet<Account>();
         }
 
         public string Name

@@ -13,7 +13,7 @@
 
         private Battery battery;
         private Display display;
-        private IList<Call> callHistory;
+        private ICollection<Call> callHistory;
 
         public GSM(string model, Manufacturer manufacturer)
             : base(model, manufacturer)
@@ -45,7 +45,7 @@
         {
             this.Battery = battery;
             this.Display = display;
-            this.CallHistory = new List<Call>();
+            this.CallHistory = new HashSet<Call>();
         }
 
         public static GSM IPhone4S
@@ -82,7 +82,7 @@
             }
         }
 
-        public virtual IList<Call> CallHistory
+        public virtual ICollection<Call> CallHistory
         {
             get
             {

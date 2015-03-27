@@ -13,7 +13,7 @@
         private string firstName;
         private string middleName;
         private string lastName;
-        private string ssn;
+        private int ssn;
         private string address;
         private string phoneNumber;
         private string email;
@@ -22,12 +22,12 @@
         private University university;
         private Faculty faculty;
 
-        public Student(string firstName, string lastName, int course, Specialty specialty, University univeristy, Faculty faculty)
-            : this(firstName, string.Empty, lastName, string.Empty, string.Empty, string.Empty, string.Empty, course, specialty, univeristy, faculty)
+        public Student(string firstName, string lastName, int course, int ssn, Specialty specialty, University univeristy, Faculty faculty)
+            : this(firstName, string.Empty, lastName, ssn, string.Empty, string.Empty, string.Empty, course, specialty, univeristy, faculty)
         {
         }
 
-        public Student(string firstName, string middleName, string lastName, string ssn, string address, string phoneNumber, string email, int course, Specialty specialty, University university, Faculty faculty)
+        public Student(string firstName, string middleName, string lastName, int ssn, string address, string phoneNumber, string email, int course, Specialty specialty, University university, Faculty faculty)
         {
             this.FirstName = firstName;
             this.MiddleName = middleName;
@@ -106,7 +106,7 @@
             }
         }
 
-        public string SSN
+        public int SSN
         {
             get
             {
@@ -271,9 +271,9 @@
         public int CompareTo(object obj)
         {
             var otherStudent = obj as Student;
-            if (this.FirstName.CompareTo(otherStudent.FirstName) <= 0)
+            if (this.FirstName.CompareTo(otherStudent.FirstName) == 0)
             {
-                return otherStudent.SSN.CompareTo(this.SSN);
+                return this.SSN.CompareTo(otherStudent.SSN);
             }
 
             return this.FirstName.CompareTo(otherStudent.FirstName);

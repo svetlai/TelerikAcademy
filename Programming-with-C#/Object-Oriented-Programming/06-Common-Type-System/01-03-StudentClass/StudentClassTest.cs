@@ -19,8 +19,9 @@
         {
             var sb = new StringBuilder();
 
-            var peshoStudent = new Student("Pesho", "Peshov", 4, Specialty.QA, University.TilirikUniversity, Faculty.SoftwareFaculty);
-            var goshoStudent = new Student("Gosho", "Goshov", 2, Specialty.MobileDevelopment, University.TilirikUniversity, Faculty.SoftwareFaculty);
+            var peshoStudent = new Student("Pesho", "Peshov", 4, 222, Specialty.QA, University.TilirikUniversity, Faculty.SoftwareFaculty);
+            var goshoStudent = new Student("Gosho", "Goshov", 2, 123, Specialty.MobileDevelopment, University.TilirikUniversity, Faculty.SoftwareFaculty);
+            var oneMorePeshoStudent = new Student("Pesho", "Goshov", 2, 456, Specialty.MobileDevelopment, University.TilirikUniversity, Faculty.SoftwareFaculty);
             var anotherPeshoStudent = peshoStudent.Clone();
 
             sb.AppendLine(peshoStudent.ToString())
@@ -35,6 +36,7 @@
              .AppendLine("\nPesho cloned: ")
              .AppendLine(anotherPeshoStudent.ToString())
              .AppendLine("Compare Pesho & Gosho: " + peshoStudent.CompareTo(goshoStudent).ToString())
+             .AppendLine("Compare Pesho & one more Pesho student: " + peshoStudent.CompareTo(oneMorePeshoStudent).ToString())
              .AppendLine("Compare Pesho & Pesho copy: " + peshoStudent.CompareTo(anotherPeshoStudent).ToString());
            
             Console.WriteLine(sb);

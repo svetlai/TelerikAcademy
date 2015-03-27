@@ -55,6 +55,16 @@
             }
         }
 
+        public void Delete(T value)
+        {
+            if (this.Contains(value))
+            {
+                var root = this.Root;
+                this.Delete(ref root, value);
+                this.Root = root;
+            }
+        }
+
         public bool Contains(T value)
         {
             return this.Contains(this.Root, value);
@@ -86,6 +96,63 @@
                 var tempNode = rootNode.Right;
                 this.Insert(ref tempNode, value);
                 rootNode.Right = tempNode;
+            }
+        }
+
+        private void Delete(ref TreeNode<T> rootNode, T value)
+        {
+            if (rootNode != null)
+            {
+                if (value.CompareTo(rootNode.Value) < 0)
+                {
+                    var tempNode = rootNode.Left;
+                    this.Delete(ref tempNode, value);
+                    rootNode.Left = tempNode;
+                }
+                else if (value.CompareTo(rootNode.Value) > 0)
+                {
+                    var tempNode = rootNode.Right;
+                    this.Delete(ref tempNode, value);
+                    rootNode.Right = tempNode;
+                }
+                else
+                {
+                    if (rootNode.Left == null && rootNode.Right == null)
+                    {
+                        rootNode = null;
+                    }
+                    else if (rootNode.Left != null && rootNode.Right == null)
+                    {
+                        rootNode = rootNode.Left;
+                    }
+                    else if (rootNode.Left == null && rootNode.Right != null)
+                    {
+                        rootNode = rootNode.Right;
+                    }
+                    else
+                    {
+                        if (rootNode.Right.Left == null)
+                        {
+                            rootNode.Right.Left = rootNode.Left;
+                            rootNode = rootNode.Right;
+                        }
+                        else
+                        {
+                            var tempNode = rootNode.Right;
+                            //var p = rootNode.Right;
+
+                            while (rootNode.Right.Left.Left != null)
+                            {
+                                rootNode.Right = rootNode.Right.Left;
+                                tempNode = rootNode.Right.Left;
+                                rootNode.Right.Left = tempNode.Right; 
+                                tempNode.Left = rootNode.Left;
+                                tempNode.Right = rootNode.Right;
+                                rootNode = tempNode;
+                            }
+                        }
+                    }
+                }
             }
         }
 

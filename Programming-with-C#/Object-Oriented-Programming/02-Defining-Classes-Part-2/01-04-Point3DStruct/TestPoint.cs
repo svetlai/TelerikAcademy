@@ -27,6 +27,8 @@
         {
             HelperMethods.DisplayTaskDescription(Constants.PathToTaskDescription);
 
+            var p = new Point3D();
+            var o = Point3D.O;
             Path path3D = CreateNewPath();
 
             SavePathToFile(path3D);

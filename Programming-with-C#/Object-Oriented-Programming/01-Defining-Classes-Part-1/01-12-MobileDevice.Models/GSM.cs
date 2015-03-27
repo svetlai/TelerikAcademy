@@ -9,11 +9,16 @@
     {
         private const int SecondsInOneMinute = 60;
 
-        private static readonly GSM Iphone4S = new GSM("IPhone 4S", new Manufacturer("Apple", "USA"), 500, new Battery(BatteryType.LiIon, 500, 200), new Display(4.5, 256));
+        private static readonly GSM Iphone4S;
 
         private Battery battery;
         private Display display;
         private ICollection<Call> callHistory;
+
+        static GSM()
+        {
+            Iphone4S = new GSM("IPhone 4S", new Manufacturer("Apple", "USA"), 500, new Battery(BatteryType.LiIon, 500, 200), new Display(4.5, 256));
+        }
 
         public GSM(string model, Manufacturer manufacturer)
             : base(model, manufacturer)

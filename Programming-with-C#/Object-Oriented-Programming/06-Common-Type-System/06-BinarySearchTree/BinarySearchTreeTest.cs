@@ -33,9 +33,13 @@
                 .AppendLine("Cloned root: " + clonedNode.ToString())
                 .AppendLine("Cloned Equals root? " + (clonedNode.Equals(tree.Root)).ToString())
                 .AppendLine("Cloned == root? " + (clonedNode == tree.Root).ToString())
-                .AppendLine("Cloned != root? " + (clonedNode != tree.Root).ToString());
+                .AppendLine("Cloned != root? " + (clonedNode != tree.Root).ToString())
+                .AppendLine("12 deleted. New tree:");
 
             Console.Write(sb.ToString());
+
+            tree.Delete(12);
+            Console.WriteLine(tree.ToString());
         }
     }
 }

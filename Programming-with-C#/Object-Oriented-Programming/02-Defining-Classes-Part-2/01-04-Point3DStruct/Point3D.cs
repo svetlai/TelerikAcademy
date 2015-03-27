@@ -2,14 +2,19 @@
 {
     public struct Point3D
     {
-        private static readonly Point3D StartPoint = new Point3D(0, 0, 0);
+        private static readonly Point3D StartPoint;
+
+        static Point3D()
+        {
+            StartPoint = new Point3D(0, 0, 0);
+        }
 
         public Point3D(int x, int y, int z)
             : this()
         {
             this.X = x;
             this.Y = y;
-            this.Z = z;
+            this.Z = z;          
         }
 
         public static Point3D O

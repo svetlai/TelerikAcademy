@@ -25,7 +25,7 @@
                     return (this.MonthlyInterestRate * months) / 2;
                 }
 
-                return this.MonthlyInterestRate * months;
+                return base.CalculateInterest(months - DifferentInterestCompanyMonths);
             }
             else if (this.Customer.CustomerType == CustomerType.Individual)
             {
@@ -34,10 +34,10 @@
                     return 0;
                 }
 
-                return this.MonthlyInterestRate * months;
+                return base.CalculateInterest(months - DifferentInterestIndividualMonths);
             }
 
-            return 0;
+            return base.CalculateInterest(months);
         }
     }
 }

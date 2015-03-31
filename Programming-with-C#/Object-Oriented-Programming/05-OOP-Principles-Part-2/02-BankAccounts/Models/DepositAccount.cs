@@ -36,7 +36,7 @@
                 return 0;
             }
 
-            return this.MonthlyInterestRate * months;
+            return base.CalculateInterest(months);
         }
     }
 }

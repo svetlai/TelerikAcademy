@@ -66,9 +66,12 @@
 
         public AccountType AccountType { get; protected set; }
 
-        public abstract decimal CalculateInterest(int months);
-
         public abstract void Deposit(decimal sum);
+
+        public virtual decimal CalculateInterest(int months)
+        {
+            return this.MonthlyInterestRate * months;
+        }
 
         public override string ToString()
         {

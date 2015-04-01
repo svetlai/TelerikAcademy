@@ -103,32 +103,3 @@ You should not concern yourself with handling input and output data – the engi
 *	The names in the commands will always consist of upper and lowercase English letters only.
 *	If for some reason a command is illegal, just skip it
 *	Edit: The ReactTo method needs to be implemented specifically for ONLY two of the above tasks – most supplements don’t need to react (at least in this task) 
-
-Sample Input	
-
-insert Dog Sharo
-insert Parasite Paro
-proceed
-status
-insert Tank Tanio
-proceed
-status
-insert Queen Murphy
-proceed
-status
-insert Marine Marin
-supplement Weapon Marin 
-supplement AggressionCatalyst Marin
-supplement AggressionCatalyst Marin
-proceed
-status
-end	
-
-Sample Output
-
-Dog Sharo (Biological) [Health: 4, Power: 4, Aggression: 22, Supplements: [InfestationSpores]]
-Tank Tanio (Mechanical) [Health: 20, Power: 25, Aggression: 25, Supplements: []]
-Tank Tanio (Mechanical) [Health: 20, Power: 24, Aggression: 45, Supplements: [InfestationSpores]]
-Queen Murphy (Psionic) [Health: 5, Power: 1, Aggression: 1, Supplements: []]
-Tank Tanio (Mechanical) [Health: 20, Power: 24, Aggression: 45, Supplements: [InfestationSpores, InfestationSpores]]
-Marine Marin (Biological) [Health: 10, Power: 14, Aggression: 10, Supplements: [WeaponrySkill, Weapon, AggressionCatalyst, AggressionCatalyst]]

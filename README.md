@@ -33,4 +33,4 @@ Homework and projects for Telerik Software Academy
 * [OOP Principles Part 1 Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/04-OOP-Principles-Part-1)
 * [OOP Principles Part 2 Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/05-OOP-Principles-Part-2)
 * [Common Type System Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/06-Common-Type-System)
-* [Exam Preparation Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Object-Oriented-Programming/Exam-Preparation-Tasks)
+* [Exam Preparation Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-Preparation-Tasks)

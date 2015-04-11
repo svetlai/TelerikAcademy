@@ -36,7 +36,13 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HTMLRenderer.cs" />
+    <Compile Include="HTMLElement.cs" />
+    <Compile Include="HTMLElementFactory.cs" />
+    <Compile Include="HTMLRendererCommandExecutor.cs" />
+    <Compile Include="HTMLTable.cs" />
+    <Compile Include="IElement.cs" />
+    <Compile Include="IElementFactory.cs" />
+    <Compile Include="ITable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

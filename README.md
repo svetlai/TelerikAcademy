@@ -35,3 +35,15 @@ Homework and projects for Telerik Software Academy
 * [Common Type System Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/06-Common-Type-System)
 * [Exam Preparation Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-Preparation-Tasks)
 * [Exam 2015 Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-2015-Tasks)
+
+## Web Design and UI Technologies ##
+
+### HTML
+
+1. [HTML Fundamentals Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/01-HTML-Fundamentals)
+*  [HTML Tables Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/02-HTML-Tables)
+*  [HTML Forms and Frames Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/03-HTML-Forms-Frames)
+
+### JavaScript Applications
+
+2. [Web Storages Homework - Sheep and Rams Game](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-Applications/02-Web-Storages-SheepAndRamsGame)

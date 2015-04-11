@@ -1,0 +1,95 @@
+/* CSS Stylesheet */
+body {
+    font-family: Calibri,Verdana,sans-serif;
+}
+/*------------- Fresh Fruits ------------*/
+#tablefruits {
+    width: 50%;
+    border: 0;
+}
+
+    #tablefruits th {
+        font-style: italic;
+        font-size: 1.5em;
+    }
+
+    #tablefruits img {
+        width: 150px;
+    }
+/*------------- Alphabet ------------*/
+#tablealphabet {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+table#tablealphabet {
+    padding: 1px;
+}
+/*------------- Name Form ------------*/
+input[type="submit"] {
+    color: #96CDCD;
+    background-color: #F2F2F2;
+    border: 1px solid #96CDCD;
+    padding: 5px;
+}
+
+.form {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+    .form li {
+        padding-top: 4px;
+    }
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 5px;
+}
+/*------------- Calculator ------------*/
+table#tablecalculator,
+table#tablecalculator tr,
+table#tablecalculator td {
+    padding: 10px;
+    border: 1px solid #96CDCD;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#tablecalculator {
+    text-align: center;
+    font-weight: bold;
+    color: #96CDCD;
+    background-color: #F2F2F2;
+    font-size: 1.5em;
+}
+
+.right {
+    text-align: right;
+}
+
+input[type="button"] {
+    color: #96CDCD;
+    background-color: #F2F2F2;
+    border: 0;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+}
+
+input[type="text"]#result {
+    color: #96CDCD;
+    background-color: #F2F2F2;
+    border: 0;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+    width: 200px;
+}
+/*------------- Footer ------------*/
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+}

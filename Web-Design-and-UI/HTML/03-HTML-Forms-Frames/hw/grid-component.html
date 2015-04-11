@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Shop</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<section>
+<form name="onlineshop" action="#" method="get">
+<table id="tableonlineshop" border="1" class="left">
+	<thead>
+		<tr>
+			<th colspan="6">Drag a column header and drop it here to group by that column</th>
+		</tr>
+		<tr>
+			<th>ProductID</th>
+			<th>Product name</th>
+			<th>Unit price</th>
+			<th>Quantity per unit</th>
+			<th>Units in stock</th>
+			<th>Discontinued</th>
+		</tr>
+		<tr>
+			<th><input type="text" name="ProductID" id="productid" /></th>
+			<th><input type="text" name="ProductName" id="productname" /></th>
+			<th><input type="text" name="UnitPrice" id="unitprice" /><input type="image" src="images/filter.png" alt="Filter"></th>
+			<th><input type="text" name="QuantityPerUnit" id="quanityperunit" /></th>
+			<th><input type="text" name="UnitsInStock" id="unitsinstock" /><input type="image" src="images/filter.png" alt="Filter"></th>
+			<th><input type="checkbox" name="Discontinued" id="discontinued" /><input type="image" src="images/filter.png" alt="Filter"></th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="2">				
+					<input type="image" src="images/first.png" alt="First">
+					<input type="image" src="images/prev.png" alt="Prev">
+					<a href="#">1</a>, <a href="#">2</a>, <a href="#">3</a> ...
+					<input type="image" src="images/next.png" alt="Next">
+					<input type="image" src="images/last.png" alt="Last">
+			</td>
+			<td colspan="2">Page size:
+				<select name="PageSize" id="pagesize">
+					<option value="10" selected="selected">10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+				</select>
+			</td>
+			<td colspan="2" class="right">200 items in 200 pages</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Coffee Espresso</td>
+			<td>£3</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Latte</td>
+			<td>£3</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Cappuccino</td>
+			<td>£3</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Mochaccino</td>
+			<td>£3</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Black Coffee</td>
+			<td>£2</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Tea</td>
+			<td>£2</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Hot Chocolate</td>
+			<td>£3</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Milk</td>
+			<td>£1.5</td>
+			<td>1 cup</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Water</td>
+			<td>£1</td>
+			<td>1 bottle</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Coke</td>
+			<td>£2</td>
+			<td>1 bottle</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>Ice Tea</td>
+			<td>£4</td>
+			<td>1 bottle</td>
+			<td>6</td>
+			<td><input type="checkbox" name="Discontinued" /></td>
+		</tr>
+	</tbody>
+</table><!--tableonlineshop-->
+</form><!--onlineshop-->
+</section>
+<footer>
+<hr />
+	<nav>
+		<a class="backto" href="../index.html" title="Go Back to My HTML Forms and Frames Homework">Go Back to My HTML Forms and Frames Homework</a>
+	</nav>
+</footer>
+</body>
+</html>

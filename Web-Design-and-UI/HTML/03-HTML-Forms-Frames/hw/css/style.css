@@ -1,0 +1,138 @@
+/* CSS Stylesheet */
+body {
+    font-family: Calibri,Verdana,sans-serif;
+}
+/*------------- Web Form ------------*/
+table#tablewebform,
+table#tablewebform tr,
+table#tablewebform td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#tablewebform {
+    color: #000;
+}
+
+table#tablewebform tbody td:first-child {
+    text-align: right;
+    width: 150px;
+    font-weight: bold;
+}
+
+#tablewebform tfoot {
+    text-align: center;
+    background-color: #009900;
+}
+
+label#statelabel {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="text"], textarea, #email {
+    width: 290px;
+}
+
+#state, #countrycode, #areacode, #year, #zip {
+    width: 50px;
+}
+
+#month, #day {
+    width: 20px;
+}
+
+#city {
+    width: 185px;
+}
+
+#phonenumber {
+    width: 140px;
+}
+/*------------- Students ------------*/
+table#tablestudents,
+table#tablestudents tr,
+table#tablestudents td,
+table#tablestudents th {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 5px;
+}
+/*------------- OnlineCoffeeShop ------------*/
+table#tableonlineshop,
+table#tableonlineshop tr,
+table#tableonlineshop td,
+table#tableonlineshop th {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 5px;
+}
+
+    table#tableonlineshop th {
+        font-weight: normal;
+        background-color: #eee;
+    }
+
+    table#tableonlineshop tfoot td {
+        background-color: #eee;
+        border: 0;
+    }
+
+#unitprice, #quanityperunit, #unitsinstock {
+    width: 100px;
+}
+
+#productid {
+    width: 20px;
+}
+
+#productname {
+    width: 150px;
+}
+/*------------- iShop ------------*/
+table#tableishop td {
+    padding: 5px;
+}
+
+table#tableishop th {
+    border-bottom: 2px solid #aaa;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table#tablelaptops {
+    border: 2px solid #aaa;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+    table#tablelaptops td {
+        padding: 0;
+    }
+
+table.tablelaptopdata td {
+    padding: 0;
+}
+
+legend {
+    text-align: center;
+}
+/*------------- Footer ------------*/
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+}

@@ -1,0 +1,25 @@
+/* CSS Stylesheet */
+/*--------Page: Runners Home----------*/
+ul.dash {
+    list-style-type: none;
+    text-indent: -2em;
+    margin-top: -10px;
+}
+
+    ul.dash li:before { /* list style type: dash; not supported in IE7*/
+        content: "- ";
+        line-height: 150%;
+    }
+/*--------Things To Do List----------*/
+#list {
+    font-family: Calibri,Verdana,sans-serif;
+}
+
+    #list li {
+        line-height: 150%;
+    }
+
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+}

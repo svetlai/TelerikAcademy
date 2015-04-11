@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Form</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<section>
+<form name="webform" action="#" method="post">
+<table id="tablewebform" border="1" >
+		<colgroup>
+		<col class="right" />
+		<col span="3" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td><label for="lastname">Last Name: </label></td>
+			<td colspan="3"><input type="text" name="LastName" id="lastname" autofocus="autofocus"/></td>
+		</tr>
+		<tr>
+			<td><label for="firstname">First Name: </label></td>
+			<td colspan="3"><input type="text" name="FirstName" id="firstname" /></td>
+		</tr>
+		<tr>
+			<td><label for="address">Address: </label></td>
+			<td colspan="3"><textarea name="Address" id="address"></textarea></td>
+		</tr>
+		<tr>
+			<td><label for="firstname">City: </label></td>
+			<td><input type="text" name="City" id="city" /></td>
+			<td><label for="state" id="statelabel">State: </label></td>
+			<td><input type="text" name="State" id="state" /></td>
+		</tr>
+		<tr>
+			<td><label for="zip">Zip/Postal Code: </label></td>
+			<td colspan="3"><input type="text" pattern="[0-9]{1,5}" name="Zip" id="zip" /></td>
+		</tr>		
+		<tr>
+			<td><label for="country">Country: </label></td>
+			<td colspan="3">
+				<select name="Country" id="country">
+					<option value="Bulgaria" selected="selected">Bulgaria</option>
+					<option value="Disneyland">Disneyland</option>
+					<option value="Neverland">Neverland</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="countrycode">Phone (country code, area code, number): </label></td>
+			<td colspan="3">(+<input type="text" pattern="[0-9]{1,5}" name="CountryCode" id="countrycode" />) 
+			<input type="text" pattern="[0-9]{1,5}" name="AreaCode" id="areacode" /> - 
+			<input type="text" pattern="[0-9]{1,10}" name="phonenumber" id="phonenumber" /></td>
+		</tr>
+		<tr>
+			<td><label for="email">Email: </label></td>
+			<td colspan="3"><input type="email" name="Email" id="email" required /></td>
+		</tr>
+		<tr>
+			<td><label for="month">Birth date: </label></td>
+			<td colspan="3">Month<input type="text" pattern="[1-9]|[012]{2}" name="Month" id="month" /> 
+			Day<input type="text" pattern="[1-9]|[031]{2}" name="Day" id="day" /> 
+			Year (4 digit)<input type="text" pattern="(?:19|20)[0-9]{2}" name="Year" id="year" /></td>
+		</tr>
+		<tr>
+			<td><label for="gender">Gender: </label></td>
+			<td colspan="3">
+				<select name="Gender" id="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Other" selected="selected">Other</option>
+				</select>
+			
+			</td>
+		</tr>
+		<tr>
+			<td>Starting date: </td>
+			<td colspan="3"><input type="radio" name="StartingDare" id="spring" /><label for="spring">Spring 2006</label>
+			<input type="radio" name="StartingDare" id="summer" /><label for="summer">Summer 2006</label></td>
+		</tr>
+		<tr>
+			<td><label for="comments">Comments/Questions: </label></td>
+			<td colspan="3"><textarea name="Comments" id="comments"></textarea></td>
+		</tr>
+	</tbody>
+	<tfoot>
+			<tr>
+			<td colspan="4"><input type="submit" value="Submit" /><input type="reset" value="Clear This Form" /></td>
+		</tr>
+	</tfoot>	
+</table>
+</form><!--tablewebform-->
+</section>
+<footer>
+<hr />
+	<nav>
+        <a class="backto" href="../index.html" title="Go Back to My HTML Forms and Frames Homework">Go Back to My HTML Forms and Frames Homework</a>
+	</nav>
+</footer>
+</body>
+</html>

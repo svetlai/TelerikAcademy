@@ -1,0 +1,65 @@
+/* CSS Stylesheet */
+body {
+    background-color: #F0F8FF;
+    font-family: Calibri,Verdana,sans-serif;
+}
+
+h1 {
+    font-style: italic;
+}
+/*------------- Header ------------*/
+#navbar {
+    list-style-type: none;
+    margin-left: -20px;
+    list-style-type: none;
+}
+
+    #navbar li {
+        display: inline;
+        padding-right: 20px;
+    }
+/*------------- Footer ------------*/
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+}
+/*-------------- Profile --------------- */
+#profilepic img {
+    width: 150px;
+    height: auto;
+}
+
+#personalinfo ul {
+    list-style-type: none;
+    line-height: 200%;
+}
+
+    #personalinfo ul li {
+        margin-left: -20px;
+    }
+/*-------------- Friends --------------- */
+#friends {
+    margin-left: 20px;
+}
+
+dl {
+    counter-reset: item1;
+}
+
+dt:before { /*not supported in IE7*/
+    counter-increment: item1;
+    content: counter(item1) ". ";
+}
+
+dt {
+    font-style: italic;
+    line-height: 200%;
+}
+/*-------------- Info --------------- */
+#info {
+    margin-left: 20px;
+}
+
+    #info p {
+        font-style: italic;
+    }

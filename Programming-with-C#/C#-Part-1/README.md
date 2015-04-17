@@ -1,4 +1,4 @@
-# Telerik Academy
+# Telerik Software Academy
 
 ## Programming with C# ##
 

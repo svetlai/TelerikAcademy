@@ -1,48 +1,50 @@
-<!DOCTYPE html> 
+﻿<!DOCTYPE html> 
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Calculator</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-<section>
-<table id="tablecalculator" border="1" >
-	<tbody>
-		<tr>
-			<td colspan="4"><input type="text" value="123" class="right" id="result" name="result"></td>
-		</tr>
-		<tr>
-			<td><input type="button" value="1" name="number"></td>
-			<td><input type="button" value="2" name="number"></td>
-			<td><input type="button" value="3" name="number"></td>
-			<td><input type="button" value="+" name="operator"></td>
-		</tr>
-		<tr>
-			<td><input type="button" value="4" name="number"></td>
-			<td><input type="button" value="5" name="number"></td>
-			<td><input type="button" value="6" name="number"></td>
-			<td><input type="button" value="-" name="operator"></td>
-		</tr>
-		<tr>
-			<td><input type="button" value="7" name="number"></td>
-			<td><input type="button" value="8" name="number"></td>
-			<td><input type="button" value="9" name="number"></td>
-			<td><input type="button" value="*" name="operator"></td>
-		</tr>
-		<tr>
-			<td colspan="2"><input type="button" value="0" name="number"></td>
-			<td><input type="button" value="." name="operator"></td>
-			<td><input type="button" value="/" name="operator"></td>
-		</tr>		
-	</tbody>
-</table><!--tablecalculator-->
-</section>
-<footer>
-<hr />
-	<nav>
-		<a class="backto" href="../index.html" title="Go Back to My HTML Tables Homework">Go Back to My HTML Tables Homework</a>
-	</nav>
-</footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <section>
+            <form>
+                <table id="tablecalculator" border="1">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><input type="text" placeholder="123" class="right" id="result" name="result"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="1" name="number"></td>
+                            <td><input type="button" value="2" name="number"></td>
+                            <td><input type="button" value="3" name="number"></td>
+                            <td><input type="button" value="+" name="operator"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="4" name="number"></td>
+                            <td><input type="button" value="5" name="number"></td>
+                            <td><input type="button" value="6" name="number"></td>
+                            <td><input type="button" value="-" name="operator"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="7" name="number"></td>
+                            <td><input type="button" value="8" name="number"></td>
+                            <td><input type="button" value="9" name="number"></td>
+                            <td><input type="button" value="*" name="operator"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" class="wide" value="0" name="number"></td>
+                            <td><input type="button" value="." name="operator"></td>
+                            <td><input type="button" value="/" name="operator"></td>
+                        </tr>
+                    </tbody>
+                </table><!--tablecalculator-->
+            </form>
+        </section>
+        <footer>
+        <hr />
+	        <nav>
+		        <a class="backto" href="../index.html" title="Go Back to My HTML Tables Homework">Go Back to My HTML Tables Homework</a>
+	        </nav>
+        </footer>
+    </body>
 </html>

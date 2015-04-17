@@ -1,0 +1,41 @@
+/* CSS Stylesheet 
+Index
+*/
+#wrapper {
+padding-left:20px;
+padding-right:20px;
+margin-left:auto;
+margin-right:auto;
+}
+h1, a , p, li{
+font-family:Calibri,Verdana,sans-serif;
+}
+.indexheading {
+color:#006633;
+}
+ol.homework {
+list-style-type:1;
+color:#006633;
+}
+.homework  li{
+line-height:150%;
+}
+.homework a:link {
+text-decoration:none;
+color:#999900;
+}
+.homework a:visited {
+text-decoration:none;
+color:#9999CC;
+}
+.homework a:hover, 
+.homework a:active {
+text-decoration:underline;
+color:#00CC99;
+}
+.footer {
+color:#006633;
+}
+.backto {
+font-size:0.8em;
+}

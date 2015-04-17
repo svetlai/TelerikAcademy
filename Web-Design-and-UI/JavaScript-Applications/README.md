@@ -1,4 +1,4 @@
-# Telerik Academy
+# Telerik Software Academy
 
 ## Web Design and UI Technologies ##
 

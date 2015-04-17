@@ -1,4 +1,4 @@
-# Telerik Academy
+# Telerik Software Academy
 
 ## Programming with C# ##
 
@@ -21,6 +21,7 @@
 * [Strings and Text Processing Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/06-Strings-Text-Processing)
 * [Exception Handling Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/07-Exception-Handling)
 * [Text Files Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/08-Text-Files)
+* [Team Project - Ninja Assassins] (https://github.com/TeamIceElemental-Telerik/NinjaAssassins)
 
 ### Object-Oriented Programming
 
@@ -32,3 +33,4 @@
 * [Common Type System Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/06-Common-Type-System)
 * [Exam Preparation Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-Preparation-Tasks)
 * [Exam 2015 Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-2015-Tasks)
+* [Team Project - Easter Farm] (https://github.com/TeamRaspberry-Telerik/EasterFarm)

@@ -1,4 +1,4 @@
-TelerikAcademy
+Telerik Software Academy
 ==============
 
 Homework and projects for Telerik Software Academy
@@ -24,6 +24,7 @@ Homework and projects for Telerik Software Academy
 * [Strings and Text Processing Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/06-Strings-Text-Processing)
 * [Exception Handling Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/07-Exception-Handling)
 * [Text Files Homework] (https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/C%23-Part-2/08-Text-Files)
+* [Team Project - Ninja Assassins] (https://github.com/TeamIceElemental-Telerik/NinjaAssassins)
 
 ### Object-Oriented Programming
 
@@ -35,6 +36,7 @@ Homework and projects for Telerik Software Academy
 * [Common Type System Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/06-Common-Type-System)
 * [Exam Preparation Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-Preparation-Tasks)
 * [Exam 2015 Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-2015-Tasks)
+* [Team Project - Easter Farm] (https://github.com/TeamRaspberry-Telerik/EasterFarm)
 
 ## Web Design and UI Technologies ##
 
@@ -43,7 +45,34 @@ Homework and projects for Telerik Software Academy
 1. [HTML Fundamentals Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/01-HTML-Fundamentals)
 *  [HTML Tables Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/02-HTML-Tables)
 *  [HTML Forms and Frames Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/03-HTML-Forms-Frames)
+*  [Semantic HTML Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/04-Semantic-HTML)
+
+### JavaScript UI and DOM
+
+* [Team Project - The Evil Pacman](https://github.com/TeamHercules-Telerik/TeamHercules)
 
 ### JavaScript Applications
 
 2. [Web Storages Homework - Sheep and Rams Game](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-Applications/02-Web-Storages-SheepAndRamsGame)
+
+## Software Technologies ##
+
+### Databases 
+
+* [Team Project - Football Database](https://github.com/TeamWolfRaider/TeamWork)
+
+### Web Services and Cloud
+
+* [Team Project - Teamwork System](https://github.com/Telerik-Team-Lychee/TeamWorkSystem)
+
+### End-to-End JavaScript Applications
+
+* [Team Project - Online shop for cool programmer's T-shirts](https://github.com/wIksS/OnlineStore)
+
+### ASP.NET Web Forms
+
+* Team Project - Drink and Rate: [Source](https://github.com/AynRandTelerik/DrinkAndRate) [Preview](http://drinkandrate.apphb.com)
+
+### ASP.NET MVC
+
+* [Individual Project - Like It](https://github.com/svetlai/LikeIt)

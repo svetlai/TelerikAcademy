@@ -1,0 +1,9 @@
+Add the following to the Web.config file in Visual Studio to enable working with LESS directly on the client:
+
+<configuration>  
+  <system.webServer>
+    <staticContent>
+      <mimeMap fileExtension=".less" mimeType="text/css"/>
+    </staticContent>
+  </system.webServer>
+</configuration>

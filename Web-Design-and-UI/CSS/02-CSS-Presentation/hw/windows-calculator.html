@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Windows Calculator</title>
+	<link type="text/css" rel="stylesheet" href="css/stylecalculator.css" />
+</head>
+<body>
+<section>
+<div id="calculatorouter">
+	<div id="head">
+		<p>Calculator</p>
+	</div>
+	<div id="calculatorinner">
+		<ul id="menu">
+			<li><span class="short">V</span>iew</li>
+			<li><span class="short">E</span>dit</li>
+			<li><span class="short">H</span>elp</li>
+		</ul>
+		<input type="text" value="8854455" id="result" name="result">
+		<table id="bits">
+			<tbody>
+				<tr>
+					<td>0000</td>
+					<td rowspan="2">0000</td>
+					<td rowspan="2">0000</td>
+					<td rowspan="2">0000</td>
+					<td>0000</td>
+					<td rowspan="2">0000</td>
+					<td rowspan="2">0000</td>
+					<td>0000</td>
+				</tr>
+				<tr class="grey">
+					<td>63</td>
+					<td>47</td>
+					<td>32</td>
+				</tr>
+				<tr>
+					<td>0000</td>
+					<td rowspan="2">0000</td>
+					<td rowspan="2">1000</td>
+					<td rowspan="2">0111</td>
+					<td>0001</td>
+					<td rowspan="2">1011</td>
+					<td rowspan="2">1011</td>
+					<td>0111</td>
+				</tr>
+				<tr class="grey">
+					<td>31</td>
+					<td>15</td>
+					<td>0</td>
+				</tr>
+			</tbody>
+		</table><!--bits-->
+		<div id="systemlengths">
+			<ul id="system">
+				<li><input type="radio" name="system" id="hex"/><label for="hex">Hex</label></li>
+				<li><input type="radio" name="system" id="doc" checked/><label for="doc">Dec</label></li>
+				<li><input type="radio" name="system" id="oct"/><label for="oct">Oct</label></li>
+				<li><input type="radio" name="system" id="bin"/><label for="bin">Bin</label></li>
+			</ul>
+			<ul id="lengths">
+				<li><input type="radio" name="lengths" id="qword" checked/><label for="qword">Qword</label></li>
+				<li><input type="radio" name="lengths" id="dword"/><label for="dword">Dword</label></li>
+				<li><input type="radio" name="lengths" id="word"/><label for="word">Word</label></li>
+				<li><input type="radio" name="lengths" id="byte"/><label for="byte">Byte</label></li>
+			</ul>
+		</div><!--systemlengths-->
+		<div id="buttons">
+			<input type="button" value=" " name="number" disabled>
+			<input type="button" value="Mod" name="number" class="special">
+			<input type="button" value="A" name="number" disabled class="letters">
+			<input type="button" value="MC" name="number" class="mbuttons">
+			<input type="button" value="MR" name="number" class="mbuttons">
+			<input type="button" value="MS" name="number" class="mbuttons">
+			<input type="button" value="M+" name="number" class="mbuttons">
+			<input type="button" value="M-" name="number" class="mbuttons">
+			<input type="button" value="(" name="number" class="special">
+			<input type="button" value=")" name="number" class="special">
+			<input type="button" value="B" name="number" disabled class="letters">
+			<input type="button" value="&larr;" name="number" class="special">
+			<input type="button" value="CE" name="number" class="special">
+			<input type="button" value="C" name="number" class="special">
+			<input type="button" value="&#177;" name="number" class="special">
+			<input type="button" value="&#8730;" name="number" disabled>
+			<input type="button" value="RoL" name="number" class="special">
+			<input type="button" value="RoR" name="number" class="special">
+			<input type="button" value="C" name="number" disabled class="letters">
+			<input type="button" value="7" name="number">
+			<input type="button" value="8" name="number">
+			<input type="button" value="9" name="number">
+			<input type="button" value="/" name="number" class="special">
+			<input type="button" value="%" name="number" disabled>
+			<input type="button" value="Or" name="number" class="special">
+			<input type="button" value="Xor" name="number" class="special">
+			<input type="button" value="D" name="number" disabled class="letters">
+			<input type="button" value="4" name="number">
+			<input type="button" value="5" name="number">
+			<input type="button" value="6" name="number">
+			<input type="button" value="*" name="number" class="special">
+			<input type="button" value="1/&chi;" name="number" disabled>
+			<input type="button" value="Lsh" name="number" class="special">
+			<input type="button" value="Rsh" name="number" class="special">
+			<input type="button" value="E" name="number" disabled class="letters">
+			<input type="button" value="1" name="number">
+			<input type="button" value="2" name="number">
+			<input type="button" value="3" name="number">
+			<input type="button" value="-" name="number" class="special">
+			<input type="button" value="=" name="number" class="equals special">
+			<input type="button" value="Not" name="number" class="special">
+			<input type="button" value="And" name="number" class="special">
+			<input type="button" value="F" name="number" disabled class="letters">
+			<input type="button" value="0" name="number" class="zero">
+			<input type="button" value="," name="number" disabled>
+			<input type="button" value="+" name="number" class="special">
+		</div><!--buttons-->
+	</div><!--calculatorinner-->
+</div><!--calculatorouter-->
+</section>
+<footer>
+<hr />
+	<nav>
+		<ul class="backto">
+			<li><a href="css/stylecalculator.css" title="Open CSS File" download>Open CSS File</a></li> <!--Works in IE 11 & Firefox; Chrome downloads it; download attribute not supported in Opera & Safari-->
+			<li><a href="css/stylecalculator.css" title="View CSS File" target="_blank">View CSS File in Browser</a></li> <!--Works in Firefox, Chrome, Safari & Opera; IE 11 opens it locally-->
+			<li><a href="../index.html" title="Go Back to My CSS Presentation Homework">Go Back to My CSS Presentation Homework</a></li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>

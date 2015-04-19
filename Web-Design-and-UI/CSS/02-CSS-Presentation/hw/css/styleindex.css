@@ -1,0 +1,41 @@
+/* CSS Stylesheet 
+Index
+*/
+#wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, a, p, li {
+    font-family: Calibri,Verdana,sans-serif;
+}
+
+.indexheading {
+    color: #2F4F4F;
+}
+
+.homework li {
+    line-height: 150%;
+}
+
+.homework a:link {
+    text-decoration: none;
+    color: #0094ff;
+}
+
+.homework a:visited {
+    text-decoration: none;
+    color: #79CDCD;
+}
+
+.homework a:hover,
+.homework a:active {
+    text-decoration: underline;
+    color: #388E8E;
+}
+
+.footer {
+    color: #2F4F4F;
+}

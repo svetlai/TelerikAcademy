@@ -1,0 +1,182 @@
+/* CSS Stylesheet */
+body {
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    color: #1E395B;
+    background-color: #eee;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    background-color: #aaa;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+#wrapper {
+    border: 2px solid #bbb;
+    background-color: #eee;
+    position: absolute;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ----- Aside Left ----- */
+aside#left {
+    float: left;
+    display: block;
+    position: relative;
+    width: 150px;
+}
+
+li.home {
+    background-image: url('../images/home.png');
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-top: 3px;
+}
+
+ul.navi {
+    list-style-type: none;
+}
+
+    ul.navi li {
+        margin-left: -40px;
+    }
+
+        ul.navi li a {
+            text-decoration: none;
+            color: black;
+        }
+
+            ul.navi li a:hover {
+                text-decoration: underline;
+            }
+/* ----- Aside Right ----- */
+aside#right {
+    float: right;
+    display: block;
+    position: relative;
+    width: 160px;
+    background-color: #fff;
+}
+
+    aside#right h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+ul.naviright {
+    list-style-type: none;
+    text-align: center;
+    border: 2px solid #bbb;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 150%;
+}
+
+    ul.naviright li {
+        margin-left: -40px;
+    }
+
+        ul.naviright li a {
+            color: red;
+        }
+
+            ul.naviright li a:hover {
+                color: black;
+            }
+
+input[type="text"]#search {
+    width: 120px;
+    float: left;
+}
+
+input[type="button"].bluebutton {
+    padding: 7px 25px;
+    background-color: #D1EEEE;
+    border: 1px solid #388E8E;
+    color: #00EEEE;
+    font-weight: bold;
+    border-radius: 2px;
+}
+/* ----- Main Section ----- */
+section {
+    display: block;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+
+    section h3 {
+        text-align: left;
+        clear: left;
+        margin-top: 5px;
+    }
+
+    section img {
+        float: left;
+        margin: 5px 15px 5px 5px;
+    }
+
+    section a {
+        color: red;
+    }
+
+        section a:hover {
+            color: black;
+        }
+
+input[type="button"].navbutton {
+    width: 150px;
+    padding: 2px 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 2px;
+}
+
+    input[type="button"].navbutton:hover {
+        background-color: #eee;
+    }
+
+p.bold {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.clearfix { /* ----- IE ----- */
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+/* ----- Footer ----- */
+.backto {
+    font-size: 0.9em;
+    font-family: Calibri,Verdana,sans-serif;
+    list-style-type: none;
+    margin-left: -30px;
+    line-height: 140%;
+}
+
+    .backto a {
+        color: red;
+    }

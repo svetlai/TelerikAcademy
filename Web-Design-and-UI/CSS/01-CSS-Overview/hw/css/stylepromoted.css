@@ -1,0 +1,80 @@
+/* CSS Stylesheet */
+body {
+    font-family: Calibri,Arial,sans-serif;
+    font-size: 14px;
+    color: #777;
+}
+
+table#tableemployees,
+table#tableemployees th,
+table#tableemployees td {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+    table#tableemployees th {
+        background-color: #66CD00;
+        color: #eee;
+        border-bottom-color: green;
+        padding-left: 5px;
+    }
+
+    table#tableemployees td {
+        border-bottom: 0;
+        border-top: 0;
+        padding-left: 5px;
+    }
+
+    table#tableemployees tr:nth-child(even) {
+        background: #eee;
+    }
+
+    table#tableemployees tr:nth-child(odd) {
+        background: #fff;
+    }
+
+    table#tableemployees col.firstcol {
+        width: 130px;
+    }
+
+    table#tableemployees col.secondcol {
+        width: 100px;
+    }
+
+    table#tableemployees col.thirdcol {
+        width: 130px;
+    }
+
+    table#tableemployees col.forthcol {
+        width: 90px;
+    }
+
+.germany {
+    background: url(../images/germany-flag.gif) no-repeat;
+    background-position: 5px 5px;
+    padding-left: 50px !important;
+}
+
+.mexico {
+    background: url(../images/mexico-flag.gif) no-repeat;
+    background-position: 5px 5px;
+    padding-left: 50px !important;
+}
+
+.uk {
+    background: url(../images/uk-flag.png) no-repeat;
+    background-position: 5px 5px;
+    padding-left: 50px !important;
+}
+/* ----- Footer ----- */
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+    list-style-type: none;
+    margin-left: -30px;
+    line-height: 140%;
+}

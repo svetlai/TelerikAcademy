@@ -1,0 +1,63 @@
+/* CSS Stylesheet */
+body {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+}
+
+table#tabletickets {
+    background-color: #666;
+    border: 0;
+    color: #ffffb2;
+}
+
+    table#tabletickets th {
+        font-size: 1.5em;
+        color: #aaa;
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    table#tabletickets td {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+        table#tabletickets td:first-child {
+            font-style: italic;
+            color: #ddd;
+            width: 120px;
+            vertical-align: top;
+        }
+
+        table#tabletickets td:last-child {
+            width: 240px;
+        }
+
+.greenbullet {
+    background: url(../images/greenbullet.png) no-repeat;
+    background-position: 0 0;
+    padding-left: 25px;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.grey {
+    color: #aaa;
+}
+
+.status {
+    color: orange;
+    font-weight: bold;
+}
+/* ----- Footer ----- */
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+    list-style-type: none;
+    margin-left: -30px;
+    line-height: 140%;
+}

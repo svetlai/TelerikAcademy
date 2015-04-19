@@ -1,0 +1,86 @@
+/* CSS Stylesheet */
+body {
+    font-size: 14px;
+    font-family: Calibri,Verdana,sans-serif;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+section {
+    background-color: #eee;
+    padding: 10px 10px;
+    width: 400px;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 10px 10px;
+    width: 380px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+    article img {
+        float: left;
+        position: relative;
+        width: 150px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+    }
+
+    article p {
+        padding-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+.imp {
+    font-weight: bold;
+}
+
+.buttons {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+    .buttons a {
+        text-decoration: none;
+        padding: 3px 18px;
+        color: #fff;
+        border: 2px outset #cc0001;
+        text-shadow: 1px -1px rgba(255,255,255, .3);
+    }
+
+.listen {
+    background: url('../images/listen.png');
+}
+
+.add {
+    background: url('../images/add.png');
+}
+
+.clearfix { /* ----- IE ----- */
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+/* ----- Footer ----- */
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+    list-style-type: none;
+    margin-left: -30px;
+    line-height: 140%;
+}

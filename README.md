@@ -47,6 +47,14 @@ Homework and projects for Telerik Software Academy
 *  [HTML Forms and Frames Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/03-HTML-Forms-Frames)
 *  [Semantic HTML Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/HTML/04-Semantic-HTML)
 
+### CSS
+
+1. [CSS Overview Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/CSS/01-CSS-Overview)
+*  [CSS Presentation Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/CSS/02-CSS-Presentation)
+*  [CSS Layout Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/CSS/03-CSS-Layout)
+*  [LESS Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/CSS/04-LESS)
+*  [SASS Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/CSS/05-SASS)
+
 ### JavaScript UI and DOM
 
 * [Team Project - The Evil Pacman](https://github.com/TeamHercules-Telerik/TeamHercules)

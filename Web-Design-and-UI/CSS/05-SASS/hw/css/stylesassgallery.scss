@@ -1,0 +1,57 @@
+body {
+    section {
+        ul li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 5px;
+
+            label img {
+                width: 10%;
+                height: 10%;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            input[type="radio"] {
+                display: none;
+
+                & + img {
+                    display: none;
+                    margin-top: 10px;
+                    position: absolute;
+                }
+
+                &:checked + img {
+                    display: block;
+                    width: 420px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    // section
+    footer {
+        position: absolute;
+        bottom: 0;
+
+        nav {
+            ul {
+                &.backto {
+                    font-size: 0.8em;
+                    font-family: Calibri,Verdana,sans-serif;
+                    list-style-type: none;
+                    line-height: 140%;
+                    color: #000;
+
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        // nav
+    }
+    //footer
+}

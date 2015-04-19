@@ -1,0 +1,47 @@
+body section ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 5px;
+}
+
+    body section ul li label img {
+        width: 10%;
+        height: 10%;
+    }
+
+        body section ul li label img:hover {
+            opacity: 0.5;
+        }
+
+    body section ul li input[type="radio"] {
+        display: none;
+    }
+
+        body section ul li input[type="radio"] + img {
+            display: none;
+            margin-top: 10px;
+            position: absolute;
+        }
+
+        body section ul li input[type="radio"]:checked + img {
+            display: block;
+            width: 420px;
+            height: auto;
+        }
+
+body footer {
+    position: absolute;
+    bottom: 0;
+}
+
+    body footer nav ul.backto {
+        font-size: 0.8em;
+        font-family: Calibri,Verdana,sans-serif;
+        list-style-type: none;
+        line-height: 140%;
+        color: #000;
+    }
+
+        body footer nav ul.backto a {
+            color: #000;
+        }

@@ -1,0 +1,133 @@
+/* CSS Stylesheet */
+body {
+    font-size: 14px;
+    font-family: Calibri,Verdana,sans-serif;
+}
+
+#wrapper {
+    background-color: #8FBC8F;
+    position: relative;
+    width: 700px;
+    border: 1px solid #3CB371;
+    border-radius: 5px;
+}
+
+header#main {
+    height: 30px;
+}
+
+ul.mainmenu,
+ul.news {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+    ul.mainmenu li {
+        display: inline-block;
+    }
+
+    ul.mainmenu a {
+        color: #E0EEE0;
+        padding: 10px;
+        background-color: #B7C8B6;
+        font-weight: bold;
+    }
+
+        ul.mainmenu a:link,
+        ul.mainmenu a:visited {
+            text-decoration: none;
+        }
+
+        ul.mainmenu a:hover {
+            text-decoration: underline;
+        }
+
+        ul.mainmenu a:active,
+        .active {
+            color: white !important;
+            text-decoration: none !important;
+            background-color: #8FBC8F !important;
+        }
+
+article {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+    article header {
+        width: 250px;
+        background-color: #3CB371;
+    }
+
+    article h1 {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        color: white;
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    article img {
+        position: relative;
+        width: 420px;
+        margin-top: 0;
+        float: right;
+    }
+
+ul.news {
+    float: left;
+    position: relative;
+    width: 250px;
+    margin-top: -15px;
+}
+
+    ul.news li {
+        padding: 10px;
+        border-bottom: 1px solid #B7C8B6;
+    }
+
+        ul.news li:last-child {
+            padding-bottom: 0px;
+            border-bottom: 0px solid #B7C8B6;
+        }
+
+    ul.news a {
+        color: #E0EEE0;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        ul.news li:hover {
+            background-color: #3CB371;
+        }
+
+.clearfix { /*  IE  */
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+/* ----- Footer ----- */
+footer {
+    position: relative;
+    clear: left;
+}
+
+.backto {
+    font-size: 0.8em;
+    font-family: Calibri,Verdana,sans-serif;
+    list-style-type: none;
+    margin-left: -30px;
+    line-height: 140%;
+}
+
+    .backto a {
+        color: #E0EEE0;
+    }

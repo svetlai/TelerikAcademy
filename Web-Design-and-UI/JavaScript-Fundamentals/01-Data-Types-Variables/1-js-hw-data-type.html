@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1. JavaScript Homework - Data Types and Variables</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <section>
+        <h1>1. JavaScript Homework - Data Types and Variables</h1>
+        <article>
+            <h1>1. Assign all the possible JavaScript literals to different variables.</h1>
+            <pre><code class="task">
+var intLit = 1,					//Integer
+    floatLit = 1.5,				//Floating-point
+    boolLit = true,				//Boolean
+    stringLit = "This is a string literal.",	//String
+    objectLit = {name:"John", age:26},		//Object
+    arrayLit = ["red", "blue", "green"];	//Array
+    functionLit = function functionName(a, b) {
+			return(a + b);
+    };						//Function
+			</code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="intLit" onclick="displayLitInConsole(intLit)" />
+            <input type="button" class="inline" value="floatLit" onclick="displayLitInConsole(floatLit)" />
+            <input type="button" class="inline" value="boolLit" onclick="displayLitInConsole(boolLit)" />
+            <input type="button" class="inline" value="stringLit" onclick="displayLitInConsole(stringLit)" />
+            <input type="button" class="inline" value="objectLit" onclick="displayLitInConsole(objectLit)" />
+            <input type="button" class="inline" value="arrayLit" onclick="displayLitInConsole(arrayLit)" />
+            <input type="button" class="inline" value="functionLit" onclick="displayLitInConsole(functionLit)" />
+        </article>
+        <article>
+            <h1>2. Create a string variable with quoted text in it. For example: 'How you doin'?', Joey said.</h1>
+            <pre><code class="task">
+var quotedString = "'How you doin'?', Joey said.";
+			</code></pre>
+            <input type="button" class="displayString" value="console.log" onclick="displayLitInConsole(quotedString)" />
+            <p>Alternative:</p>
+            <pre><code class="task">
+var quotedString = "\"How you doin'?\", Joey said.";
+			</code></pre>
+            <input type="button" class="displayString" value="console.log" onclick="displayLitInConsole(quotedString2)" />
+        </article>
+        <article>
+            <h1>3. Try typeof on all variables you created.</h1>
+            <pre><code class="task">
+typeof(intLit);		//number
+typeof(floatLit);	//number
+typeof(boolLit);	//boolean
+typeof(stringLit);	//string
+typeof(objectLit);	//object
+typeof(arrayLit);	//object
+typeof(arrayLit);	//object
+typeof(functionLit);	//function
+			</code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="intLit" onclick="displayTypeOf(intLit)" />
+            <input type="button" class="inline" value="floatLit" onclick="displayTypeOf(floatLit)" />
+            <input type="button" class="inline" value="boolLit" onclick="displayTypeOf(boolLit)" />
+            <input type="button" class="inline" value="stringLit" onclick="displayTypeOf(stringLit)" />
+            <input type="button" class="inline" value="objectLit" onclick="displayTypeOf(objectLit)" />
+            <input type="button" class="inline" value="arrayLit" onclick="displayTypeOf(arrayLit)" />
+            <input type="button" class="inline" value="functionLit" onclick="displayTypeOf(functionLit)" />
+        </article>
+        <article>
+            <h1>4. Create null, undefined variables and try typeof on them.</h1>
+            <pre><code class="task">
+var nullVar = null,
+    undefinedVar = undefined;
+			</code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="nullVar" onclick="displayTypeOf(nullVar)" />
+            <input type="button" class="inline" value="undefinedVar" onclick="displayTypeOf(undefinedVar)" />
+        </article>
+    </section>
+    <div id="consoleWrapper">
+        <input type="button" class="clear" value="Clear Console" onclick="clearConsole()" />
+        <div id="js-console">
+        </div>
+    </div>
+    <script src="scripts/1-js-hw-data-type.js" type="text/javascript"></script>
+    <script src="scripts/1-js-hw-preview-tasks.js" type="text/javascript"></script>
+    <script src="scripts/js-console.js"></script>
+</body>
+</html>

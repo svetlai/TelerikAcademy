@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>6. JavaScript Homework - Functions</title>
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div id="wrapper">
+	<section>
+        <h1>6. JavaScript Homework - Functions</h1>
+		<article>
+			<h1>1. Write a function that returns the last digit of given integer as an English word. Examples: 512 > "two", 1024 > "four", 12309 > "nine".
+            </h1>
+			<pre><code class="task">
+function findLastDigitName(number) {
+    var lastDigit = number % 10;
+
+    switch (lastDigit) {
+        case 0: return 'zero';
+        case 1: return 'one';
+        case 2: return 'two';
+        case 3: return 'three';
+        case 4: return 'four';
+        case 5: return 'five';
+        case 6: return 'six';
+        case 7: return 'seven';
+        case 8: return 'eight';
+        case 9: return 'nine';
+        default : throw new TypeError('Invalid number.');
+    }
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a1">Enter Number</label>
+	        <input type="text" id="a1" />
+			<input type="button" class="inline" value="Last Digit Name" onclick="printLastDigitName()" />
+		</article>
+        <article>
+			<h1>2. Write a function that reverses the digits of given decimal number. Example: 256 > 652.
+            </h1>
+			<pre><code class="task">
+function reverseNumber(number) {
+    var numberAsArray,
+            reversedArr,
+            reversed;
+
+    numberAsArray = number.split('').map(function (el) {
+        return +el;
+    });
+
+    reversedArr = numberAsArray.reverse();
+    reversed = reversedArr.join('');
+
+    return reversed;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a2">Enter Number</label>
+	        <input type="text" id="a2" />
+			<input type="button" class="inline" value="Reverse Number" onclick="printReversedNumber()" />
+		</article>
+        <article>
+			<h1>3. Write a function that finds all the occurrences of word in a text. The search can be case sensitive or case insensitive. Use function overloading.
+            </h1>
+			<pre><code class="task">
+function wordSearch(word, text, isCaseSensitive) {
+    var replaced = ' ' + text.replace(/\W+/g, ' ') + ' ', // removes punctuation
+            word = " " + word + " ",	//whole word
+            searchStrLen = word.length,
+            startIndex = 0,
+            wordIndex = 0,
+            foundWordIndices = [];
+
+    isCaseSensitive = isCaseSensitive || false;
+
+    if (isCaseSensitive === false) {
+        replaced = replaced.toLowerCase();
+        word = word.toLowerCase();
+    }
+
+    while ((wordIndex = replaced.indexOf(word, startIndex)) > -1) {
+        foundWordIndices.push(wordIndex);
+        startIndex = wordIndex + searchStrLen;
+    }
+
+    return {
+        word: word.trim(),
+        count: foundWordIndices.length,
+        indices: foundWordIndices
+    }
+}
+
+function wordOccurrencesMessage(wordOccurrences) {
+    var output = "";
+
+    console.log(wordOccurrences.indices);
+    if (wordOccurrences.count === 0) {
+        return "Not found.";
+    } else {
+        for (var i = 0; i < wordOccurrences.indices.length; i += 1) {
+            output += wordOccurrences.indices[i] + ': ' + '"' + wordOccurrences.word + '"';
+
+            if (i < wordOccurrences.indices.length - 1) {
+                output += ", ";
+            }
+        }
+
+        return '"' + wordOccurrences.word + '" was found ' + wordOccurrences.count + ' times in random text. Index: ' + output;
+    }
+}
+			</code></pre>
+            <div id="randomtext">This is some random text. He oppose at thrown desire of no. Announcing impression unaffected day his are unreserved indulgence. Him hard find read are you sang. Parlors visited noisier how explain pleased his see suppose. Do ashamed assured on related offence at equally totally. Use mile her whom they its. Kept hold an want as he bred of. Was dashwood landlord cheerful husbands two. Estate why theirs indeed him polite old settle though she. In as at regard easily narrow roused adieus.
+                                 Am finished rejoiced drawings so he elegance. Set lose dear upon had two its what seen. Held she sir how know what such whom. Esteem put uneasy set piqued son depend her others. Two dear held mrs feet view her old fine. Bore can led than how has rank. Discovery any extensive has commanded direction. Short at front which blind as. Ye as procuring unwilling principle by. 
+            </div>
+			<p>Try it in the Console:</p>
+            <label for="a3">Search for Word</label>
+	        <input type="text" id="a3" />
+			<label for="b3">Case Sensitive</label>
+			<input type="checkbox" id="b3" name="casesensitive">
+			<input type="button" class="inline" value="Search Word" onclick="printWordOccurences()" />
+		</article>
+        <article>
+			<h1>4. Write a function to count the number of divs on the web page.
+            </h1>
+			<pre><code class="task">
+function countTags(tagToCount) {
+    return divCount = document.getElementsByTagName(tagToCount).length;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<input type="button" class="inline" value="Count Divs" onclick="printCountedTags('div')" />
+		</article>
+        <article>
+			<h1>5. Write a function that counts how many times given number appears in given array. Write a test function.
+            </h1>
+			<pre><code class="task">
+function getFrequencyOfNum(arr, number) {
+    var count = 0,
+            outputStr = "";
+
+    for (var i = 0, l = arr.length; i < l; i += 1) {
+        if (number === arr[i]) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+//Test
+function testFrequencyOfNum(arr, number, expected) {
+    return getFrequencyOfNum(arr, number) === expected;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<p>How often does 0 appear in arr: [1, 5, 3, 2, 9, 0, 6, 5, 2, 0]?
+			<input type="button" class="inline" value="Count" onclick="printFrequencyOfNum()" /></p>
+			<p>Run a test:</p>
+            <p>Expected: 2
+			<input type="button" class="inline" value="Test Count" onclick="printTestFrequencyResults()" /></p>
+		</article>
+        <article>
+			<h1>6. Write a function that checks if the element at given position in given array of integers is bigger than its two neighbours (when such exist).
+            </h1>
+			<pre><code class="task">
+function isBiggerThanNeighbors(arr, index) {
+    var l = arr.length;
+
+    if (index < 0 || index > l - 1 || isNaN(index)) {
+        throw new Error('Invalid index.');
+    }
+
+    if (index > 0 && index < l - 1 && (arr[index] > arr[index - 1] && arr[index] > arr[index + 1])
+            || index === 0 && arr[0] > arr[1]
+            || index === (l - 1) && arr[l - 1] > arr[l - 2]) {
+        return true;
+    }
+
+    return false;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<p>Given array: [2, 3, 4, 5, 6, 7, 1, 3, 7, 8]</p>
+			<label for="a6">Type an index number (position in array) between 0 and 9:</label>
+	        <input type="text" id="a6" />
+			<input type="button" class="inline" value="Check Neighbours" onclick="printCheckNeighbors()" />
+		</article>
+        <article>
+			<h1>7. Write a function that returns the index of the first element in array that is bigger than its neighbours, or -1, if there's no such element. Use the function from the previous exercise.
+
+            </h1>
+			<pre><code class="task">
+function firstBiggerThanNeighbours(arr) {
+    var bigger;
+
+    for (var index = 0, l = arr.length; index < l; index++) {
+        bigger = isBiggerThanNeighbors(arr, index);
+
+        if (bigger) {
+            return index;
+        }
+    }
+
+    return -1;
+}			</code></pre>
+			<p>Try it in the Console:</p>
+			<label for="a7">Type a sequence of numbers, separated by a coma. Example: 1,2,3</label>
+	        <input type="text" id="a7" />
+			<input type="button" class="inline" value="Index of Bigger" onclick="printFirstBiggerThanNeighbours()" />
+		</article>
+	</section>
+	<div id="consoleWrapper">
+		<input type="button" class="clear" value="Clear Console" onclick="clearConsole()" />
+		<div id="js-console">
+		</div>
+	</div>
+	<script src="scripts/6-js-hw-functions.js"></script>
+	<script src="scripts/preview/6-js-hw-preview-tasks.js"></script>
+	<script src="scripts/preview/js-console.js"></script>
+</div>
+</body>
+</html>

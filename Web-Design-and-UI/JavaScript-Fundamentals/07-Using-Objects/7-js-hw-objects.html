@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>7. JavaScript Homework - Objects</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<div id="wrapper">
+    <section>
+        <h1>7. JavaScript Homework - Objects</h1>
+        <article>
+            <h1>1. Write functions for working with shapes in standard Planar coordinate system.
+                Points are represented by coordinates P(X, Y).
+                Lines are represented by two points, marking their beginning and ending L(P1(X1,Y1), P2(X2,Y2)).
+                Calculate the distance between two points.
+                Check if three segment lines can form a triangle. </h1>
+			<pre><code class="task">
+function getPoint(x, y) {
+    var point = {
+        x: x,
+        y: y
+    };
+
+    return point;
+}
+
+function getLine(startPoint, endPoint){
+    var line = {
+        start: startPoint,
+        end: endPoint
+    };
+
+    return line;
+}
+
+function calculateDistance(line) {
+    var dx = Math.pow((line.start.x - line.end.x), 2),
+            dy = Math.pow((line.start.y - line.end.y), 2),
+            distance =  Math.sqrt(dx + dy);
+
+    return distance;
+}
+
+function canFormTriangle(firstLine, secondLine, thirdLine){
+    var firstLength = calculateDistance(firstLine),
+            secondLength = calculateDistance(secondLine),
+            thirdLength = calculateDistance(thirdLine);
+
+    if (firstLength + secondLength > thirdLength && firstLength + thirdLength > secondLength && secondLength + thirdLength > firstLength) {
+        return true;
+    }
+
+    return false;
+}
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <label for="a1">Enter Coordinates for A(x,y). Example: 1,2 </label>
+            <input type="text" id="a1"/><br/>
+            <label for="b1">Enter Coordinates for B(x,y). Example: 1,2 </label>
+            <input type="text" id="b1"/><br/>
+            <label for="c1">Enter Coordinates for C(x,y). Example: 1,2 </label>
+            <input type="text" id="c1"/>
+            <input type="button" class="inline" value="Check for Triangle" onclick="printPlanarCoordinates()"/>
+        </article>
+        <article>
+            <h1>2. Write a function that removes all elements with a given value.
+                Attach it to the array type.
+                Read about prototype and how to attach methods. </h1>
+			<pre><code class="task">
+Array.prototype.remove = function (value) {
+    for (var i in this){
+        if (this[i] === value) {
+            this.splice(i, 1);
+        }
+    }
+
+    return this;
+}
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <label for="a2">Type a sequence of numbers, separated by a coma. Example: 1,2,3</label>
+            <input type="text" id="a2"/><span> <-- arr;</span><br/>
+            <label for="b2">Enter element value to be removed.</label>
+            <input type="text" id="b2"/><span> <-- value;</span><br/>
+            <input type="button" class="inline" value="arr.remove(value)" onclick="removeElementFromArray()"/>
+        </article>
+        <article>
+            <h1>3. Write a function that makes a deep copy of an object. The function should work for both primitive and
+                reference types.
+            </h1>
+			<pre><code class="task">
+function deepCopy(obj) {
+    var copy = obj instanceof Array ? [] : {};
+
+    if (obj === null || typeof(obj) !== 'object') {
+        return obj;
+    }
+
+    for (var i in obj) {
+        if (typeof(obj[i]) === 'object') {
+            copy[i] = deepCopy(obj[i])
+        } else {
+            copy[i] = obj[i];
+        }
+    }
+
+    return copy;
+}
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Copy number" onclick="printDeepCopy(1)"/>
+            <input type="button" class="inline" value="Copy string" onclick="printDeepCopy('random string')"/>
+            <input type="button" class="inline" value="Copy boolean" onclick="printDeepCopy(true)"/>
+            <input type="button" class="inline" value="Copy array" onclick="printDeepCopy([1,2,3])"/>
+            <input type="button" class="inline" value="Copy object" onclick="printDeepCopy({ a: 1, b: 2 })"/>
+        </article>
+        <article>
+            <h1>4. Write a function that checks if a given object contains a given property.
+            </h1>
+			<pre><code class="task">
+function hasProperty(obj, prop) {
+    if (prop in obj) {
+        return true;
+    }
+
+    return false;
+}            </code></pre>
+            <p>Try it in the Console:</p>
+			<pre><code class="task">
+var obj = {
+            fname: "brad",
+            lname: "kolev",
+            age: 21,
+            eyecolor: "blue",
+            height: 180,
+            weight: 75
+}
+
+var arr = [1, 2, 3];
+
+hasProperty(obj, prop);
+hasProperty(arr, prop);
+            </code></pre>
+            <label for="a4">Check for property: </label>
+            <input type="text" id="a4"/>
+            <input type="button" class="inline" value="obj has property?" onclick="objHasPropBtn(obj)"/>
+            <input type="button" class="inline" value="arr has property?" onclick="objHasPropBtn(arr)"/>
+        </article>
+        <article>
+            <h1>5. Write a function that finds the youngest person in a given array of persons and prints his/hers full
+                name.
+                Each person have properties firstname, lastname and age.
+            </h1>
+			<pre><code class="task">
+function findYoungestPerson(persons) {
+    var youngest = {},
+            min = 200;
+
+    for (var i = 0; i < persons.length; i += 1) {
+        if (persons[i].age < min) {
+            min = persons[i].age;
+            youngest = persons[i];
+        }
+    }
+
+    return youngest.firstname + " " + youngest.lastname;
+}
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <pre><code class="task">
+var persons = [
+    {firstname: 'Gosho', lastname: 'Petrov', age: 32},
+    {firstname: 'Bay', lastname: 'Ivan', age: 81},
+    {firstname: 'Holly', lastname: 'Berry', age: 21}];
+
+findYoungestPerson(persons);
+            </code></pre>
+            <input type="button" class="inline" value="Find Youngest" onclick="youngestPersonBtn()"/>
+        </article>
+        <article>
+            <h1>7. Write a function that groups an array of persons by
+                age, first or last name. The function must return an
+                associative array, with keys - the groups, and values -
+                arrays with persons in this groups.
+                Use function overloading (i.e. just one function).
+            </h1>
+			<pre><code class="task">
+function group(people, criterion) {
+    var arr = [];
+
+    for (var i in people) {
+        for (var prop in persons[i]) {
+            if (people[i][prop] === criterion) {
+                arr.push(people[i]);
+            }
+        }
+    }
+
+    if (arr.length > 0) {
+        return {key: criterion, value: arr};
+    } else {
+        return "There's no person with such data.";
+    }
+}            </code></pre>
+            <p>Try it in the Console:</p>
+			<pre><code class="task">
+var people = [
+    {firstname: "Gosho", lastname: "Petrov", age: 32},
+    {firstname: "Bay", lastname: "Ivan", age: 81},
+    {firstname: "Gosho", lastname: "Berry", age: 18},
+    {firstname: "Holly", lastname: "Berry", age: 21},
+    {firstname: "Nikki", lastname: "Watson", age: 32}];
+
+var groupByFname = group(people, "Gosho");
+var groupByLname = group(people, "Berry");
+var groupByAge = group(people, '32');
+			</pre>
+            </code>
+            <input type="button" class="inline" value="Group by Fisrt Name" onclick="groupPeople('Gosho')"/>
+            <input type="button" class="inline" value="Group by Last Name" onclick="groupPeople('Berry')"/>
+            <input type="button" class="inline" value="Group by Age" onclick="groupPeople(32)"/>
+        </article>
+    </section>
+    <div id="consoleWrapper">
+        <input type="button" class="clear" value="Clear Console" onclick="clearConsole()"/>
+
+        <div id="js-console">
+        </div>
+    </div>
+    <script src="scripts/7-js-hw-objects.js"></script>
+    <script src="scripts/preview/js-console.js"></script>
+    <script src="scripts/preview/7-js-hw-preview-tasks.js"></script>
+</div>
+</body>
+</html>

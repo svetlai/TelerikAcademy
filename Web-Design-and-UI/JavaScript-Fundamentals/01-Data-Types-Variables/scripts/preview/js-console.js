@@ -47,11 +47,11 @@
             return parseFloat(text);
         }
 
+        self.clear = function clear() {
+            textArea.innerHTML = "";
+        }
+
         return self;
     }
     jsConsole = new createJsConsole("#js-console");
 }).call(this);
-
-function clearConsole() {
-    document.location.reload();
-}

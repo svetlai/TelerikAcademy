@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>5. JavaScript Homework - Arrays</title>
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div id="wrapper">
+	<section>
+        <h1>5. JavaScript Homework - Arrays</h1>
+		<article>
+			<h1>1. Write a script that allocates array of 20 integers and initializes each element by its index multiplied by 5. Print the obtained array on the console.
+            </h1>
+			<pre><code class="task">
+function increaseArrayNumbers() {
+    var arr = new Array(20);
+
+    for (var i = 0, l = arr.length; i < l; i++) {
+	    arr[i] = i * 5;
+	}
+
+	return arr;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<input type="button" class="inline" value="Print Array" onclick="printIncreasedArray()" />
+		</article>
+		<article>
+			<h1>2. Write a script that compares two char arrays lexicographically (letter by letter).
+            </h1>
+			<pre><code class="task">
+var first = ["a", "x", "c", "d"],
+    second = ["k", "l", "c", "z"];
+
+function compareCharArrays(first, second) {
+    if (first.length !== second.length){
+        return false
+    }
+
+    for (var i = 0; i < first.length; i+=1) {
+        if (first[i] !== second[i]){
+            return false;
+        }
+    }
+
+    return true;
+}
+</code></pre>
+			<p>Try it in the Console:</p>
+			<input type="button" class="inline" value="Compare Arrays" onclick="printCharArraysComparison()" />
+		</article>
+		<article>
+			<h1>3. Write a script that finds the maximal sequence of equal elements in an array. Example: {2, 1, 1, 2, 3, 3, 2, 2, 2, 1} > {2, 2, 2}.
+            </h1>
+			<pre><code class="task">
+function findMaxEqualSequence(arr) {
+    var seqStart,
+            seqLength = 1,
+            max = seqLength,
+            maxSequence = [],
+            outputStr = "";
+
+    for (var i = 0, l = arr.length; i < l - 1; i+=1) {
+        if (arr[i] === arr[i + 1]) {
+            seqLength++;
+            if (seqLength > max) {
+                max = seqLength;
+                seqStart = arr[i];
+            }
+        } else {
+            seqLength = 1;  // reset
+        }
+    }
+
+    for (var j = 0; j < max; j+=1) {
+        maxSequence.push(seqStart);
+    }
+
+    return {
+        max: max,
+        maxSequence: maxSequence
+    }
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<input type="button" class="inline" value="Equal Elements" onclick="printMaxSequence()" />
+		</article>
+		<article>
+			<h1>4. Write a script that finds the maximal increasing sequence in an array. Example: {3, 2, 3, 4, 2, 2, 4} > {2, 3, 4}.
+            </h1>
+			<pre><code class="task">
+function findMaxIncreasingSequence(arr) {
+    var seqEnd,
+            seqLength = 1,
+            max = seqLength,
+            maxSequence = [];
+
+    for (var i = 1, l = arr.length; i < l; i++) {
+        if (arr[i] === arr[i - 1] + 1) {
+            seqLength++;
+            if (seqLength >= max) {
+                max = seqLength;
+                seqEnd = arr[i];
+            }
+        } else {
+            seqLength = 1;  //reset
+        }
+    }
+
+    for (var j = 0; j < max; j++) {
+        maxSequence.push(seqEnd);
+        seqEnd--;
+    }
+
+    maxSequence.reverse();
+
+    return {
+        max: max,
+        maxSequence: maxSequence
+    }
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<input type="button" class="inline" value="Increasing Sequence" onclick="printMaxIncreasingSequence()" />
+		</article>
+		<article>
+			<h1>5. Sorting an array means to arrange its elements in increasing order. Write a script to sort an array. Use the "selection sort" algorithm: Find the smallest element, move it at the first position, find the smallest from the rest, move it at the second position, etc.Hint: Use a second array.
+                Sample array: {4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3}
+            </h1>
+			<pre><code class="task">
+function selectionSort(arr) {
+    var min,
+        sorted = [];
+
+    while(arr.length) {
+        min = 0;
+        for (var i = 0, l = arr.length; i < l; i+=1) {
+            if (arr[i] < arr[min]){
+                min = i;
+            }
+        }
+
+        sorted.push(arr[min]);
+        arr.splice(min, 1);
+    }
+
+    return sorted;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a5">Type a sequence of numbers, separated by a coma. Example: 1,2,3</label>
+	        <input type="text" id="a5" />
+			<input type="button" class="inline" value="Sort Array" onclick="printSelectionSort()" />
+		</article>
+		<article>
+			<h1>6. Write a program that finds the most frequent number in an array. Example: {4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3} > 4 (5 times)
+            </h1>
+			<pre><code class="task">
+function findMostFrequent(arr) {
+    var start = arr[0],
+        count = 1,
+        mostFrequent = count;
+
+    arr.sort(function (a, b) {
+        return a - b;       //ascending
+    });
+
+    for (var i = 0, l = arr.length; i < l - 1; i++) {
+        if (arr[i] === arr[i + 1]) {
+            count++;
+            if (count > mostFrequent) {
+                mostFrequent = count;
+                start = arr[i];
+            }
+        } else {
+            count = 1;  //reset
+        }
+    }
+
+    return {
+        count: mostFrequent,
+        start: start
+    };
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a6">Type a sequence of numbers, separated by a coma. Example: 1,2,3</label>
+	        <input type="text" id="a6" />
+			<input type="button" class="inline" value="Most Frequent" onclick="printMostFrequent()" />
+		</article>
+		<article>
+			<h1>7. Write a program that finds the index of given element in a sorted array of integers by using the binary search algorithm (find it in Wikipedia).
+                Example: {1, 2, 3, 4, 5, 12} > 3 > (index: 2)
+            </h1>
+			<pre><code class="task">
+function binarySearch(arr, x) {
+
+    arr.sort(function (a, b) {
+            return a - b;       //ascending
+        });
+
+    var indexX,
+        l = arr.length,
+        middleIndex = Math.floor(l / 2),
+        middle = arr[middleIndex],
+        outputStr = "";
+
+    if (x === middle) {
+        indexX = middleIndex;
+    } else if (x < middle) {
+        for (var i = 0; i < middleIndex; i++) {
+            if (x === arr[i]) {
+                indexX = i;
+                break;
+            }
+        }
+    } else {
+        for (var j = 0; j > middleIndex, j < l; j++) {
+            if (x === arr[j]) {
+                indexX = j;
+                break;
+            }
+        }
+    }
+
+    return indexX;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a7">Type a sequence of numbers, separated by a coma. Example: 1,2,3</label>
+	        <input type="text" id="a7" /><br />
+            <label for="b7">Enter element to find its index.</label>
+	        <input type="text" id="b7" />
+			<input type="button" class="inline" value="Find Index" onclick="binarySearchBtn()" />
+		</article>
+	</section>
+	<div id="consoleWrapper">
+		<input type="button" class="clear" value="Clear Console" onclick="clearConsole()" />
+		<div id="js-console">
+		</div>
+	</div>
+	<script src="scripts/5-js-hw-arrays.js"></script>
+	<script src="scripts/preview/js-console.js"></script>
+    <script src="scripts/preview/5-js-hw-preview-tasks.js"></script>
+</div>
+</body>
+</html>

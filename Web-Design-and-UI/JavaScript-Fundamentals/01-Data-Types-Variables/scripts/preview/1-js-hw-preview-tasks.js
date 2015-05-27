@@ -12,3 +12,7 @@ function displayTypeOf(literal) {
     console.log(typeof (literal));
     jsConsole.writeLine(typeof (literal));
 }
+
+function clearConsole() {
+    jsConsole.clear();
+}

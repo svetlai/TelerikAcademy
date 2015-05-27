@@ -164,8 +164,10 @@ node_modules/
 #Web Design and UI
 *.sln
 *.csproj
-2014-Homeworks/
+2014 Homeworks/
 Properties/
+.idea/
+*.config
 
 # RIA/Silverlight projects
 Generated_Code/

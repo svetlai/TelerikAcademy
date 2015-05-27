@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>4. JavaScript Homework - Loops</title>
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div id="wrapper">
+	<section>
+        <h1>4. JavaScript Homework - Loops</h1>
+		<article>
+			<h1>1. Write a script that prints all the numbers from 1 to N.
+            </h1>
+			<pre><code class="task">
+function printNumbers(upperLimit){
+	var outputStr = "";
+	
+	for (var i = 1; i <= upperLimit; i++) {
+		outputStr += i;
+		if (i !== upperLimit) {
+			outputStr += ", ";
+		}
+	}
+
+	return outputStr;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a1">Enter number </label>
+	        <input type="text" id="a1" />
+			<input type="button" class="inline" value="Print Numbers" onclick="printNumbersOnClick()" />
+
+		</article>
+		<article>
+			<h1>2. Write a script that prints all the numbers from 1 to N, that are not divisible by 3 and 7 at the same time.
+            </h1>
+			<pre><code class="task">
+function printNotDivBy3And7(upperLimit) {
+    var outputStr = "";
+	
+	for (var i = 1; i <= upperLimit; i++) {
+	    var divisible = (i % 3 === 0) && (i % 7 === 0);
+
+	    if (!divisible) {
+			outputStr += i;
+			if (i < upperLimit) {
+			    outputStr += ", ";
+			}
+		}
+	}
+
+	return outputStr;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a2">Enter Number: </label>
+	        <input type="text" id="a2" />
+			<input type="button" class="inline" value="Print Numbers" onclick="printNotDivBy3And7OnClick()" />
+		</article>
+		<article>
+			<h1>3. Write a script that finds the max and min number from a sequence of numbers.
+            </h1>
+			<pre><code class="task">
+function findMaxAndMin(sequence) {
+      var  sequenceArr = sequence.split(",").map(function (el) {
+                                                        return +el;
+                                                    }),   //converts array string elements into numbers
+        max = sequenceArr[0],
+        min = sequenceArr[0];
+
+    for (var i in sequenceArr) {
+        if (sequenceArr[i] > max) {
+            max = sequenceArr[i];
+        } else if (sequenceArr[i] < min) {
+            min = sequenceArr[i];
+        }
+    }
+
+    return { max: max, min: min };
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a3">Type a sequence of numbers, separated by a coma. Example: 1,2,3 </label>
+	        <input type="text" id="a3" />
+			<input type="button" class="inline" value="Find Max and Min" onclick="findMaxAndMinNumBtn()" />
+		</article>
+		<article>
+			<h1>4. Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects.
+            </h1>
+			<pre><code class="task">
+function findSLPropsInObj() {
+    var arrObj = [document, window, navigator],
+		outputStr = "";
+
+	for (var i in arrObj){
+			var arr = [],
+				currentObj = arrObj[i],
+				smallest,
+				largest;
+
+			for (var prop in currentObj){
+				arr.push(prop);
+			}
+
+			arr.sort();	
+			smallest = arr[0];
+			largest = arr[arr.length-1];
+			outputStr += "The smallest property of " + currentObj + "is: " + smallest + ". \nThe largest property of " + currentObj + "is: " + largest + ".\n";			
+	}
+
+	return outputStr;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<input type="button" class="inline" value="Find Properties" onclick="findSLPropsInObjBtn()" />
+		</article>
+	</section>
+	<div id="consoleWrapper">
+		<input type="button" class="clear" value="Clear Console" onclick="clearConsole()" />
+		<div id="js-console">
+		</div>
+	</div>
+	<script src="scripts/4-js-hw-loops.js"></script>
+	<script src="scripts/preview/js-console.js"></script>
+	<script src="scripts/preview/4-js-hw-preview-tasks.js"></script>
+</div>
+</body>
+</html>

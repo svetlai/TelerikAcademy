@@ -1,0 +1,518 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>8. JavaScript Homework - Strings</title>
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div id="wrapper">
+	<section>
+        <h1>8. JavaScript Homework - Strings</h1>
+		<article>
+			<h1>1. Write a JavaScript function reverses string and returns it. Example: "sample" > "elpmas".</h1>
+			<pre><code class="task">
+function reverseString(str) {
+    var reversed = str.split('').reverse().join('');
+    
+    return reversed;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a1">Enter a string to reverse: </label>
+	        <input type="text" id="a1" />
+			<input type="button" class="inline" value="Reverse String" onclick="testReverseString()" />
+		</article>
+		<article>
+			<h1>2. Write a JavaScript function to check if in a given expression the brackets are put correctly.
+					Example of correct expression: ((a+b)/5-d).
+					Example of incorrect expression: )(a+b)).</h1>
+			<pre><code class="task">
+function checkBrackets(expression) {
+	var counter = 0,
+			opening = "(",
+			closing = ")";
+
+	for (var i in expression) {
+		if (expression[i] === opening) {
+			counter++;
+		} else if (expression[i] === closing) {
+			if (counter === 0) {	//if there's a closing bracket before an opening bracket;
+				return "false";     //as string in order to display in jsConsole
+			} else {
+				counter--;
+			}
+		}
+	}
+
+	if (counter === 0) {
+		return true;
+	}
+
+	return false;
+}			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a2">Enter an expression: </label>
+	        <input type="text" id="a2" />
+			<input type="button" class="inline" value="Check Brackets" onclick="testCheckBrackets()" />
+		</article>
+		<article>
+			<h1>3. Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+			</h1>
+			<pre><code class="task">
+function countSubStr(text, subStr) {
+	if (subStr === "") {
+		throw new Error('Substring cannot be empty.');
+	}
+
+	var subStr = subStr.toLowerCase(),
+			text = text.toLowerCase(),
+			subStrLen = subStr.length,
+			counter = 0,
+			subStrIndex,
+			startIndex = 0;
+
+	while ((subStrIndex = text.indexOf(subStr, startIndex)) > -1) {
+		counter++;
+		startIndex = subStrIndex + subStrLen;
+	}
+
+	if (counter === 0) {
+		return "Not found.";
+	}
+
+	return counter;
+}			</code></pre>
+			<p>Random text:</p>
+			<div id="sometext">
+				We are living in an yellow submarine. We don't 
+				have anything else. Inside the submarine is very 
+				tight. So we are drinking all the day. We will 
+				move out of it in 5 days. 
+			</div>
+			<p>Try it in the Console:</p>
+            <label for="a3">Enter a substring: </label>		
+	        <input type="text" id="a3" />
+			<input type="button" class="inline" value="Find Substring" onclick="testCountSubStr()" />
+		</article>
+		<article>
+			<h1>4. You are given a text. Write a function that changes the text in all regions:
+					<upcase>text</upcase> to uppercase.
+					<lowcase>text</lowcase> to lowercase
+					<mixcase>text</mixcase> to mix casing(random).
+			</h1>
+			<pre><code class="task">
+function changeCase(text) {
+	var currentSymbol,
+	openTag = '<',
+	closeTag = '>',
+        isTag = false,
+	currentTag = '',
+	result = '',
+	tags = [];
+
+    for (var i = 0, l = text.length; i < l; i += 1) {
+        currentSymbol = text[i];
+
+        if (currentSymbol === openTag) {
+            isTag = true;
+            continue;
+        }
+
+        if (currentSymbol === closeTag) {
+            isTag = false;
+            continue;
+        }
+
+        if (isTag) {
+            switch (currentSymbol) {
+                case 'u':
+                    currentTag = '&lt;upcase>';
+                    tags.push(currentTag);
+                    i += currentTag.length - 2;
+                    break;
+                case 'm':
+                    currentTag = '&lt;mixcase>';
+                    tags.push(currentTag);
+                    i += currentTag.length - 2;
+                    break;
+                case 'l':
+                    currentTag = '&lt;lowcase>';
+                    tags.push(currentTag);
+                    i += currentTag.length - 2;
+                    break;
+                case '/':
+                    tags.pop();
+                    i += currentTag.length - 2;
+                    if (tags.length > 0) {
+                        currentTag = tags[tags.length - 1];
+                    } else {
+                        currentTag = '';
+                    }
+                    break;
+			}
+
+            isTag = false;
+            continue;
+        }
+
+        switch (currentTag) {
+            case '&lt;upcase>':
+                result += currentSymbol.toUpperCase();
+                break;
+            case '&lt;mixcase>':
+                if (Math.random() < 0.5) {
+                    result += currentSymbol.toUpperCase();
+                    continue;
+                } else {
+                    result += currentSymbol.toLowerCase();
+                    continue;
+                }
+                break;
+            case '&lt;lowcase>':
+                result += currentSymbol.toLowerCase();
+                break;
+            default:
+                result += currentSymbol;
+                break;
+    }
+
+    return result;
+}
+			</code></pre>
+			<p>Random text:</p>
+			<div id="changecasetext">We are &lt;upcase>&lt;mixcase>&lt;lowcase>&lt;/lowcase>living&lt;/mixcase> in &lt;/upcase> a &lt;upcase>yellow submarine&lt;/upcase>. We &lt;mixcase>don't&lt;/mixcase> have &lt;lowcase>anything&lt;/lowcase> else.
+			</div>
+			<p>Try it in the Console:</p>
+			<input type="button" class="inline" value="Change Case" onclick="testChangeCase()" />
+		</article>
+		<article>
+			<h1>5. Write a function that replaces non breaking white-spaces in a text with <code>&amp;nbsp;</code>.
+			</h1>
+			<pre><code class="task">
+function escapeSpace(str) {
+    var result = str.split(' ').join('&nbsp;');
+
+    return result;
+}
+			</code></pre>
+			<p>Random text:</p>
+			<div id="escapespacetext">We are living in an yellow submarine. We don't
+				have anything else. Inside the submarine is very
+				tight. So we are drinking all the day. We will
+				move out of it in 5 days.</div>
+			<p>Try it in the browser Console:</p>
+			<input type="button" class="inline" value="Replace Space" onclick="testEscapeSpace()" />
+		</article>
+		<article>
+			<h1>
+				6. Write a function that extracts the content of a html page given as text. The function should return anything that is in a tag, without the tags.
+			</h1>
+			<pre><code class="task">
+function removeTags(str) {
+    var currentSymbol,
+            openTag = "<",
+            closeTag = ">",
+            inTag = false,
+            result = '';
+
+    for (var i in str) {
+        currentSymbol = str[i];
+        if (currentSymbol === openTag) {
+            inTag = true;
+            continue;
+        }
+        if (currentSymbol === closeTag) {
+            inTag = false;
+            continue;
+        }
+
+        if (!inTag) {
+            result += currentSymbol;
+        }
+    }
+
+    return result;
+}			</code></pre>
+			<p>Try it in the console:</p>
+<pre><code class="task">
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Sample site&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div&gt;text
+		&lt;div>more text&lt;/div&gt;and more...
+		&lt;/div&gt;in body
+	&lt;/body&gt;
+&lt;/html&gt;
+	</code></pre>
+
+			<input type="button" class="inline" value="Extract Content" onclick="testRemoveTags()" />
+		</article>
+		<article>
+			<h1>7. Write a script that parses an URL address given in the format:
+                    [protocol]://[server]/[resource] and extracts from it the [protocol], [server] and [resource] elements. 
+                    Return the elements in a JSON object.
+                    For example from the URL http://www.devbg.org/forum/index.php the following information should be extracted:
+                    {protocol: 'http', 
+                     server: 'www.devbg.org',
+                     resource: '/forum/index.php'}
+			</h1>
+			<pre><code class="task">
+function parseURL(url) {
+    var protocolEndIndex = url.indexOf(":"),
+        protocol = url.substring(0, protocolEndIndex),
+        serverStartIndex = protocolEndIndex + 3,
+        serverEndIndex = url.indexOf("/", serverStartIndex),
+        server = url.substring(serverStartIndex, serverEndIndex),
+        resourceStartIndex = url.indexOf("/", serverEndIndex),
+        resource = url.substr(resourceStartIndex),
+
+        output = {
+            "protocol": protocol,
+            "server": server,
+            "resource": resource
+        };
+
+    return output;
+}
+
+//hack
+//function parseUri(input) {
+//    var uri = document.createElement('a');
+//    uri.href = input;
+
+//    return {
+//        protocol: uri.protocol,
+//        server: uri.hostname,
+//        resource: uri.pathname,
+//    };
+//}
+			</code></pre>
+			<p>Try it in the Console:</p>
+            <label for="a6">Enter url to parse: </label>		
+	        <input type="text" id="a6" />
+			<input type="button" class="inline" value="Parse URL" onclick="testParseURL()" />
+		</article>
+		<article>
+			<h1>8. Write a JavaScript function that replaces in a HTML document given as string all the tags &lt;a href="…">…&lt;/a> with corresponding tags [URL=…]…/URL]. 
+            </h1>
+			<pre><code class="task">
+function replaceAnchorTag(str) {
+    var currentSymbol,
+        inHref = false,
+        isTag = false,
+        startIndex = 0,
+        hrefIndex,
+        href,
+        strToReplace,
+        newURL = "";
+
+    for (var i = 0, l = str.length; i < l; i++) {
+        currentSymbol = str[i];
+
+        if (currentSymbol === '<') {
+            isTag = true;
+        } else if (currentSymbol === '>') {
+            isTag = false;
+        }
+
+        if (isTag && currentSymbol === "a") {
+            inHref = true;
+        }
+
+        if (inHref) {
+            str = str.replace("'", '"');                //makes sure the quotes are "
+            hrefIndex = str.indexOf('&lt;a href="', startIndex)
+           
+            if (hrefIndex > -1) {
+                href = str.substring(hrefIndex + '&lta href="'.length, str.indexOf('"', hrefIndex + '&lta href="'.length));
+                strToReplace = str.substring(str.indexOf("<", hrefIndex), str.indexOf(">", hrefIndex) + 1);  //including attributes
+                newURL = "[URL=" + href + "]";      
+                str = str.replace(strToReplace, newURL);
+                isTag = false;
+                inHref = false;
+                i += newURL.length - 2;             //skips the already replaced URL
+            }
+
+            startIndex = hrefIndex + href.length;
+        }
+
+        str = str.replace('&lt;/a>', '[/URL]');
+    }
+
+    return str;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<p>Random text:</p>
+			<div id="replaceahreftext"><code>&lt;p&gt;Please visit &lt;a href="http://academy.telerik.com" title='telerik' &gt;our site&lt;/a&gt; to choose a training course. Also visit &lt;a href="www.devbg.org"&gt;our forum&lt;/a&gt; to discuss the courses.&lt;/p&gt;</code></div>
+			<input type="button" class="inline" value="Replace <a href>" onclick="testReplaceAhref()" />
+		</article>
+		<article>
+			<h1>9. Write a function for extracting all email addresses from given text. All substrings that match the format <identifier>@<host>…<domain> should be recognized as emails. Return the emails as array of strings.
+            </h1>
+			<pre><code class="task">
+function extractEmail(str) {
+    var emailArr = [],
+            atIndex = str.indexOf("@"),
+            dotIndex,
+            endIndex,
+            replaced = str.replace(/[^\w\s@.]|_/g, ' ') + ' ', //removes punctuation except for @ and .
+            identifier,
+            host,
+            domain,
+            email;
+
+    while (atIndex > -1){
+        if (atIndex === 0){
+            atIndex = replaced.indexOf("@", atIndex + 1);
+            continue;
+        }
+
+        if (atIndex === replaced.length - 1){
+            break;
+        }
+
+        if (replaced[atIndex + 1] !== " " && replaced[atIndex - 1] !== " ") {
+            dotIndex = replaced.indexOf(".", atIndex + 1);
+            endIndex = replaced.indexOf(" ", dotIndex + 1) < replaced.indexOf(".", dotIndex + 1) ? replaced.indexOf(" ", dotIndex + 1) : replaced.indexOf(".", dotIndex + 1);
+
+            identifier = replaced.substring(replaced.lastIndexOf(" ", atIndex - 1) + 1, atIndex);
+            host = replaced.substring(atIndex + 1, dotIndex);
+            domain = replaced.substring(dotIndex + 1, endIndex);
+
+            email = identifier + "@" + host + "." + domain;
+            emailArr.push(email);
+        }
+
+        atIndex = replaced.indexOf("@", atIndex + 1); // atIndex + + host.length + domain.length
+    }
+
+    return emailArr;
+}
+
+//Regex alternative
+function extractEmail(str) {
+    var emailArr = [];
+
+    function findEmail(str) {
+        var email = str.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+        return email;
+    }
+
+    emailArr.push(findEmail(str));
+
+    return emailArr;
+}
+			</code></pre>
+			<p>Try it in the Console:</p>
+			<p>Random text:</p>
+			<div id="extractemailtext">@This is a text @ that contains emails. Like email.emailov@abv.bg and bla@gmail.com.</div>
+			<input type="button" class="inline" value="Extract Email" onclick="testExtractEmail()" />
+		</article>
+		<article>
+			<h1>10. Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".
+            </h1>
+			<pre><code class="task">
+function extractPalindromes(text) {
+    var splitText = text.split(/\W+/g), ///[ ,.?]+/
+            palindromesArr = [];
+
+    for (var i = 0, l = splitText.length; i < l; i++) {
+        var word = splitText[i];
+        if (word === word.split('').reverse().join('') && word.length > 1) {
+            palindromesArr.push(word);
+        }
+    }
+
+    return palindromesArr;
+}
+
+////non regex alternative for splitting text into words:
+//for (var i in str) {
+//    if (str[i] === '.' || str[i] === ',' || str[i] === '?') { //etc.
+//        str = str.replace(str[i], '');
+//    }
+//}
+//
+//var wordArr = str.split(' ');
+            </code></pre>
+			<p>Try it in the Console:</p>
+			<p>Random text:</p>
+			<div id="extraxtpalindromestext">This is a text with palindromes. Hi, mom, dad, what level are you at?</div>
+			<input type="button" class="inline" value="Extract Palindromes" onclick="testExtractPalindromes()" />
+		</article>
+		<article>
+			<h1>11. Write a function that formats a string using placeholders.
+            </h1>
+			<pre><code class="task">
+function stringFormat(str) {
+    var str = arguments[0],
+            placeholder;
+
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length && i <= 31; i += 1)  {
+            placeholder = "{" + (i - 1) + "}";
+            for (var j in str) {                        //if placeholder repeats
+                str = str.replace(placeholder, arguments[i]);
+            }
+        }
+    }
+
+    return str;
+}			</code></pre>
+			<p>Try it in the Console:</p>
+			<pre><code class="task"> var str = stringFormat('Hello, {1} {0}! {2} {3} of you to {5} {4}, {0}!', 'Peter', 'dear', 'How', 'nice', 'us', 'join');</code></pre>
+			<input type="button" class="inline" value="String Format" onclick="testStringFormat()" />
+		</article>
+        		<article>
+			<h1>12. Write a function that creates a HTML UL using a template for every HTML LI. The source of the list should an array of elements. Replace all placeholders marked with –{…}–   with the value of the corresponding property of the object.
+            </h1>
+			<pre><code class="task">
+function generateList(list, template) {
+    var placeholder,
+        listAsArray = ["&lt;ul>"];
+
+    for (var i in list) {
+        listAsArray.push("&lt;li>")
+
+        var liContent = template;
+
+        for (var prop in list[i]) {
+            placeholder = "-{" + prop + "}-";
+
+            for (var j in liContent) {
+                liContent = liContent.replace(placeholder, list[i][prop]);
+            }
+
+        }
+
+        listAsArray.push(liContent);
+        listAsArray.push("&lt;/li>");
+    }
+
+    listAsArray.push("&lt;/ul>");
+
+    return listAsArray.join('');;
+}
+            </code></pre>
+			<p>Try it in the Console:</p>
+             <div data-type="template" id="list-item"><strong>-{name}-</strong> <span>-{age}-</span></div>
+             <pre><code class="task">
+var people = [{name: 'Peter', age: 14},
+    {name: 'George', age: 18}];
+             </code></pre>            <input type="button" class="inline" value="Create HTML UL" onclick="testGenerateList()" />
+		</article>
+	</section>
+	<div id="consoleWrapper">
+		<input type="button" class="clear" value="Clear Console" onclick="clearConsole()" />
+		<div id="js-console">
+		</div>
+	</div>
+	<script src="scripts/8-js-hw-strings.js"></script>
+	<script src="scripts/preview/js-console.js"></script>
+	<script src="scripts/preview/8-js-hw-preview-tasks.js"></script>
+</div>
+</body>
+</html>

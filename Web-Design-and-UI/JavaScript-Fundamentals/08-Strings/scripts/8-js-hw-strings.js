@@ -374,7 +374,7 @@ function extractPalindromes(text) {
 //var wordArr = str.split(' ');
 
 //11. Write a function that formats a string using placeholders:
-function stringFormat(str) {
+function stringFormat() {
     var str = arguments[0],
         placeholder;
 

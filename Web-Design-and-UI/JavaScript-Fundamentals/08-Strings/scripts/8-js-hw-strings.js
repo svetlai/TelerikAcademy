@@ -381,9 +381,9 @@ function stringFormat() {
     if (arguments.length > 1) {
         for (var i = 1; i < arguments.length && i <= 31; i += 1)  {
             placeholder = "{" + (i - 1) + "}";
-            for (var j in str) {                        //if placeholder repeats
-                str = str.replace(placeholder, arguments[i]);
-            }
+
+            // replace all placeholders with their value
+            str = str.split(placeholder).join(arguments[i]);
         }
     }
 
@@ -404,10 +404,8 @@ function generateList(list, template) {
         for (var prop in list[i]) {
             placeholder = "-{" + prop + "}-";
 
-            for (var j in liContent) {
-                liContent = liContent.replace(placeholder, list[i][prop]);
-            }
-
+            // replace placeholder with the property's value
+            liContent = liContent.split(placeholder).join(list[i][prop]);
         }
 
         listAsArray.push(liContent);

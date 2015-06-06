@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>10. JavaScript Homework - Regular Expressions</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<div id="wrapper">
+    <section>
+        <h1>10. JavaScript Homework - Regular Expressions</h1>
+        <article>
+            <h1>1. Write a function that formats a string. The function should have placeholders, as shown in the example Add the function to the String.prototype </h1>
+			<pre><code class="task">
+String.prototype.format = function (options) {
+    var placeholder,
+            _this = this;
+
+    for (var prop in options) {
+        placeholder = new RegExp('#{' + prop + '}', 'g');
+        _this = _this.replace(placeholder, options[prop]);
+    }
+
+    return _this;
+}
+
+//var options = {name: 'John', age: 13};
+//console.log('My name is #{name} and I am #{age}-years-old'.format(options));
+
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Format" onclick="testStringFormat()"/>
+        </article>
+        <article>
+            <h1>2.  Write a function that puts the value of an object into the content/attributes of HTML tags. Add the function to the String.prototype </h1>
+			<pre><code class="task">
+String.prototype.bind = function (str, options) {
+    var rgxContent,
+            rgxLink,
+            rgxClass;
+
+    for (var prop in options) {
+        rgxContent = new RegExp('(<.*?data-bind-content="' + prop + '".*?>)(.*?)(<.*?>)', 'g'),
+        rgxLink = new RegExp('(<.*?data-bind-href="' + prop + '".*?)()>', 'g'),
+        rgxClass = new RegExp('(<.*?data-bind-class="(' + prop + '").*?>)', 'g');
+
+        function contentReplacer(match, start, content, end) {
+            return [start, options[prop], end].join('');
+        }
+
+        function linkReplacer(match, start, content) {
+            return [start, ' href="', options[prop], '"'].join('');
+        }
+
+        function classReplacer(match, start, content) {
+            return [start, ' class="', options[prop], '">'].join('');
+        }
+
+        str = str.replace(rgxContent, contentReplacer);
+        str = str.replace(rgxLink, linkReplacer);
+        str = str.replace(rgxClass, classReplacer);
+    }
+
+    return str;
+}
+
+//var str = '&lt;div data-bind-content="name">&lt;/div>';
+//console.log(str.bind(str, {name: 'Steven'}));
+//
+//// &lt;div data-bind-content="name">Steven&lt;/div>
+//
+//var bindingString = '&lt;a data-bind-content="name" data-bind-href="link" data-bind-class="name">&lt;/a>'
+//console.log(str.bind(bindingString, {name: 'Elena', link: 'http://telerikacademy.com'}));
+//
+//// &lt;a data-bind-content="name" data-bind-href="link" data-bind-class="name" href="http://telerikacademy.com" class="Elena">Elena&lt;/а>
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Bind" onclick="testHtmlBinding()"/>
+        </article>
+    </section>
+    <div id="consoleWrapper">
+        <input type="button" class="clear" value="Clear Console" onclick="clearConsole()" />
+        <div id="js-console">
+        </div>
+    </div>
+</div>
+<script src="scripts/10-js-hw-regex.js"></script>
+<script src="scripts/preview/js-console.js"></script>
+<script src="scripts/preview/10-js-hw-tasks-preview.js"></script>
+</body>
+</html>

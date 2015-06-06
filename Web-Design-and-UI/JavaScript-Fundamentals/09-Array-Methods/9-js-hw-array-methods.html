@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>9. JavaScript Homework - Array Methods</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div id="wrapper">
+    <section>
+        <h1>9. JavaScript Homework - Array Methods</h1>
+        <article>
+            <h1>1. Write a function for creating persons. Each person must have firstname, lastname, age and gender (true is female, false is male) Generate an array with ten person with different names, ages and genders</h1>
+			<pre><code class="task">
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+function getRandomString(length) {
+    var alphabet = 'abcdefghijklmnopqrstuvwxyz',
+            result = '';
+
+    for (var i = 0; i < length; i += 1) {
+        result += i === 0 ? alphabet[getRandomInt(0, alphabet.length - 1)].toUpperCase() : alphabet[getRandomInt(0, alphabet.length - 1)];
+    }
+
+    return result;
+}
+
+function createPerson(firstName, lastName, age, gender) {
+    return {
+        firstName: firstName,
+        lastName: lastName,
+        age: age,
+        gender: gender
+    }
+}
+
+function getArrayWithRandomPeople(count) {
+    var people = [];
+    for (var i = 0; i < count; i += 1) {
+        var gender = Math.random() < 0.5 ? true : false,
+                person = createPerson(getRandomString(5), getRandomString(5), getRandomInt(10, 80), gender);
+
+        people.push(person);
+    }
+
+    return people;
+}
+
+var people = getArrayWithRandomPeople(9);
+people[9] = createPerson('Pesho', 'Peshov', 16, true);
+
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Print People" onclick="printPeople(people)" />
+        </article>
+        <article>
+            <h1>2. Write a function that checks if an array of person contains only people of age (with age 18 or greater). Use only array methods and no regular loops (for, while)</h1>
+			<pre><code class="task">
+function isOfAge(person){
+    return person.age >= 18;
+}
+
+var ofAge = people.every(isOfAge);
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Are Of Age" onclick="printIsOfAge(ofAge)" />
+        </article>
+        <article>
+            <h1>3. Write a function that prints all underaged persons of an array of person. Use Array#filter and Array#forEach. Use only array methods and no regular loops (for, while)</h1>
+			<pre><code class="task">
+function isUnderaged(person){
+    return person.age < 18;
+}
+var underaged = people.filter(isUnderaged);
+
+function printUnderaged(underaged){
+    underaged.forEach(function(person){
+        var gender = person.gender ? 'male' : 'female';
+        console.log(person.firstName + ' ' + person.lastName + ', Age: ' + person.age + ', Gender: ' + gender);
+    });
+}
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Print Underage" onclick="printUnderage(underage)" />
+        </article>
+        <article>
+            <h1>4. Write a function that calculates the average age of all females, extracted from an array of persons. Use Array#filter. Use only array methods and no regular loops (for, while)</h1>
+			<pre><code class="task">
+function isFemale(person){
+    return !person.gender;
+}
+
+var females = people.filter(isFemale);
+
+var agesSum = females.reduce(function(sum, person){
+    return sum + person.age;
+}, 0);
+
+var averageAge = Math.round(agesSum / females.length);
+
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Average Female Age" onclick="printAverageAge(averageAge)" />
+        </article>
+        <article>
+            <h1>5. Write a function that finds the youngest male person in a given array of people and prints his full name. Use only array methods and no regular loops (for, while). Use Array#find</h1>
+			<pre><code class="task">
+if (!Array.prototype.find) {
+    Array.prototype.find = function (callback) {
+        var i, len = this.length;
+        for (i = 0; i < len; i += 1) {
+            if (callback(this[i], i, this)){
+                return this[i];
+            }
+        }
+    }
+}
+
+function isMale(person){
+    return person.gender;
+}
+
+var youngest = people.sort(function(firstPerson, secondPerson){
+    return firstPerson.age > secondPerson.age;
+}).find(isMale);
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Print Youngest" onclick="printYoungest(youngest)" />
+        </article>
+        <article>
+            <h1>6. Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object. Use Array#reduce. Use only array methods and no regular loops (for, while)</h1>
+			<pre><code class="task">
+var result = people.reduce(function(groups, person){
+    if (groups[person.firstName[0]]){
+        groups[person.firstName[0]].push(person);
+    }else {
+        groups[person.firstName[0]] = [person]
+    }
+
+    return groups;
+}, {})
+            </code></pre>
+            <p>Try it in the Console:</p>
+            <input type="button" class="inline" value="Print Groups" onclick="printGroups(result)" />
+        </article>
+        </section>
+    <div id="consoleWrapper">
+        <input type="button" class="clear" value="Clear Console" onclick="clearConsole()" />
+        <div id="js-console">
+        </div>
+    </div>
+    <input type="button" class="clear" value="Case Insensitive" id="submitIns" />
+    <input type="button" class="clear" value="Case Sensitive" id="submitSens" />
+
+    <script src="scripts/9-js-hw-array-methods.js"></script>
+<script src="scripts/preview/9-js-hw-tasks-preview.js"></script>
+<script src="scripts/preview/js-console.js"></script>
+</div>
+</body>
+</html>

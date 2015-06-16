@@ -38,6 +38,12 @@ Homework and projects for Telerik Software Academy
 * [Exam 2015 Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/Object-Oriented-Programming/Exam-2015-Tasks)
 * [Team Project - Easter Farm] (https://github.com/TeamRaspberry-Telerik/EasterFarm)
 
+### High Quality Code
+
+1. [Code Formatting Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/01-Code-Formatting)
+* [Naming Identifiers Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/02-Naming-Identifiers)
+* [Code Documentation Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/03-Code-Documentation)
+
 ## Web Design and UI Technologies ##
 
 ### HTML

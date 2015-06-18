@@ -166,6 +166,7 @@ node_modules/
 *.csproj
 2014 Homeworks/
 Properties/
+Exam-Prep/
 .idea/
 *.config
 

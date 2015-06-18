@@ -74,6 +74,13 @@ Homework and projects for Telerik Software Academy
 * [Array Methods Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-Fundamentals/09-Array-Methods)
 * [Regular Expressions Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-Fundamentals/10-Regular-Expressions)
 
+### JavaScript OOP
+
+#### 2015
+1. [Functions and Function Expressions Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-OOP/2015/01-Functions-and-Function-Expressions)
+* [Scopes and Closures Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-OOP/2015/02-Scopes-and-Closures)
+* [Classical Inheritance Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-OOP/2015/03-Classical-Inheritance)
+
 ### JavaScript UI and DOM
 
 * [Team Project - The Evil Pacman](https://github.com/TeamHercules-Telerik/TeamHercules)

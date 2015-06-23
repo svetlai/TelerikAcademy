@@ -99,8 +99,20 @@ function solve() {
         }
 
         function validateChild(child){
-            if (!(isString(child) || child.type !== 'domElement')) {
-                throw new Error('oops')
+            if (!(isString(child) || Object.getPrototypeOf(child) === domElement)) {
+                throw new Error('Child must be either string or a domElement');
+            }
+        }
+
+        function validateParent(value){
+            if (Object.getPrototypeOf(value) !== domElement) {
+                throw new Error('Parent must be a domElement.');
+            }
+        }
+
+        function validateContent(value){
+            if (!isString(value)) {
+                throw new Error('Content must be a string.');
             }
         }
 
@@ -191,6 +203,7 @@ function solve() {
             },
             set content(value) {
                 if (this.children.length === 0) {
+                    validateContent(value);
                     this._content = value;
                 }
             },
@@ -210,6 +223,7 @@ function solve() {
                 return this._parent;
             },
             set parent(value) {
+                validateParent(value);
                 this._parent = value;
             }
         };

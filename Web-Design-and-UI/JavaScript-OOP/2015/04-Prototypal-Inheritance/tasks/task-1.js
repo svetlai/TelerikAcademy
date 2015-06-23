@@ -139,7 +139,7 @@ function solve() {
                     if (typeof(children[i]) === 'string') {
                         output += children[i];
                     } else {
-                        output += children[i].innerHTML;
+                        output += parseHtml(children[i].type, children[i].attributes, children[i].children, children[i].content);
                     }
                 }
             } else {
@@ -220,3 +220,29 @@ function solve() {
 }
 
 module.exports = solve;
+
+//var domElement = solve();
+//
+//var meta = Object.create(domElement)
+//    .init('meta')
+//    .addAttribute('charset', 'utf-8');
+//
+//var div = Object.create(domElement)
+//    .init('div')
+//    .addAttribute('style', 'font-size: 42px');
+//
+//div.content = 'Hello, world!';
+//
+//var body = Object.create(domElement)
+//    .init('body')
+//    .appendChild(div)
+//    .addAttribute('id', 'cuki')
+//    .addAttribute('bgcolor', '#012345');
+//
+//var root = Object.create(domElement)
+//    .init('theGuiltyTag')
+//    .addAttribute('adata', 'do not')
+//    .addAttribute('bdata', 'see')
+//    .addAttribute('adata', 'me');
+//
+//console.log(body.innerHTML);

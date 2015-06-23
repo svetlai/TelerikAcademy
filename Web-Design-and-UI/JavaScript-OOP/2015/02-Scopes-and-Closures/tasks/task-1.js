@@ -38,7 +38,7 @@ function solve() {
             var filterObj = arguments[0];
 
             books = books.sort(function (firstBook, secondBook) {
-                return firstBook.ID < secondBook.ID;
+                return firstBook.ID - secondBook.ID;
             });
 
             if (filterObj) {

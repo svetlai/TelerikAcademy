@@ -2,7 +2,7 @@
 {
     using System;
 
-    internal class BoolPrinter
+    public class BoolPrinter
     {
         public void PrintBoolean(bool value)
         {

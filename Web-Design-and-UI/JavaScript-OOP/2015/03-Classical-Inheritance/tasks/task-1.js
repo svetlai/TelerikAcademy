@@ -18,32 +18,26 @@
 function solve() {
     var Person = (function () {
         function Person(firstname, lastname, age) {
-            if (!isString(firstname) || !isString(lastname)) {
-                throw  new Error('Invalid argument. First and last names must be strings.')
-            }
-
-            if (!isNameLengthValid(firstname) || !isNameLengthValid(lastname)) {
-                throw new Error('Invalid argument. First and last names must be 3 and 20 characters.')
-            }
-
-            if (!hasOnlyLatinLetters(firstname) || !hasOnlyLatinLetters(lastname)) {
-                throw new Error('Invalid argument. First and last names must containing only Latin letters.')
-            }
-
-            if (!isNumber(age)) {
-                throw new Error('Invalid argument. Age must be a number.')
-            }
-
-            if (!isAgeValid(age)) {
-                throw new Error('Inhuman age. A person cannot be younger than 0 or older than 150.')
-            }
-
             this.firstname = firstname;
             this.lastname = lastname;
             this.age = +age;
         }
 
         Person.prototype = {
+            get firstname() {
+                return this._firstname;
+            },
+            set firstname(value) {
+                validateName(value);
+                this._firstname = value;
+            },
+            get lastname() {
+                return this._lastname;
+            },
+            set lastname(value) {
+                validateName(value);
+                this._lastname = value;
+            },
             get fullname() {
                 return this.firstname + ' ' + this.lastname;
             },
@@ -51,6 +45,13 @@ function solve() {
                 var splitName = name.split(' ');
                 this.firstname = splitName[0] || '';
                 this.lastname = splitName[1] || '';
+            },
+            get age() {
+                return this._age;
+            },
+            set age(value) {
+                validateAge(value);
+                this._age = value;
             },
             introduce: function () {
                 return 'Hello! My name is ' + this.fullname + ' and I am ' + this.age + '-years-old'
@@ -75,6 +76,30 @@ function solve() {
 
         function isAgeValid(age){
             return age <= 150 && age >= 0
+        }
+
+        function validateName(name){
+            if (!isString(name)) {
+                throw  new Error('Invalid argument. First and last names must be strings.');
+            }
+
+            if (!isNameLengthValid(name)) {
+                throw new Error('Invalid argument. First and last names must be 3 and 20 characters.');
+            }
+
+            if (!hasOnlyLatinLetters(name)) {
+                throw new Error('Invalid argument. First and last names must containing only Latin letters.');
+            }
+        }
+
+        function validateAge(age){
+            if (!isNumber(age)) {
+                throw new Error('Invalid argument. Age must be a number.');
+            }
+
+            if (!isAgeValid(age)) {
+                throw new Error('Inhuman age. A person cannot be younger than 0 or older than 150.');
+            }
         }
 
         return Person;

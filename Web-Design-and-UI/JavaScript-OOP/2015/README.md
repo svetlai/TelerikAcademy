@@ -9,3 +9,4 @@
 * [Scopes and Closures Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-OOP/2015/02-Scopes-and-Closures)
 * [Classical Inheritance Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-OOP/2015/03-Classical-Inheritance)
 * [Prototypal Inheritance Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-OOP/2015/04-Prototypal-Inheritance)
+* [Modules and Patterns Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Web-Design-and-UI/JavaScript-OOP/2015/05-Modules-and-Patterns)

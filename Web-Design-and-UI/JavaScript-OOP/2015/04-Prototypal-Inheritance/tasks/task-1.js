@@ -67,7 +67,7 @@ function solve() {
         }
 
         function isNonEmptyString(value) {
-            return typeof(value) === 'string' && value !== '';
+            return isString(value) && value !== '';
         }
 
         function hasOnlyLatinLettersAndDigits(value) {
@@ -210,14 +210,8 @@ function solve() {
             get children() {
                 return this._children;
             },
-            set children(value) {
-                this._children = value;
-            },
             get attributes() {
                 return this._attributes;
-            },
-            set attributes(value) {
-                this._attributes = value;
             },
             get parent() {
                 return this._parent;
@@ -237,10 +231,6 @@ module.exports = solve;
 
 //var domElement = solve();
 //
-//var meta = Object.create(domElement)
-//    .init('meta')
-//    .addAttribute('charset', 'utf-8');
-//
 //var div = Object.create(domElement)
 //    .init('div')
 //    .addAttribute('style', 'font-size: 42px');
@@ -252,11 +242,5 @@ module.exports = solve;
 //    .appendChild(div)
 //    .addAttribute('id', 'cuki')
 //    .addAttribute('bgcolor', '#012345');
-//
-//var root = Object.create(domElement)
-//    .init('theGuiltyTag')
-//    .addAttribute('adata', 'do not')
-//    .addAttribute('bdata', 'see')
-//    .addAttribute('adata', 'me');
 //
 //console.log(body.innerHTML);

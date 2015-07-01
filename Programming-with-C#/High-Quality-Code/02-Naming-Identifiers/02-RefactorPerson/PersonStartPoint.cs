@@ -15,7 +15,7 @@
         public static Person CreatePerson(int id)
         {
             Person person = new Person();
-            person.Age = id;
+            person.Id = id;
 
             if (id % 2 == 0)
             {

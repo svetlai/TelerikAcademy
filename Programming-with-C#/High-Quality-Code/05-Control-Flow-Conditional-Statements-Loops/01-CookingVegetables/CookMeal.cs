@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Cook
+    public class CookMeal
     {
         public static void Main()
         {

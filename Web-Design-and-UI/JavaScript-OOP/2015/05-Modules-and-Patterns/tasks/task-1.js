@@ -238,30 +238,31 @@ function solve() {
 
 
 module.exports = solve;
-var results = [{
-    StudentID: 1,
-    Score: 20
-},
-    {
-        StudentID: 3,
-        Score: 20
-    },
-    {
-        StudentID: 2,
-        Score: 20
-    }];
-var course = solve().init('ssfsf', ['ljlk', 'kjhkh', 'khk']);
-
-
-course.addStudent('Pesho Ivanov')
-course.addStudent('Gosho Ivanov')
-course.addStudent('Maria Petrova')
-course.pushExamResults(results);
-
-course.submitHomework(1, 1)
-    .submitHomework(1, 2)
-    .submitHomework(1, 3)
-    .submitHomework(2, 1)
-    .submitHomework(3, 1);
-
-console.log(course.getTopStudents());
+//
+//var results = [{
+//    StudentID: 1,
+//    Score: 20
+//},
+//    {
+//        StudentID: 3,
+//        Score: 20
+//    },
+//    {
+//        StudentID: 2,
+//        Score: 20
+//    }];
+//
+//var course = solve().init('ssfsf', ['ljlk', 'kjhkh', 'khk']);
+//
+//course.addStudent('Pesho Ivanov')
+//course.addStudent('Gosho Ivanov')
+//course.addStudent('Maria Petrova')
+//course.pushExamResults(results);
+//
+//course.submitHomework(1, 1)
+//    .submitHomework(1, 2)
+//    .submitHomework(1, 3)
+//    .submitHomework(2, 1)
+//    .submitHomework(3, 1);
+//
+//console.log(course.getTopStudents());

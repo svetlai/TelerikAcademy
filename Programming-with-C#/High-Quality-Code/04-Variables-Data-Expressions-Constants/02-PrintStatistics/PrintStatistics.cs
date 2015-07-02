@@ -1,15 +1,27 @@
-﻿namespace UsingVariables
+﻿namespace PrintStatistics
 {
     using System;
 
-    public static class Statistics
+    public class Statistics
     {
+        public static void Main()
+        {
+            double[] numbers = new double[]
+            {
+                1, 2, 3
+            };
+
+            int count = numbers.Length;
+
+            PrintStatistics(numbers, count);
+        }
+
         public static void PrintStatistics(double[] numbers, int count)
         {
             double maxValue = GetMax(numbers, count);
             PrintMax(maxValue);
 
-            double minValue = GetMin(numbers, count);           
+            double minValue = GetMin(numbers, count);
             PrintMin(minValue);
 
             double sum = GetSum(numbers, count);

@@ -19,17 +19,17 @@
         public override string ToString()
         {
             var sb = new StringBuilder();
-            if (IsPeeled)
+            if (this.IsPeeled)
             {
                 sb.Append("Peeled ");
             }
 
-            if (IsCut)
+            if (this.IsCut)
             {
                 sb.Append("Cut ");
             }
 
-            if (!IsNotRotten)
+            if (!this.IsNotRotten)
             {
                 sb.Append("Rotten ");
             }

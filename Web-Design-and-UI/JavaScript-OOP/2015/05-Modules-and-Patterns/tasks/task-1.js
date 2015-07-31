@@ -89,7 +89,7 @@ function solve() {
         pushExamResults: function (results) {
             validateResults(results, this.students);
             for (var i = 0, len = results.length; i < len; i += 1) {
-                this._studentData[results[i].StudentID]['examResults'] = results[i].Score;
+                this._studentData[results[i].StudentID]['examResults'] = results[i].score;
             }
 
             return this;
@@ -193,6 +193,7 @@ function solve() {
 
     function validateScore(score) {
         if (isNaN(score)) {
+            console.log(score);
             throw new Error('Score must be a number');
         }
     }
@@ -217,7 +218,7 @@ function solve() {
             }
 
             validateStudentID(results[i].StudentID, students);
-            validateScore(results[i].Score);
+            validateScore(results[i].score);
         }
     }
 
@@ -238,6 +239,8 @@ function solve() {
 
 
 module.exports = solve;
+
+//var course = solve().init('ssfsf', ['ljlk', 'kjhkh', 'khk']);
 //
 //var results = [{
 //    StudentID: 1,
@@ -251,8 +254,6 @@ module.exports = solve;
 //        StudentID: 2,
 //        Score: 20
 //    }];
-//
-//var course = solve().init('ssfsf', ['ljlk', 'kjhkh', 'khk']);
 //
 //course.addStudent('Pesho Ivanov')
 //course.addStudent('Gosho Ivanov')

@@ -1,0 +1,29 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, sans-serif;
+    font-size:16px;
+}
+
+    #wrapper {
+        margin: 0 auto;
+        position: relative;
+        text-align:center;
+    }
+
+        #wrapper figure{
+            border:1px solid black;
+            box-shadow: 3px 3px grey;
+        }
+            
+            #wrapper figure figcaption{
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+        #wrapper img{
+            margin: 5px 0;
+            width: 90%;
+        }
+
+

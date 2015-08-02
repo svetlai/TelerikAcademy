@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Task-3</title>
+</head>
+<body>
+<ul id="books-list" data-template="book-item-template"></ul>
+<script id="book-item-template" type="text/x-handlebars-template">
+    <li class="book-item">
+        <a href="/#books/{{id}}">
+            <strong>{{title}}</strong>
+        </a>
+    </li>
+</script>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/handlebars/dist/handlebars.js"></script>
+<script src="task-3.js"></script>
+<script>
+    var func = solve();
+    func();
+</script>
+</body>
+</html>

@@ -10,7 +10,7 @@
 * Позволява алгоритъмът да варира независимо от клиетите, които го ползват
 
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/strategy-uml.png "Strategy UML Diagram")
+ ![Strategy UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/strategy-uml.png "Strategy UML Diagram")
 
 #### Участниците в процеса:
 - **Strategy** - дефинипа общ интерфейс за поддържните алгоритми. Контекстът (context)

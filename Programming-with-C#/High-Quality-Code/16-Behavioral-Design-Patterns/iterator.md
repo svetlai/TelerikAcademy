@@ -9,7 +9,7 @@
 * Осигурява начин за достъп до елементите на агрегиран обект (колекция) последователно, без да експоузва репрезентацията и отдолу
  
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/iterator-uml.svg "Iterator UML Diagram")
+ ![Iterator UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/iterator-uml.png "Iterator UML Diagram")
 
 #### Участниците в процеса:
 - **IIterator** - интерфейс, който репрезентира абстрактния итератор, дефиниращ итератора

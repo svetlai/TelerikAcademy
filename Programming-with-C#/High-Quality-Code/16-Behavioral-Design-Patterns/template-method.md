@@ -9,7 +9,7 @@
 * Оставя под-класовете да ре-дефинират определени стъпки на алгоритъма, без да променят неговата структура
 
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/template-method-uml.svg "Template Method UML Diagram")
+ ![Template Method UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/template-method-uml.png "Template Method UML Diagram")
 
 #### Участниците в процеса:
 - **Abstract Class** - имплементира темплейтен метод, който дефинира скелета на алгоритъм; дефинира абстрактни примитивни операции, които конкретните класове дефинират, за да имплементира стъпки от алгоритъм

@@ -10,7 +10,7 @@
 * Създаване на нови обекти чрез копиране на техния прототип
 
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/14-Creational-Design-Patterns/imgs/prototype-uml.svg "Prototype UML Diagram")
+ ![Prototype UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/14-Creational-Design-Patterns/imgs/prototype-uml.png "Prototype UML Diagram")
 
 #### Участниците в процеса:
 - **Client** - създава нов обект, карайки прототипа да се клонира

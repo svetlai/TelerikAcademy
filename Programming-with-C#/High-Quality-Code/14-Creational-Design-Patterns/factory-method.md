@@ -10,7 +10,7 @@
 * Реферира към новосъздадения обект през общ интерфейс
 
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/14-Creational-Design-Patterns/imgs/factory-method-uml.svg "Factory Method UML Diagram")
+ ![Factory Method UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/14-Creational-Design-Patterns/imgs/factory-method-uml.png "Factory Method UML Diagram")
 
 #### Участниците в процеса:
 - **Product** - дефинира интерфейс за обектите, които **Factory Method** създава

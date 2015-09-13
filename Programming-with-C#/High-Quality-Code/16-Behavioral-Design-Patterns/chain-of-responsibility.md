@@ -10,7 +10,7 @@
 * Обектите стават част от верига и заявката се праща от един обект на друг, докато не бъде изпълнена
  
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/chain-of-responsibility-uml.svg "Chain of Responsibility UML Diagram")
+ ![Chain of Responsibility UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/16-Behavioral-Design-Patterns/imgs/chain-of-responsibility-uml.png "Chain of Responsibility UML Diagram")
 
 #### Участниците в процеса:
 - **Handler** - дефинира интерфейс за обработване на заявки

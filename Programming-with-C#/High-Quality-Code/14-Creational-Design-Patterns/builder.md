@@ -11,7 +11,7 @@
 * Реферира към новосъздадения обект през общ интерфейс
  
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/14-Creational-Design-Patterns/imgs/builder-uml.svg "Builder UML Diagram")
+ ![Builder UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/14-Creational-Design-Patterns/imgs/builder-uml.png "Builder UML Diagram")
 
 #### Участниците в процеса:
 -	**Director** – определя последователността на създаване на отделните части

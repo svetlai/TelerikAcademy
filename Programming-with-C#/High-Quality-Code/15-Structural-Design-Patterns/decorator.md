@@ -8,7 +8,7 @@
 * Да добавя допълнителни отговорности към обекта динамично, по време на изпълнение
  
 #### Структура 
- ![alt text](https://raw.github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/15-Structural-Design-Patterns/imgs/decorator-uml.svg "Decorator UML Diagram")
+ ![Decorator UML Diagram](https://raw.githubusercontent.com/svetlai/TelerikAcademy/master/Programming-with-C%23/High-Quality-Code/15-Structural-Design-Patterns/imgs/decorator-uml.png "Decorator UML Diagram")
 
 #### Участниците в процеса:
 - **Component** - интерфейс на обектите, които могат да бъдат променяни динамично

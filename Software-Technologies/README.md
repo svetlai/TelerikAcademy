@@ -10,7 +10,7 @@
 
 #### Team Project ####
 
-* [Team Project - Teamwork System](https://github.com/Telerik-Team-Lychee/TeamWorkSystem)
+* [Teamwork System](https://github.com/Telerik-Team-Lychee/TeamWorkSystem)
 
 ### Single-page Applications with JavaScript
 
@@ -25,7 +25,7 @@
 
 #### Team Project ####
 
-* [Team Project - Online shop for cool programmer's T-shirts](https://github.com/wIksS/OnlineStore)
+* [Online shop for cool programmer's T-shirts](https://github.com/wIksS/OnlineStore)
 
 ### ASP.NET Web Forms
 
@@ -45,8 +45,32 @@
 
 #### Exam 2014 Tasks ####
 
-*	[2014-10-28 - News System](https://github.com/svetlai/TelerikAcademy/tree/master/Software-Technologies/ASP.NET-Web-Forms/Exam-2014-Tasks/2014-10-28-NewsSystem)
+* [2014-10-28 - News System](https://github.com/svetlai/TelerikAcademy/tree/master/Software-Technologies/ASP.NET-Web-Forms/Exam-2014-Tasks/2014-10-28-NewsSystem)
 
 #### Team Project ####
 
-* Team Project - Drink and Rate: [Source](https://github.com/AynRandTelerik/DrinkAndRate) [Preview](http://drinkandrate.apphb.com)
+* Drink and Rate: [Source](https://github.com/AynRandTelerik/DrinkAndRate) [Preview](http://drinkandrate.apphb.com)
+
+### ASP.NET MVC
+
+* [Individual Project - Like It](https://github.com/svetlai/LikeIt)
+
+### Windows-Applications
+
+* [Team Project - Upgrade Yourself - A mobile app for self upgrading in software](https://github.com/TeamTwenty-Six/UpgradeYourself)
+
+### Mobile Applications for Android
+
+* [Team Project - KitKare - A mobile app for remote cat caring](https://github.com/KitKare)
+
+### Mobile Applications for iOS
+
+1. [ObjectiveC OOP Homework](./Mobile Applications for iOS/01-Objective-C-OOP)
+
+#### Individual Project ####
+
+* [Job Matcher - The 'Tinder' of job seeking.](https://github.com/svetlai/JobMatcher)
+
+### Mobile Applications with NativeScript
+
+* [Team Project - Challenge Accepted - A mobile app for doing and sharing real life challenges](https://github.com/NativeScriptHybrids/ChallengeAcceptede)

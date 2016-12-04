@@ -142,7 +142,9 @@ Homework and projects for Telerik Software Academy
 * [Windows-Communication-Foundation Homework](./Software-Technologies/Web-Services-and-Cloud/02-WCF-Services)
 * [Unit-Testing-Web-Services Homework](./Software-Technologies/Web-Services-and-Cloud/03-Unit-Testing)
 
-* [Team Project - Teamwork System](https://github.com/Telerik-Team-Lychee/TeamWorkSystem)
+#### Team Project ####
+
+* [Teamwork System](https://github.com/Telerik-Team-Lychee/TeamWorkSystem)
 
 ### Single-page Applications with JavaScript
 
@@ -157,7 +159,7 @@ Homework and projects for Telerik Software Academy
 
 #### Team Project ####
 
-* [Team Project - Online shop for cool programmer's T-shirts](https://github.com/wIksS/OnlineStore)
+* [Online shop for cool programmer's T-shirts](https://github.com/wIksS/OnlineStore)
 
 ### ASP.NET Web Forms
 
@@ -181,8 +183,28 @@ Homework and projects for Telerik Software Academy
 
 #### Team Project ####
 
-* Team Project - Drink and Rate: [Source](https://github.com/AynRandTelerik/DrinkAndRate) [Preview](http://drinkandrate.apphb.com)
+* Drink and Rate: [Source](https://github.com/AynRandTelerik/DrinkAndRate) [Preview](http://drinkandrate.apphb.com)
 
 ### ASP.NET MVC
 
 * [Individual Project - Like It](https://github.com/svetlai/LikeIt)
+
+### Windows-Applications
+
+* [Team Project - Upgrade Yourself - A mobile app for self upgrading in software](https://github.com/TeamTwenty-Six/UpgradeYourself)
+
+### Mobile Applications for Android
+
+* [Team Project - KitKare - A mobile app for remote cat caring](https://github.com/KitKare)
+
+### Mobile Applications for iOS
+
+1. [ObjectiveC OOP Homework](./Software-Technologies/Mobile Applications for iOS/01-Objective-C-OOP)
+
+#### Individual Project ####
+
+* [Job Matcher - The 'Tinder' of job seeking.](https://github.com/svetlai/JobMatcher)
+
+### Mobile Applications with NativeScript
+
+* [Team Project - Challenge Accepted - A mobile app for doing and sharing real life challenges](https://github.com/NativeScriptHybrids/ChallengeAcceptede)

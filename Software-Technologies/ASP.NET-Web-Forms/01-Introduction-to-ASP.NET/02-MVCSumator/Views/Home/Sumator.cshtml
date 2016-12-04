@@ -1,0 +1,21 @@
+﻿@model _2._2.MVC_Sumator.Models.SumatorModel
+
+@{
+    ViewBag.Title = "Sumator";
+}
+
+<h2>Sumator</h2>
+<form action="/Home/Sumator" method="post">
+    <div class="control-group">
+        @Html.TextBoxFor(m => m.FirstNumber)
+    </div>
+    <br />
+    <div class="control-group">
+        @Html.TextBoxFor(m => m.SecondNumber)
+    </div>
+    <br />
+    <button type="submit">Sum Numbers</button>
+</form>
+<hr />
+<h1> @ViewBag.Result</h1>
+

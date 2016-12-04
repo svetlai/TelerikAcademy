@@ -49,6 +49,27 @@ Homework and projects for Telerik Software Academy
 * [High-Quality Classes Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/07-High-Quality-Classes)
 * [Defensive Programming and Exceptions Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/08-Defensive-Programming)
 * [Code Tuning and Optimization Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/09-Code-Tuning-and-Optimization)
+* [Unit Testing Homework](/10-Unit-Testing)
+* [Test Driven Development Homework](/11-Test-Driven-Development)
+* [Refactoring Homework](/12-Refactoring)
+* [Creational Design Patterns Homework](/14-Creational-Design-Patterns)
+* [Structural Design Patterns Homework](/15-Structural-Design-Patterns)
+* [Behavioral Design Patterns Homework](/16-Behavioral-Design-Patterns)
+* [Mocking with Moq and JustMock Homework](/17-Mocking-with-Moq-and-JustMock)
+
+### Data Structures and Algorithms
+
+1. [Data Structure Algorithms and Complexity](/Data-Structures-and-Algorithms/01-DSA-and-Complexity)
+* [Linear Data Structures](/Data-Structures-and-Algorithms/02-Linear-Data-Structures)
+* [Trees and Traversals](/Data-Structures-and-Algorithms/03-Trees-and-Traversals)
+* [Dictionaries Hash Tables and Sets](/Data-Structures-and-Algorithms/04-Dictionaries-and-HashTables)
+* [Advanced Data Structures](/Data-Structures-and-Algorithms/05-Advanced-Data-Structures)
+* [Data Structures Efficiency](/Data-Structures-and-Algorithms/06-Data-Structures-Efficiency)
+* [Recursion](/Data-Structures-and-Algorithms/07-Recursion)
+* [Sorting and Searching Algorithms](/Data-Structures-and-Algorithms/08-Sorting-and-Searching-Algorithms)
+* [Combinatorics](/Data-Structures-and-Algorithms/09-Combinatorics)
+* [Dynamic Programming](/Data-Structures-and-Algorithms/10-Dynamic-Programming)
+* [Graphs](/Data-Structures-and-Algorithms/11-Graphs)
 
 ## Web Design and UI Technologies ##
 
@@ -113,15 +134,49 @@ Homework and projects for Telerik Software Academy
 
 ### Web Services and Cloud
 
+1. [ASP.NET-Web-API Homework](./Software-Technologies/Web-Services-and-Cloud/01-ASP.Net-Web.Api)
+* [Windows-Communication-Foundation Homework](./Software-Technologies/Web-Services-and-Cloud/02-WCF-Services)
+* [Unit-Testing-Web-Services Homework](./Software-Technologies/Web-Services-and-Cloud/03-Unit-Testing)
+
 * [Team Project - Teamwork System](https://github.com/Telerik-Team-Lychee/TeamWorkSystem)
 
+### Single-page Applications with JavaScript
+
+1. [AngularJS Homework](./Software-Technologies/Single-page-Applications-with-JavaScript/01-AngularJS)
+
 ### End-to-End JavaScript Applications
+
+1. [File Upload Homework](./Software-Technologies/End-to-End-JavaScript-Applications/01-FileUpload)
+* [MongoDb Chat Homework](./Software-Technologies/End-to-End-JavaScript-Applications/02-MongoDbChat)
+* [ExpressJS Homework](./Software-Technologies/End-to-End-JavaScript-Applications/03-ExpressJS)
+* [Grunt Homework](./Software-Technologies/End-to-End-JavaScript-Applications/04-Grunt)
+
+#### Team Project ####
 
 * [Team Project - Online shop for cool programmer's T-shirts](https://github.com/wIksS/OnlineStore)
 
 ### ASP.NET Web Forms
 
+1. [Introduction to ASP.NET Homework](./Software-Technologies/ASP.NET-Web-Forms/01-Introduction-to-ASP.NET)
+* [Introduction to WebForms Homework](./Software-Technologies/ASP.NET-Web-Forms/02-Introduction-to-WebForms)
+* [Controls Homework](./Software-Technologies/ASP.NET-Web-Forms/03-Controls)
+* [Master Pages Homework](./Software-Technologies/ASP.NET-Web-Forms/04-MasterPagess)
+* [Data Binding and Data Controls Homework](./Software-Technologies/ASP.NET-Web-Forms/05-Data-Binding-and-Data-Controls)
+* [Data Source Controls Homework](./Software-Technologies/ASP.NET-Web-Forms/06-Data-Source-Controls)
+* [File Upload Homework](./Software-Technologies/ASP.NET-Web-Forms/07-File-Upload)
+* [State Management Homework](./Software-Technologies/ASP.NET-Web-Forms/08-State-Management)
+* [SiteMaps and Navigation Homework](./Software-Technologies/ASP.NET-Web-Forms/09-SiteMaps-and-Navigation)
+* [Validation Controls Homework](./Software-Technologies/ASP.NET-Web-Forms/10-Validation-Controls)
+* [AJAX Homework](./Software-Technologies/ASP.NET-Web-Forms/11-AJAX)
+* [User Controls Homework](./Software-Technologies/ASP.NET-Web-Forms/12-User-Controls)
+* [Identity Homework](./Software-Technologies/ASP.NET-Web-Forms/13-Identity)
+
+#### Exam Tasks ####
+
 * [Exam-2014-Tasks](https://github.com/svetlai/TelerikAcademy/tree/master/Software-Technologies/ASP.NET-Web-Forms/Exam-2014-Tasks)
+
+#### Team Project ####
+
 * Team Project - Drink and Rate: [Source](https://github.com/AynRandTelerik/DrinkAndRate) [Preview](http://drinkandrate.apphb.com)
 
 ### ASP.NET MVC

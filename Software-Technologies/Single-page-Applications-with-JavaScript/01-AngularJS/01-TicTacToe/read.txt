@@ -1,0 +1,11 @@
+In order to start the client, you need to start the server and make the services available first.
+
+1. Run Global.asax (Ctrl+F5) from the TicTacToe.Web project in the solution. (It should be at http:\\localhost:33257, but in case it isn't, you need to change baseServiceUrl in TicTacToe.JavaScriptClient\app\app\js\app.js
+
+2. Go to TicTacToe.JavaScriptClient\app\app 
+3. Open command prompt
+4. Type: node web-server.js
+
+That's it. You can now see the client at http://localhost:1234
+
+Thank you.

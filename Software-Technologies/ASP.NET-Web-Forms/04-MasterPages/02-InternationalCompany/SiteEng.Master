@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/SiteMain.Master" CodeBehind="SiteEng.Master.cs" Inherits="_4._1.User_Profile.SiteEng" %>
+
+<asp:Content ID="NavbarContent" ContentPlaceHolderID="NavbarContent" runat="server">
+    <div class="navbar-collapse collapse">
+        <ul class="menu nav navbar-nav">
+            <li><a runat="server" href="~/Eng/Home.aspx">Home</a></li>
+            <li><a runat="server" href="~/Eng/About.aspx">About</a></li>
+            <li><a runat="server" href="~/Eng/Contact.aspx">Contacts</a></li>
+        </ul>
+    </div>
+</asp:Content>
+<asp:Content ID="BodyEngContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainEngContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

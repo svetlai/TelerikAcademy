@@ -21,7 +21,7 @@
 
 function solve() {
     return function (selector, count) {
-        if (!selector){
+        if (!selector) {
             throw new Error('You need to provide a selector.');
         }
 
@@ -29,16 +29,18 @@ function solve() {
             throw new Error('Selector must be a string or a DOM element');
         }
 
-        if (!count || isNaN(count)){
-           throw new Error('You need to provide a number of lis to be added.');
+        if (!count || isNaN(count)) {
+            throw new Error('You need to provide a number of lis to be added.');
         }
 
-        if (!isNaN(count) && count < 1){
+        if (!isNaN(count) && count < 1) {
             throw new Error('Count must be a positive number.');
         }
 
+
+
         var $domElement = $(selector);
-console.log($domElement);
+//console.log($domElement);
         var $ulList = $('<ul/>');
         if ($domElement != null) {
             $ulList.addClass('items-list');

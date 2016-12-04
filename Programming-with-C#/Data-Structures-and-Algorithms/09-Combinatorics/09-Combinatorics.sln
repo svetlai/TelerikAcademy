@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Circles", "01-Circles\01-Circles.csproj", "{1A637E59-3963-4223-8A72-EE5E3F4D6D5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-ColouredBunnies", "01-ColouredBunnies\01-ColouredBunnies.csproj", "{8657EBC0-A5DB-46D0-A66C-C0D97BAE7047}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-RowOfBalls", "02-RowOfBalls\02-RowOfBalls.csproj", "{808BC338-1404-444B-902D-B18108C303A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A637E59-3963-4223-8A72-EE5E3F4D6D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A637E59-3963-4223-8A72-EE5E3F4D6D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A637E59-3963-4223-8A72-EE5E3F4D6D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A637E59-3963-4223-8A72-EE5E3F4D6D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8657EBC0-A5DB-46D0-A66C-C0D97BAE7047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8657EBC0-A5DB-46D0-A66C-C0D97BAE7047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8657EBC0-A5DB-46D0-A66C-C0D97BAE7047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8657EBC0-A5DB-46D0-A66C-C0D97BAE7047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808BC338-1404-444B-902D-B18108C303A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808BC338-1404-444B-902D-B18108C303A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808BC338-1404-444B-902D-B18108C303A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808BC338-1404-444B-902D-B18108C303A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

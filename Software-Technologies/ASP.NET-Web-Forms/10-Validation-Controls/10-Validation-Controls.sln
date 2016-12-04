@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-UserRegistration", "01-UserRegistration\01-UserRegistration.csproj", "{24073CC4-F2A9-45F7-A3D6-6F615F19A191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-UserRegistration-Groups", "02-UserRegistration-Groups\02-UserRegistration-Groups.csproj", "{AFC823C4-0B2C-4B8B-937B-6F0150CA7C8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24073CC4-F2A9-45F7-A3D6-6F615F19A191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24073CC4-F2A9-45F7-A3D6-6F615F19A191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24073CC4-F2A9-45F7-A3D6-6F615F19A191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24073CC4-F2A9-45F7-A3D6-6F615F19A191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC823C4-0B2C-4B8B-937B-6F0150CA7C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC823C4-0B2C-4B8B-937B-6F0150CA7C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC823C4-0B2C-4B8B-937B-6F0150CA7C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC823C4-0B2C-4B8B-937B-6F0150CA7C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

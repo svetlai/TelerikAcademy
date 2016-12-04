@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMain.master.cs" Inherits="_4._2.International_Company.SiteMain" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>International Company</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="formMain" runat="server">
+        <div id="wrapper">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="header">
+                        <ul class="nav navbar-nav">
+                            <li><a class="navbar-brand" runat="server" href="~/Eng/Home.aspx">International Company</a></li>
+                            <li class="lang"><a runat="server" href="~/Eng/Home.aspx">Eng</a></li>
+                            <li class="lang"><a runat="server" href="~/Bg/Home.aspx">БГ</a></li>
+                        </ul>
+                    </div>
+                    <asp:ContentPlaceHolder ID="NavbarContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="container body-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">Telerik Academy</div>
+        </div>
+    </form>
+</body>
+</html>

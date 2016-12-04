@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-ReadTree", "01-ReadTree\01-ReadTree.csproj", "{EDE138CE-43EA-4FD4-A3A0-4FFFE879B4D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-TraverseC-Windows", "02-TraverseC-Windows\02-TraverseC-Windows.csproj", "{BAC0CF9E-0C8B-4459-BD82-6DA0253B012C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-FilesAndFolders", "03-FilesAndFolders\03-FilesAndFolders.csproj", "{9F454E19-779E-43A9-98F5-A4543EDC036F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDE138CE-43EA-4FD4-A3A0-4FFFE879B4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE138CE-43EA-4FD4-A3A0-4FFFE879B4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE138CE-43EA-4FD4-A3A0-4FFFE879B4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE138CE-43EA-4FD4-A3A0-4FFFE879B4D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC0CF9E-0C8B-4459-BD82-6DA0253B012C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC0CF9E-0C8B-4459-BD82-6DA0253B012C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC0CF9E-0C8B-4459-BD82-6DA0253B012C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC0CF9E-0C8B-4459-BD82-6DA0253B012C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F454E19-779E-43A9-98F5-A4543EDC036F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F454E19-779E-43A9-98F5-A4543EDC036F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F454E19-779E-43A9-98F5-A4543EDC036F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F454E19-779E-43A9-98F5-A4543EDC036F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

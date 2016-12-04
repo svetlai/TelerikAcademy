@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="wraper"></div>
+<script id = "article-template" type='text/x-handlebars-template'>
+    <div class='id'>
+        <p class="Pesho" data-id = "{{id}}">Name: {{name}}</p>
+        <p>Visitors {{visitors}}</p>
+    </div>
+</script>
+<script src="bower_components/handlebars.js/lib/handlebars.gs"></script>
+<script>
+    var html = document.getElementById('article-template').innerHTML;
+    console.log(html);
+    var articleTemplate = Handlebars.compile(html);
+    var article = {
+                id: 5,
+                name: 'Svilen Ukalski',
+                visitors: 555555
+            },
+            articleResult = articleTemplate(article);
+    document.getElementById('wraper').innerHTML = articleResult;
+</script>
+</body>
+</html>

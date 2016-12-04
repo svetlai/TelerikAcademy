@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="_4._1.User_Profile.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .sidebar {
+            position: relative;
+            float: left;
+            padding: 10px;
+        }
+
+        .body-content {
+            display: inline-block;
+            padding: 10px;
+            clear: right;
+            border-left: 1px solid black;
+        }
+        .header a{
+            font-size: 1.2em;
+        }
+        .footer {
+            clear: left;
+            bottom: 0;
+            padding: 5px;
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form id="formMain" runat="server">
+        <div id="wrapper">
+            <div class="header">
+                <a class="navbar-brand" runat="server" href="~/Home.aspx">User Profile App</a>
+            </div>
+            <div class="sidebar navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a runat="server" href="~/Home.aspx">Home</a></li>
+                            <li><a runat="server" href="~/PersonalInfo.aspx">Personal Info</a></li>
+                            <li><a runat="server" href="~/Friends.aspx">Friends</a></li>
+                            <li><a runat="server" href="~/AdditionalInfo.aspx">Additional Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container body-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">Telerik Academy</div>
+        </div>
+    </form>
+</body>
+</html>

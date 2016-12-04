@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="well">
+        <form class="form-horizontal" name="registerForm">
+            <fieldset>
+                <legend>Register</legend>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="inputEmail" ng-model="user.email" required="required" name="Email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="inputPassword" ng-model="user.password" required="required" name="Password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputConfirm" class="col-lg-2 control-label confirm">Confirm Password</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="inputConfirm" ng-model="user.confirmPassword" required="required" name="ConfirmPassword" placeholder="ConfirmPassword">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button class="btn btn-default" id="btn-cancel">Cancel</button>
+                        <button class="btn btn-primary" id="btn-register" ng-disabled="registeForm.$invalid" ng-click="signup(user)">Register</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

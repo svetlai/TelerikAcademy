@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ExpressJS</Name>
+    <RootNamespace>ExpressJS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9003bf5f-8df1-4bfb-9ff7-0ba900faa061</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="public\lib\bootstrap-3.2.0\js\bootstrap.js" />
+    <Compile Include="public\lib\bootstrap-3.2.0\js\bootstrap.min.js" />
+    <Compile Include="public\lib\jquery-2.1.1\jquery.min.js" />
+    <Compile Include="server.js" />
+    <Compile Include="server\config\auth.js" />
+    <Compile Include="server\config\config.js" />
+    <Compile Include="server\config\express.js" />
+    <Compile Include="server\config\mongoose.js" />
+    <Compile Include="server\config\passport.js" />
+    <Compile Include="server\config\routes.js" />
+    <Compile Include="server\controllers\index.js" />
+    <Compile Include="server\controllers\UsersController.js" />
+    <Compile Include="server\data\models\User.js" />
+    <Compile Include="server\data\users.js" />
+    <Compile Include="server\utilities\encryption.js" />
+    <Content Include="package.json" />
+    <Content Include="public\css\site.css" />
+    <Content Include="public\lib\bootstrap-3.2.0\css\bootstrap-theme.css" />
+    <Content Include="public\lib\bootstrap-3.2.0\css\bootstrap-theme.css.map" />
+    <Content Include="public\lib\bootstrap-3.2.0\css\bootstrap-theme.min.css" />
+    <Content Include="public\lib\bootstrap-3.2.0\css\bootstrap.css" />
+    <Content Include="public\lib\bootstrap-3.2.0\css\bootstrap.css.map" />
+    <Content Include="public\lib\bootstrap-3.2.0\css\bootstrap.min.css" />
+    <Content Include="public\lib\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\lib\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\lib\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\lib\bootstrap-3.2.0\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="README.md" />
+    <Content Include="server\views\index.html" />
+    <Content Include="server\views\index.jade" />
+    <Content Include="server\views\shared\layout.html" />
+    <Content Include="server\views\shared\layout.jade" />
+    <Content Include="server\views\shared\scripts.html" />
+    <Content Include="server\views\shared\scripts.jade" />
+    <Content Include="server\views\users\login.html" />
+    <Content Include="server\views\users\login.jade" />
+    <Content Include="server\views\users\register.html" />
+    <Content Include="server\views\users\register.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\lib\" />
+    <Folder Include="public\lib\bootstrap-3.2.0\" />
+    <Folder Include="public\lib\bootstrap-3.2.0\css\" />
+    <Folder Include="public\lib\bootstrap-3.2.0\fonts\" />
+    <Folder Include="public\lib\bootstrap-3.2.0\js\" />
+    <Folder Include="public\lib\jquery-2.1.1\" />
+    <Folder Include="server\" />
+    <Folder Include="server\config\" />
+    <Folder Include="server\controllers\" />
+    <Folder Include="server\data\" />
+    <Folder Include="server\data\models\" />
+    <Folder Include="server\utilities\" />
+    <Folder Include="server\views\" />
+    <Folder Include="server\views\shared\" />
+    <Folder Include="server\views\users\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

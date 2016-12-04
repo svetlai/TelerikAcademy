@@ -1,0 +1,14 @@
+{
+  "name": "File_Upload",
+  "version": "0.0.0",
+  "description": "File Upload",
+  "main": "server.js",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "formidable": "^1.0.15"
+  }
+}

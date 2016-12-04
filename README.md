@@ -59,17 +59,21 @@ Homework and projects for Telerik Software Academy
 
 ### Data Structures and Algorithms
 
-1. [Data Structure Algorithms and Complexity](/Data-Structures-and-Algorithms/01-DSA-and-Complexity)
-* [Linear Data Structures](/Data-Structures-and-Algorithms/02-Linear-Data-Structures)
-* [Trees and Traversals](/Data-Structures-and-Algorithms/03-Trees-and-Traversals)
-* [Dictionaries Hash Tables and Sets](/Data-Structures-and-Algorithms/04-Dictionaries-and-HashTables)
-* [Advanced Data Structures](/Data-Structures-and-Algorithms/05-Advanced-Data-Structures)
-* [Data Structures Efficiency](/Data-Structures-and-Algorithms/06-Data-Structures-Efficiency)
-* [Recursion](/Data-Structures-and-Algorithms/07-Recursion)
-* [Sorting and Searching Algorithms](/Data-Structures-and-Algorithms/08-Sorting-and-Searching-Algorithms)
-* [Combinatorics](/Data-Structures-and-Algorithms/09-Combinatorics)
-* [Dynamic Programming](/Data-Structures-and-Algorithms/10-Dynamic-Programming)
-* [Graphs](/Data-Structures-and-Algorithms/11-Graphs)
+1. [Data Structure Algorithms and Complexity](./Data-Structures-and-Algorithms/01-DSA-and-Complexity)
+* [Linear Data Structures](./Data-Structures-and-Algorithms/02-Linear-Data-Structures)
+* [Trees and Traversals](./Data-Structures-and-Algorithms/03-Trees-and-Traversals)
+* [Dictionaries Hash Tables and Sets](./Data-Structures-and-Algorithms/04-Dictionaries-and-HashTables)
+* [Advanced Data Structures](./Data-Structures-and-Algorithms/05-Advanced-Data-Structures)
+* [Data Structures Efficiency](./Data-Structures-and-Algorithms/06-Data-Structures-Efficiency)
+* [Recursion](./Data-Structures-and-Algorithms/07-Recursion)
+* [Sorting and Searching Algorithms](./Data-Structures-and-Algorithms/08-Sorting-and-Searching-Algorithms)
+* [Combinatorics](./Data-Structures-and-Algorithms/09-Combinatorics)
+* [Dynamic Programming](./Data-Structures-and-Algorithms/10-Dynamic-Programming)
+* [Graphs](./Data-Structures-and-Algorithms/11-Graphs)
+
+#### Team Project ####
+
+* [Team Project - SixtySix Game Bot](https://github.com/NinjAScode/Teamwork-SixtySix)
 
 ## Web Design and UI Technologies ##
 

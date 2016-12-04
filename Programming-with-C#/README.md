@@ -56,14 +56,18 @@
 
 ### Data Structures and Algorithms
 
-1. [Data Structure Algorithms and Complexity Homework](/Data-Structures-and-Algorithms/01-DSA-and-Complexity)
-* [Linear Data Structures Homework](/Data-Structures-and-Algorithms/02-Linear-Data-Structures)
-* [Trees and Traversals Homework](/Data-Structures-and-Algorithms/03-Trees-and-Traversals)
-* [Dictionaries Hash Tables and Sets Homework](/Data-Structures-and-Algorithms/04-Dictionaries-and-HashTables)
-* [Advanced Data Structures Homework](/Data-Structures-and-Algorithms/05-Advanced-Data-Structures)
-* [Data Structures Efficiency Homework](/Data-Structures-and-Algorithms/06-Data-Structures-Efficiency)
-* [Recursion Homework](/Data-Structures-and-Algorithms/07-Recursion)
-* [Sorting and Searching Algorithms Homework](/Data-Structures-and-Algorithms/08-Sorting-and-Searching-Algorithms)
-* [Combinatorics Homework](/Data-Structures-and-Algorithms/09-Combinatorics)
-* [Dynamic Programming Homework](/Data-Structures-and-Algorithms/10-Dynamic-Programming)
-* [Graphs Homework](/Data-Structures-and-Algorithms/11-Graphs)
+1. [Data Structure Algorithms and Complexity Homework](./Data-Structures-and-Algorithms/01-DSA-and-Complexity)
+* [Linear Data Structures Homework](./Data-Structures-and-Algorithms/02-Linear-Data-Structures)
+* [Trees and Traversals Homework](./Data-Structures-and-Algorithms/03-Trees-and-Traversals)
+* [Dictionaries Hash Tables and Sets Homework](./Data-Structures-and-Algorithms/04-Dictionaries-and-HashTables)
+* [Advanced Data Structures Homework](./Data-Structures-and-Algorithms/05-Advanced-Data-Structures)
+* [Data Structures Efficiency Homework](./Data-Structures-and-Algorithms/06-Data-Structures-Efficiency)
+* [Recursion Homework](./Data-Structures-and-Algorithms/07-Recursion)
+* [Sorting and Searching Algorithms Homework](./Data-Structures-and-Algorithms/08-Sorting-and-Searching-Algorithms)
+* [Combinatorics Homework](./Data-Structures-and-Algorithms/09-Combinatorics)
+* [Dynamic Programming Homework](./Data-Structures-and-Algorithms/10-Dynamic-Programming)
+* [Graphs Homework](./Data-Structures-and-Algorithms/11-Graphs)
+
+#### Team Project ####
+
+* [Team Project - SixtySix Game Bot](https://github.com/NinjAScode/Teamwork-SixtySix)

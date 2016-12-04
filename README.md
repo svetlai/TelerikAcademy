@@ -134,8 +134,6 @@ Homework and projects for Telerik Software Academy
 
 ### Databases 
 
-### Databases ###
-
 1. [Db Systems Overview Homework](./Software-Technologies/Databases/01-Db-Systems-Overview)
 * [Data Modelling and ER Diagrams Homework](./Software-Technologies/Databases/02-Data-Modelling-and-ER-Diagrams)
 * [SQL Intro Homework](./Software-Technologies/Databases/03-SQL-Intro)

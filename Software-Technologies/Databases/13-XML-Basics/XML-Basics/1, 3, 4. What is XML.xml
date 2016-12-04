@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml name="What is XML?">
+  <definition>
+    1. Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a 
+    format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification
+    produced by the W3C, and several other related specifications, all free open standards.
+  </definition>
+  <usage>
+    The design goals of XML emphasize simplicity, generality, and usability over the Internet. It is a textual data 
+    format with strong support via Unicode for different human languages. Although the design of XML focuses on 
+    documents, it is widely used for the representation of arbitrary data structures, for example in web services.
+  </usage>
+  <namespaces>
+    3. XML namespaces are used for providing uniquely named elements and attributes in an XML document. An XML instance 
+    may contain element or attribute names from more than one XML vocabulary. If each vocabulary is given a namespace, 
+    the ambiguity between identically named elements or attributes can be resolved.
+  </namespaces>
+  <urn>
+    4. In computing, a uniform resource identifier (URI) is a string of characters used to identify a name of a resource. 
+    Such identification enables interaction with representations of the resource over a network, typically the World 
+    Wide Web, using specific protocols. Schemes specifying a concrete syntax and associated protocols define each URI. 
+    The most common form of URI is the uniform resource locator (URL), frequently referred to informally as a web 
+    address. More rarely seen in usage is the uniform resource name (URN), which was designed to complement URLs by 
+    providing a mechanism for the identification of resources in particular namespaces.
+  </urn>
+</xml>

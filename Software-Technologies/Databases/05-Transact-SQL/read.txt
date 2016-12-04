@@ -1,0 +1,7 @@
+In order for some of these queries to work (Transact-SQL HW.sql), you need to add TelerikAcademy database to MS SQL Server (run the --Create-TelerikAcademy-Database-SQL-Script.sql-- file).
+
+You can run a single query by selecting it before pressing Execute (F5).
+
+Be sure to specify the path to the right folder in Task 10.
+
+Thank you.

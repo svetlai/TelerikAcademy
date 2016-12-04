@@ -2,6 +2,28 @@
 
 ## Software Technologies##
 
+### Databases ###
+
+1. [Db Systems Overview Homework](./Databases/01-Db-Systems-Overview)
+* [Data Modelling and ER Diagrams Homework](./Databases/02-Data-Modelling-and-ER-Diagrams)
+* [SQL Intro Homework](./Databases/03-SQL-Intro)
+* [Advanced SQL Homework](./Databases/04-Advanced-SQL)
+* [Transact SQL Homework](./Databases/05-Transact-SQL)
+* [ADO.NET Homework](./Databases/06-ADO.NET)
+* [ORM and Entity Framework Homework](./Databases/07-ORM-and-EntityFramework)
+* [Code First Homework](./Databases/08-Code-First)
+* [Entity Framework Performance Homework](./Databases/09-EntityFramework-Performance)
+* [Database Performance Homework](./Databases/10-Database-Performance)
+* [Transactions In ADO.NET Homework](./Databases/11-Transactions-In-ADO.NET)
+* [MongoDB Homework](./Databases/12-MongoDB)
+* [XML Basics Homework](./Databases/13-XML-Basics)
+* [XML Processing in.NET Homework](./Databases/14-XML-Processing-In-.NET)
+* [Processing JSON in .NET Homework](./Databases/15-Processing-Json-In-.NET)
+
+#### Team Project ####
+
+* [Football Database](https://github.com/TeamWolfRaider/TeamWork)
+
 ### Web Services and Cloud
 
 1. [ASP.NET-Web-API Homework](./Web-Services-and-Cloud/01-ASP.Net-Web.Api)
@@ -55,7 +77,7 @@
 
 * [Individual Project - Like It](https://github.com/svetlai/LikeIt)
 
-### Windows-Applications
+### Windows Applications
 
 * [Team Project - Upgrade Yourself - A mobile app for self upgrading in software](https://github.com/TeamTwenty-Six/UpgradeYourself)
 

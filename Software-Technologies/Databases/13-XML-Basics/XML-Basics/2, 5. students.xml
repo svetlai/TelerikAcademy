@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="7. students-xml2html.xslt" ?>
+<students xmlns="urn:students">
+  <student>
+    <name>Pesho Peshov</name>
+    <sex>Male</sex>
+    <birth-date>12-09-1987</birth-date>
+    <phone>08888888888</phone>
+    <email>pesho@yahoo.com</email>
+    <course>Databases</course>
+    <specialty>Software Engineering</specialty>
+    <faculty-number>287651</faculty-number>
+    <exams>
+      <exam>
+        <name>OOP</name>
+        <tutor>Minkov</tutor>
+        <score>78</score>
+      </exam>
+      <exam>
+        <name>C#</name>
+        <tutor>Kenov</tutor>
+        <score>54</score>
+      </exam>
+    </exams>
+    <enrollment>
+      <date>12-12-2013</date>
+      <exam-score>87</exam-score>
+    </enrollment>
+    <teachers-endorsements>
+      certified
+    </teachers-endorsements>
+  </student>
+  <student>
+    <name>Gosho Goshov</name>
+    <sex>Male</sex>
+    <birth-date>12-12-1987</birth-date>
+    <phone>08888887888</phone>
+    <email>gosho@yahoo.com</email>
+    <course>Databases</course>
+    <specialty>Software Engineering</specialty>
+    <faculty-number>245651</faculty-number>
+    <exams>
+      <exam>
+        <name>OOP</name>
+        <tutor>Minkov</tutor>
+        <score>27</score>
+      </exam>
+      <exam>
+        <name>C#</name>
+        <tutor>Kenov</tutor>
+        <score>90</score>
+      </exam>
+    </exams>
+    <enrollment>
+      <date>1-6-2013</date>
+      <exam-score>57</exam-score>
+    </enrollment>
+    <teachers-endorsements>
+      certified
+    </teachers-endorsements>
+  </student>
+</students>

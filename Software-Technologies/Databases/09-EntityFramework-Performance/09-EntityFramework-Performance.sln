@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAcademy.Model", "TelerikAcademy.Model\TelerikAcademy.Model.csproj", "{F067916E-E637-44D7-8AFA-7B9C00E596A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-2-SelectEmployees", "01-2-SelectEmployees\01-2-SelectEmployees.csproj", "{BB7A74A9-761F-4531-A1FE-89B934522E09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F067916E-E637-44D7-8AFA-7B9C00E596A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F067916E-E637-44D7-8AFA-7B9C00E596A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F067916E-E637-44D7-8AFA-7B9C00E596A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F067916E-E637-44D7-8AFA-7B9C00E596A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB7A74A9-761F-4531-A1FE-89B934522E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7A74A9-761F-4531-A1FE-89B934522E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7A74A9-761F-4531-A1FE-89B934522E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7A74A9-761F-4531-A1FE-89B934522E09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

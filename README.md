@@ -134,7 +134,27 @@ Homework and projects for Telerik Software Academy
 
 ### Databases 
 
-* [Team Project - Football Database](https://github.com/TeamWolfRaider/TeamWork)
+### Databases ###
+
+1. [Db Systems Overview Homework](./Software-Technologies/Databases/01-Db-Systems-Overview)
+* [Data Modelling and ER Diagrams Homework](./Software-Technologies/Databases/02-Data-Modelling-and-ER-Diagrams)
+* [SQL Intro Homework](./Software-Technologies/Databases/03-SQL-Intro)
+* [Advanced SQL Homework](./Software-Technologies/Databases/04-Advanced-SQL)
+* [Transact SQL Homework](./Software-Technologies/Databases/05-Transact-SQL)
+* [ADO.NET Homework](./Software-Technologies/Databases/06-ADO.NET)
+* [ORM and Entity Framework Homework](./Software-Technologies/Databases/07-ORM-and-EntityFramework)
+* [Code First Homework](./Software-Technologies/Databases/08-Code-First)
+* [Entity Framework Performance Homework](./Software-Technologies/Databases/09-EntityFramework-Performance)
+* [Database Performance Homework](./Software-Technologies/Databases/10-Database-Performance)
+* [Transactions In ADO.NET Homework](./Software-Technologies/Databases/11-Transactions-In-ADO.NET)
+* [MongoDB Homework](./Software-Technologies/Databases/12-MongoDB)
+* [XML Basics Homework](./Software-Technologies/Databases/13-XML-Basics)
+* [XML Processing in.NET Homework](./Software-Technologies/Databases/14-XML-Processing-In-.NET)
+* [Processing JSON in .NET Homework](./Software-Technologies/Databases/15-Processing-Json-In-.NET)
+
+#### Team Project ####
+
+* [Football Database](https://github.com/TeamWolfRaider/TeamWork)
 
 ### Web Services and Cloud
 
@@ -189,7 +209,7 @@ Homework and projects for Telerik Software Academy
 
 * [Individual Project - Like It](https://github.com/svetlai/LikeIt)
 
-### Windows-Applications
+### Windows Applications
 
 * [Team Project - Upgrade Yourself - A mobile app for self upgrading in software](https://github.com/TeamTwenty-Six/UpgradeYourself)
 

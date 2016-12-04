@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Форум - Телерик Академия - Студентска система</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" />
+    <meta name="keywords" content="Telerik Academy, Академия на Телерик" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="revisit-After" content="1 day" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Telerik Academy" />
+    <meta name="generator" content="Telerik Academy Learning System 5.7 (build 20160514.1dfa2d3" />
+    <link rel="shortcut icon" href="/Content/Images/favicon.ico" />
+    <link rel="apple-touch-icon" href="/Content/Images/apple-touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" href="/Rss/LatestCourses" title="Най-новите курсове в Академията на Телерик" />
+    <link href="/Content/kendoCss?v=3nWxwfpmoDQ4lbXxMN-thhkdX-Be9mDq05a2B_4sS7o1" rel="stylesheet"/>
+<link href="/Content/bootstrap?v=0q8mHivjqJQg45Dm3BwiTIrHC-_7gQtA81bYcXP-KBs1" rel="stylesheet"/>
+<link href="/Content/css?v=0H6MskmFFdhv0alYLjd8wbX40p8mmOJrdA9ZNNVqGDk1" rel="stylesheet"/>
+
+    
+
+
+    <noscript>
+        <link href="/Content/NoJavascript.css" rel="stylesheet" type="text/css" />
+    </noscript>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script>window.jQuery || document.write(decodeURI('%3Cscript src="/Scripts/jquery-2.1.4.min.js"%3E%3C/script%3E'))</script>
+    <script src="/bundles/kendo?v=GhYLbiHozPa7MhOk4j9S4KEI2lz18MmE8Au8Kexq-7I1"></script>
+<script src="/bundles/TILS/global?v=TiHczx48os4V0qn4YiH_uXyTq5xN9poUqBGb9oWi0c81"></script>
+<script src="/bundles/bootstrap?v=wMFBIIZ6OsUCe1qOSlRNS_6hGBJgfCE05Vh1GzCppYo1"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    
+
+
+</head>
+
+
+
+<body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MJH9PN"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MJH9PN');
+    </script>
+    <!-- End Google Tag Manager -->
+    <div id="Wrapper">
+        <header id="MainHeader">
+                <div id="HeaderLoginPanel" class="pull-right">
+
+                    <div style="">
+                        <a href="/Users/Auth/Login?ReturnURL=/Forum/Home" id="EntranceButton" class="entranceButton" rel="nofollow">Вход</a>
+                        <a href="/Users/Auth/Registration" class="entranceButton" rel="nofollow">Регистрация</a>
+                        <a href="/Users/Auth/FacebookLogin" id="FbLogin" class="entranceButton" rel="nofollow"></a>
+
+                    </div>
+
+
+                </div>
+        </header>
+
+        <nav class="kendo-style-black">
+            <ul id="Menu" class="noJavascriptMenu">
+                <li>
+                    <a href="/"><span class="glyphicon glyphicon-home" title="Начало"></span></a>
+                </li>
+                <li>
+                    <span class="glyphicon glyphicon-globe" title="Софтуерна академия"></span>
+                    Академия
+                    <ul>
+                        <li><a href="/SoftwareAcademy/Candidate" rel="nofollow">Кандидатстване за академията</a></li>
+                        <li><a href="/SoftwareAcademy/Candidate/ExamDateSelect" rel="nofollow">Входен изпит</a></li>
+                        <li>
+                            <a href="/Courses/CourseTracks/List">Специалности</a>
+                            <ul>
+                            </ul>
+                        </li>
+                            <li>
+                                <a href="/Courses/CourseTracks/Archive">Архивни специалности</a>
+                                <ul>
+                                        <li><a href="/Courses/Tracks/ms.net-ninja-developer">.NET нинджа разработчик 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/csharp-software-developer-2013">C# програмист 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/web-site-developer">Разработчик на уеб сайтове 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/front-end-web-developer">Front-end уеб разработчик 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/xaml-front-end-developer">XAML Front-end разработчик 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/server-side-developer">Разработчик на сървърни услуги 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/mobile-application-developer">Разработчик на мобилни приложения 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/asp-net-web-developer">ASP.NET уеб разработчик 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/windows-8-javascript-developer">Windows 8 JavaScript разработчик 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/windows-8-xaml-developer">Windows 8 XAML разработчик 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/telerik-academy-ninja">Telerik Academy Ninja</a></li>
+                                        <li><a href="/Courses/Tracks/javascript-developer-2013">JavaScript програмист 2012/2013</a></li>
+                                        <li><a href="/Courses/Tracks/csharp-software-developer">C# програмист</a></li>
+                                        <li><a href="/Courses/Tracks/javascript-software-developer">JavaScript програмист</a></li>
+                                        <li><a href="/Courses/Tracks/web-developer">Разработчик на уеб приложения</a></li>
+                                        <li><a href="/Courses/Tracks/mobile-developer">Разработчик на мобилни приложения</a></li>
+                                        <li><a href="/Courses/Tracks/front-end-developer-2015">Уеб Front-end разработчик</a></li>
+                                        <li><a href="/Courses/Tracks/quality-assurance-engineer">QA инженер</a></li>
+                                        <li><a href="/Courses/Tracks/system-administrator">Системен администратор</a></li>
+                                        <li><a href="/Courses/Tracks/seo-expert">SEO експерт</a></li>
+                                </ul>
+                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="hidden-md hidden-lg k-link">
+                                            <span class="glyphicon glyphicon-book" title="Курсове"></span>
+                                            Курсове
+                                        </span>
+                                        <a href="/Courses/Courses/List" class="hidden-sm hidden-xs">
+                                            <span class="glyphicon glyphicon-book" title="Курсове"></span>
+                                            Курсове
+                                        </a>
+                                        <ul>
+                                            <li class="hidden-md hidden-lg">
+                                                <a href="/Courses/Courses/List">
+                                                    <span class="glyphicon glyphicon-book" title="Курсове"></span>
+                                                    Активни Курсове
+                                                </a>
+
+                                                    <hr />
+                                            </li>
+                                                    <li><a href="/Courses/Courses/Details/397">CSS стилизиране (ноември 2016)</a></li>
+                                                    <li><a href="/Courses/Courses/Details/403">Училищна академия: HTML, CSS и JavaScript</a></li>
+                                                    <li><a href="/Courses/Courses/Details/401">Многонишково програмиране</a></li>
+                                                    <li><a href="/Courses/Courses/Details/400">Уеб приложения с Node.js</a></li>
+                                                    <li><a href="/Courses/Courses/Details/399">Структури от данни и алгоритми (ноември 2016)</a></li>
+                                                    <li><a href="/Courses/Courses/Details/392">UX дизайн и работа с Photoshop</a></li>
+                                                    <li><a href="/Courses/Courses/Details/391">Single-page приложения с Angular 2</a></li>
+                                                    <li><a href="/Courses/Courses/Details/398">C# за напреднали (ноември 2016)</a></li>
+
+                                                <li>
+                                                    <a href="/Courses/KidsCourses/List">
+                                                        <span class="glyphicon glyphicon-book" title="Курсове"></span>
+                                                        Kids Academy Курсове
+                                                    </a>
+                                                    <ul>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/402">Разработка на игри - Начинаещи - Явор Никифоров (ноември 2016)</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/382">Алгоритмично програмиране - Начинаещи - Явор Никифоров</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/381">Разработка на игри - Начинаещи - Явор Никифоров (септември 2016)</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/356">Алгоритмично програмиране - Напреднали - Иво Дилов</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/355">Алгоритмично програмиране - Средно напреднали /Урок 20+/ - Явор Никифоров</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/354">Разработка на игри - Средно напреднали /Урок 23+/ - Иво Дилов</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/353">Разработка на игри - Напреднали /Урок 35+/ - Иво Дилов</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/Courses/Courses/Details/352">Разработка на игри - Средно напреднали /Урок 10+/ - Явор Никифоров</a>
+                                                            </li>
+                                                    </ul>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                        <li>
+                                            <span class="glyphicon glyphicon-folder-open" title="Архив"></span>
+                                            Архив
+                                            <ul>
+    <li>
+        Програмиране
+            <ul>
+    <li>
+        Програмиране 2012/2013
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/1">C# Част 1 - декември 2012</a></li>
+                    <li><a href="/Courses/Courses/Details/20">C# Част 2 - февруари 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/29">ООП - март 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/40">Качествен програмен код - април 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/89">Структури данни и алгоритми - юни 2013</a></li>
+            </ul>
+    </li>
+    <li>
+        Програмиране 2013 - пролет
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/81">C# част I - пролет 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/97">C# част II - лято 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/114">ООП - пролетна академия 2013</a></li>
+            </ul>
+    </li>
+    <li>
+        Програмиране 2013/2014
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/144">C#  част 1 - октомври 2013 </a></li>
+                    <li><a href="/Courses/Courses/Details/151">C# част 2 - декември 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/159">ООП - февруари 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/174">Качествен програмен код - април 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/186">Структури данни и алгоритми - август 2014</a></li>
+            </ul>
+    </li>
+    <li>
+        Програмиране 2015
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/212">C# програмиране - част 1</a></li>
+                    <li><a href="/Courses/Courses/Details/219">C# програмиране - част II</a></li>
+                    <li><a href="/Courses/Courses/Details/225">Обектно-ориентирано програмиране 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/244">Качествен програмен код 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/272">Структури от данни и алгоритми 2015</a></li>
+            </ul>
+    </li>
+    <li>
+        Програмиране 2016 - пролет
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/323">C# основи (март 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/331">C# за напреднали (май 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/338">Обектно-ориентирано програмиране (юни 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/345">Компонентно тестване със C# (юли 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/347">Качествен програмен код - част 1 (август 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/349">Качествен програмен код - част 2 (септември 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/389">Шаблони за дизайн (октомври 2016)</a></li>
+            </ul>
+    </li>
+    <li>
+        Програмиране 2016 - есен
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/385">C# основи (октомври 2016)</a></li>
+            </ul>
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        Софтуерни технологии
+            <ul>
+    <li>
+        Софтуерни технологии 2013
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/98">Бази данни - юли 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/106">Уеб услуги и cloud - август 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/110">JavaScript библиотеки - август 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/93">Windows 8 Store приложения с JavaScript - август 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/111">Десктоп приложения със XAML и WPF - септември 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/113">ASP.NET Web Forms - септември 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/88">Windows 8 Store приложения със XAML - септември 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/112">ASP.NET MVC - септември 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/117">Хибридни мобилни приложения - октомври 2013</a></li>
+            </ul>
+    </li>
+    <li>
+        Осигуряване на качеството 2013
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/47">Software Quality Assurance - Part I - 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/95">Software Quality Assurance - Part II - 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/103">Software Quality Assurance - Part III - 2013</a></li>
+            </ul>
+    </li>
+    <li>
+        Осигуряване на качеството 2014
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/183">Software Quality Assurance - Part I - 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/196">Software Quality Assurance - Part II - 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/201">Software Quality Assurance - Part III - 2014</a></li>
+            </ul>
+    </li>
+    <li>
+        Софтуерни технологии 2014
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/185">Бази данни - август 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/187">Уеб услуги и cloud - септември 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/189">Single-page приложения с JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/190">Хибридни мобилни приложения - септември 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/192">End-to-End JavaScript Applications</a></li>
+                    <li><a href="/Courses/Courses/Details/193">Мобилни приложения с Android</a></li>
+                    <li><a href="/Courses/Courses/Details/197">ASP.NET Web Forms 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/198">Мобилни приложения за iPhone и iPad</a></li>
+                    <li><a href="/Courses/Courses/Details/200">Уеб приложения с ASP.NET MVC 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/202">Windows Phone и Windows Store приложения</a></li>
+            </ul>
+    </li>
+    <li>
+        Софтуерни технологии 2015
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/257">Бази данни 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/275">Уеб услуги и облачни технологии 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/299">Single Page приложения с JavaScript 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/300">Приложения за Windows с UWP (2015)</a></li>
+                    <li><a href="/Courses/Courses/Details/305">End-to-end JavaScript приложения 2016</a></li>
+                    <li><a href="/Courses/Courses/Details/306">Мобилни приложения за Android</a></li>
+                    <li><a href="/Courses/Courses/Details/310">ASP.NET Web Forms 2016</a></li>
+                    <li><a href="/Courses/Courses/Details/311">Мобилни приложения за iPhone и iPad 2016</a></li>
+                    <li><a href="/Courses/Courses/Details/313">ASP.NET MVC 2016</a></li>
+                    <li><a href="/Courses/Courses/Details/316">Мултиплатформени мобилни приложения с NativeScript 2016</a></li>
+            </ul>
+    </li>
+    <li>
+        Осигуряване на качеството 2015
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/290">Software Quality Assurance - Part I - 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/301">Software Quality Assurance - Part II - 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/308">Software Quality Assurance - Part III - 2015</a></li>
+            </ul>
+    </li>
+    <li>
+        Софтуерни технологии 2016 - пролет
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/388">Бази данни (октомври 2016)</a></li>
+            </ul>
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        Уеб front-end
+            <ul>
+    <li>
+        Уеб front-end 2012/2013
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/2">HTML основи - декември 2012</a></li>
+                    <li><a href="/Courses/Courses/Details/16">CSS стилизиране - февруари 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/30">JavaScript част 1 - март 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/34">Рязане на сайтове - март 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/65">CMS системи 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/64">JavaScript част 2 - април 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/87">JavaScript приложения - юни 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/105">UX дизайн - септември 2013</a></li>
+            </ul>
+    </li>
+    <li>
+        Уеб front-end 2013/2014
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/154">HTML основи - януари 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/155">CSS стилизиране - януари 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/165">HTML основи - март 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/166">CSS стилизиране - март 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/173">JavaScript основи - април 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/178">JavaScript UI &amp; DOM</a></li>
+                    <li><a href="/Courses/Courses/Details/179">JavaScript ООП</a></li>
+                    <li><a href="/Courses/Courses/Details/182">JavaScript приложения</a></li>
+            </ul>
+    </li>
+    <li>
+        Уеб front-end 2015
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/230">HTML основи - април 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/231">CSS стилизиране - април-май 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/239">JavaScript - основи 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/245">JavaScript ООП 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/251">JavaScript UI и DOM</a></li>
+                    <li><a href="/Courses/Courses/Details/254">JavaScript приложения 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/262">UX дизайн 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/292">Photoshop 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/294">Рязане на сайтове 2015 </a></li>
+            </ul>
+    </li>
+    <li>
+        Уеб front-end 2016 - пролет
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/324">HTML основи (март 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/332">CSS стилизиране (май 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/339">Основи на JavaScript (юни 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/344">JavaScript UI и DOM юли 2016</a></li>
+                    <li><a href="/Courses/Courses/Details/346">JavaScript ООП (август 2016)</a></li>
+                    <li><a href="/Courses/Courses/Details/350">JavaScript приложения 2016</a></li>
+            </ul>
+    </li>
+    <li>
+        Уеб front-end 2016 - есен
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/386">HTML основи (октомври 2016)</a></li>
+            </ul>
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        Telerik Academy Plus
+            <ul>
+    <li>
+        2014
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/181">Telerik Kendo UI</a></li>
+                    <li><a href="/Courses/Courses/Details/184">Адаптивен дизайн и Twitter Bootstrap</a></li>
+                    <li><a href="/Courses/Courses/Details/188">Семинар &quot;Reflection&quot;</a></li>
+                    <li><a href="/Courses/Courses/Details/199">Новостите в C# 6.0 и Roslyn</a></li>
+                    <li><a href="/Courses/Courses/Details/208">Visual Studio 2015 и ASP.NET 5</a></li>
+                    <li><a href="/Courses/Courses/Details/210">Приложения за iOS със Swift</a></li>
+            </ul>
+    </li>
+    <li>
+        2015
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/217">Основи на Python</a></li>
+                    <li><a href="/Courses/Courses/Details/223">Архитектура на ASP.NET MVC приложения</a></li>
+                    <li><a href="/Courses/Courses/Details/228">JavaScript.next</a></li>
+                    <li><a href="/Courses/Courses/Details/235">Разработка на игри с Unity и C# - част 1</a></li>
+                    <li><a href="/Courses/Courses/Details/238">Разработка на игри с Unity и C# - част 2</a></li>
+                    <li><a href="/Courses/Courses/Details/243">Разработка на игри с Unity и C# - част 3</a></li>
+                    <li><a href="/Courses/Courses/Details/252">Практични съвети за разработка със C#</a></li>
+                    <li><a href="/Courses/Courses/Details/255">Асинхронно програмиране в C#</a></li>
+                    <li><a href="/Courses/Courses/Details/258">Практични съвети за разработка със C# - част II</a></li>
+            </ul>
+    </li>
+    <li>
+        2016
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/322">Advanced Reflection and Expression Trees</a></li>
+                    <li><a href="/Courses/Courses/Details/329">Bitwise Magic</a></li>
+            </ul>
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        Училищна академия
+            <ul>
+    <li>
+        Училищна академия 2012/2013
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/3">Септември 2012 - Уеб дизайн с HTML5 и CSS3</a></li>
+                    <li><a href="/Courses/Courses/Details/5">Октомври 2012 - Уеб приложения с JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/7">Ноември 2012 - Програмиране със C# върху .NET платформата</a></li>
+                    <li><a href="/Courses/Courses/Details/12">Декември 2012 - Бази данни</a></li>
+                    <li><a href="/Courses/Courses/Details/21">Януари 2013 - ASP.NET MVC</a></li>
+                    <li><a href="/Courses/Courses/Details/33">Февруари 2013 - Windows Store приложения с HTML, CSS и JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/38">Март 2013 - XAML приложения за Windows Desktop и Windows Store</a></li>
+                    <li><a href="/Courses/Courses/Details/72">Април 2013 - Подготовка за НОИТ</a></li>
+            </ul>
+    </li>
+    <li>
+        Училищна академия 2011/2012
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/52">Октомври 2011 - Въведение в уеб технологиите и езика PHP</a></li>
+                    <li><a href="/Courses/Courses/Details/51">Ноември 2011 - Разработка на цялостни уеб приложения с PHP</a></li>
+                    <li><a href="/Courses/Courses/Details/50">Декември 2011 - Уеб приложения и PHP за напреднали</a></li>
+                    <li><a href="/Courses/Courses/Details/49">Януари 2012 - Разработка на приложения със C# и бази данни</a></li>
+                    <li><a href="/Courses/Courses/Details/48">Февруари 2012 - Десктоп приложения със C# и WPF</a></li>
+                    <li><a href="/Courses/Courses/Details/46">Март 2012 - Мобилни приложения с PhoneGap</a></li>
+                    <li><a href="/Courses/Courses/Details/45">Април 2012 - Embedded Systems и Arduino</a></li>
+                    <li><a href="/Courses/Courses/Details/44">Май 2012 - Подготовка за НОИТ</a></li>
+                    <li><a href="/Courses/Courses/Details/43">Лято 2012 - ЛИШ - Програмиране за Windows 8, Metro и WinJS</a></li>
+            </ul>
+    </li>
+    <li>
+        Училищна академия 2010/2011
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/62">Ноември 2010 - Въведение в програмирането на езика C#</a></li>
+                    <li><a href="/Courses/Courses/Details/61">Декември 2010 - Софтуерно инженерство и работа в екип</a></li>
+                    <li><a href="/Courses/Courses/Details/60">Януари 2011 - Бази от данни, SQL Server и ORM технологии</a></li>
+                    <li><a href="/Courses/Courses/Details/59">Февруари 2011 - HTML и уеб технологии</a></li>
+                    <li><a href="/Courses/Courses/Details/58">Март 2011 - JavaScript и основи на ASP.NET</a></li>
+                    <li><a href="/Courses/Courses/Details/57">Април 2011 - Data-Driven ASP.NET уеб приложения</a></li>
+                    <li><a href="/Courses/Courses/Details/56">Май 2011 - Подготовка за IT Олимпиадата и за живота след училище</a></li>
+                    <li><a href="/Courses/Courses/Details/55">Юли 2011 - 3D моделиране и разработка на игри с OpenGL и C++</a></li>
+                    <li><a href="/Courses/Courses/Details/54">Август 2011 - 3D изкуство и разработка на игри</a></li>
+                    <li><a href="/Courses/Courses/Details/53">Лято 2011 - ЛИШ - HTML5, CSS3 и JavaScript</a></li>
+            </ul>
+    </li>
+    <li>
+        Училищна академия 2013/2014
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/90">Септември 2013 - HTML5 и CSS</a></li>
+                    <li><a href="/Courses/Courses/Details/143">Октомври 2013 - JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/148">Ноември 2013 - JavaScript DOM и UI</a></li>
+                    <li><a href="/Courses/Courses/Details/152">Декември 2013 - Уеб front-end разработка</a></li>
+                    <li><a href="/Courses/Courses/Details/156">Януари 2014 - Обектно-ориентирано програмиране с JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/162">Февруари 2014 - JavaScript приложения</a></li>
+                    <li><a href="/Courses/Courses/Details/169">Март 2014 - Single-page приложения с JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/171">Април 2014 - End-to-End JavaScript Applications</a></li>
+                    <li><a href="/Courses/Courses/Details/175">Май 2014 г. - Подготовка за НОИТ</a></li>
+                    <li><a href="/Courses/Courses/Details/177">Юни 2014 Проекти</a></li>
+            </ul>
+    </li>
+    <li>
+        Училищна академия 2014/2015
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/195">Октомври 2014 - Въведение в C#</a></li>
+                    <li><a href="/Courses/Courses/Details/203">Ноември 2014 - Въведение в C# - част 2 (ООП)</a></li>
+                    <li><a href="/Courses/Courses/Details/211">Декември 2014 - Бази данни и Entity Framework</a></li>
+                    <li><a href="/Courses/Courses/Details/213">Януари 2015 - Основи на HTML 5, CSS 3 и JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/222">Февруари 2015 - Уеб разработка с ASP.NET MVC</a></li>
+                    <li><a href="/Courses/Courses/Details/227">Март 2015 - iOS, Android и WinPhone приложения със Xamarin Studio</a></li>
+                    <li><a href="/Courses/Courses/Details/234">Април 2015 - 2D разработка на игри с Unity 3D</a></li>
+                    <li><a href="/Courses/Courses/Details/237">Май 2015 - Подготовка за НОИТ 2015</a></li>
+                    <li><a href="/Courses/Courses/Details/241">Юни 2015 - Проекти</a></li>
+            </ul>
+    </li>
+    <li>
+        Училищна академия 2015/2016
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/261">Въведение в Java - част 1</a></li>
+                    <li><a href="/Courses/Courses/Details/295">Въведение в Java - част 2</a></li>
+                    <li><a href="/Courses/Courses/Details/302">Структури от данни и ООП в Java</a></li>
+                    <li><a href="/Courses/Courses/Details/309">HTML, CSS и JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/318">Бази от данни и SQL</a></li>
+                    <li><a href="/Courses/Courses/Details/325">Училищна академия: Уеб приложения със SpringMVC</a></li>
+                    <li><a href="/Courses/Courses/Details/328">Училищна академия: Мобилни приложения за Andriod</a></li>
+                    <li><a href="/Courses/Courses/Details/333">Училищна академия: Подготовка за НОИТ</a></li>
+                    <li><a href="/Courses/Courses/Details/340">Училищна академия: Представяне на проекти</a></li>
+            </ul>
+    </li>
+    <li>
+        Училищна академия 2016/2017
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/383">Училищна академия: Въведение в TypeScript</a></li>
+                    <li><a href="/Courses/Courses/Details/393">Училищна академия: Обектно-ориентирано проргамиране с TypeScript</a></li>
+            </ul>
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        Алго академия
+            <ul>
+    <li>
+        Алго академия 2012/2013
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/4">Октомври 2012 - Основи на комбинаториката</a></li>
+                    <li><a href="/Courses/Courses/Details/8">Ноември 2012 - Структури от данни и STL</a></li>
+                    <li><a href="/Courses/Courses/Details/11">Декември 2012 - Изкуствен интелект</a></li>
+                    <li><a href="/Courses/Courses/Details/23">Януари 2013 - Компютърна геометрия</a></li>
+                    <li><a href="/Courses/Courses/Details/31">Февруари 2013 - Основи на графите</a></li>
+                    <li><a href="/Courses/Courses/Details/37">Март 2013 - Алгоритми върху графи</a></li>
+                    <li><a href="/Courses/Courses/Details/71">Април 2013 - Подготовка за НОИ</a></li>
+            </ul>
+    </li>
+    <li>
+        Алго академия 2011/2012
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/19">Март 2012 - Тренировъчно състезание</a></li>
+                    <li><a href="/Courses/Courses/Details/18">Април 2012 - Динамично оптимиране</a></li>
+            </ul>
+    </li>
+    <li>
+        Алго академия 2013/2014
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/91">Октомври 2013 - Търсене и сортиране</a></li>
+                    <li><a href="/Courses/Courses/Details/149">Ноември 2013 - Algo Basics - Въведение в C++ част 1</a></li>
+                    <li><a href="/Courses/Courses/Details/150">Ноември 2013 - Теория на игрите</a></li>
+                    <li><a href="/Courses/Courses/Details/153">Декември 2013 - Приложен изкуствен интелект</a></li>
+                    <li><a href="/Courses/Courses/Details/157">Януари 2014 - Algo Basics - Въведение в C++ част 2</a></li>
+                    <li><a href="/Courses/Courses/Details/158">Януари 2014 - Алчни алгоритми и евристики</a></li>
+                    <li><a href="/Courses/Courses/Details/160">Февруари 2014 - Algo Basics - Въведение в STL</a></li>
+                    <li><a href="/Courses/Courses/Details/161">Февруари 2014 - Динамично оптимиране</a></li>
+                    <li><a href="/Courses/Courses/Details/167">Март 2014 - Algo Basics - STL за напреднали</a></li>
+                    <li><a href="/Courses/Courses/Details/168">Март 2014 - Компютърна геометрия</a></li>
+                    <li><a href="/Courses/Courses/Details/172">Април 2014 - Подготовка за НОИ</a></li>
+            </ul>
+    </li>
+    <li>
+        Алго академия 2014/2015
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/194">Октомври 2014 - Състезателно програмиране</a></li>
+                    <li><a href="/Courses/Courses/Details/204">Ноември 2014 - Основи на графите</a></li>
+                    <li><a href="/Courses/Courses/Details/209">Декември 2014 - Приложен изкуствен интелект</a></li>
+                    <li><a href="/Courses/Courses/Details/215">Януари 2015 - Алгоритми върху графи</a></li>
+                    <li><a href="/Courses/Courses/Details/221">Февруари 2015 - Динамично оптимиране</a></li>
+                    <li><a href="/Courses/Courses/Details/229">Март 2015 - Standard Template Library и C++ 11</a></li>
+                    <li><a href="/Courses/Courses/Details/233">Подготовка за Националната олимпиада по информатика</a></li>
+                    <li><a href="/Courses/Courses/Details/240">Състезание по алгоритмично програмиране</a></li>
+            </ul>
+    </li>
+    <li>
+        Алго академия 2015/2016
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/260">Алгоритми върху символни низове (стрингове)</a></li>
+                    <li><a href="/Courses/Courses/Details/298">Алгоритми върху графи</a></li>
+                    <li><a href="/Courses/Courses/Details/303">Дървета и дървовидни структури</a></li>
+                    <li><a href="/Courses/Courses/Details/307">Комбинаторика</a></li>
+                    <li><a href="/Courses/Courses/Details/319">Алго академия: Динамично оптимиране</a></li>
+                    <li><a href="/Courses/Courses/Details/327">Подготовка за НОИ</a></li>
+                    <li><a href="/Courses/Courses/Details/335">Състезание по алгоритмично прорамиране</a></li>
+            </ul>
+    </li>
+            </ul>
+
+    </li>
+    <li>
+        Детска академия
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/41">Kids Academy 2011-2012</a></li>
+                    <li><a href="/Courses/Courses/Details/42">Kids Academy 2012-2013</a></li>
+                    <li><a href="/Courses/Courses/Details/146">Kids Academy 2013-2014</a></li>
+                    <li><a href="/Courses/Courses/Details/218">Kids Academy 2014-2015</a></li>
+                    <li><a href="/Courses/Courses/Details/205">Базови умения за работа с компютър и програмиране</a></li>
+                    <li><a href="/Courses/Courses/Details/278">Алгоритмично Програмиране второ ниво - Венелин Николов</a></li>
+                    <li><a href="/Courses/Courses/Details/263">Разработка на игри първо ниво - Явор Никифоров</a></li>
+                    <li><a href="/Courses/Courses/Details/264">Алгоритмично Програмиране първо ниво - Евгений Василев</a></li>
+                    <li><a href="/Courses/Courses/Details/266">Алгоритмично Програмиране второ ниво - Евгений Василев</a></li>
+                    <li><a href="/Courses/Courses/Details/268">Разработка на игри второ ниво - Явор Никифоров</a></li>
+                    <li><a href="/Courses/Courses/Details/269">Алгоритмично Програмиране първо ниво - Петя Христова</a></li>
+                    <li><a href="/Courses/Courses/Details/267">Алгоритмично Програмиране второ ниво - Явор Никифоров</a></li>
+                    <li><a href="/Courses/Courses/Details/270">Алгоритмично Програмиране второ ниво - Петя Христова</a></li>
+                    <li><a href="/Courses/Courses/Details/271">Алгоритмично Програмиране второ ниво - Димитър Стефанов</a></li>
+                    <li><a href="/Courses/Courses/Details/273">Алгоритмично Програмиране първо ниво - Атанаска Мишонова</a></li>
+                    <li><a href="/Courses/Courses/Details/274">Алгоритмично Програмиране трето ниво - Атанаска Мишонова</a></li>
+                    <li><a href="/Courses/Courses/Details/277">Алгоритмично Програмиране първо ниво - Венелин Николов</a></li>
+                    <li><a href="/Courses/Courses/Details/312">Kids Academy 2015-2016</a></li>
+                    <li><a href="/Courses/Courses/Details/314">Алгоритмично Програмиране първо ниво - Евгений Василев - пролетен прием 2016/2017</a></li>
+                    <li><a href="/Courses/Courses/Details/315">Разработка на игри първо ниво - Явор Никифоров - пролетен прием 2016/2017</a></li>
+            </ul>
+    </li>
+    <li>
+        Личностни и бизнес умения
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/63">Как да стартирам успешно ИТ кариера? (октомври 2012)</a></li>
+                    <li><a href="/Courses/Courses/Details/22">Споделяне на знания и работа в екип (януари 2013)</a></li>
+                    <li><a href="/Courses/Courses/Details/24">Умения за работа с хора</a></li>
+                    <li><a href="/Courses/Courses/Details/36">ИТ право за софтуерни инженери</a></li>
+                    <li><a href="/Courses/Courses/Details/39">Бизнес умения за софтуерни инженери 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/82">ИТ право - електронна търговия</a></li>
+                    <li><a href="/Courses/Courses/Details/85">Здрави и активни</a></li>
+                    <li><a href="/Courses/Courses/Details/100">Споделяне на знания и работа в екип - лято 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/109">Здравословен начин на живот</a></li>
+                    <li><a href="/Courses/Courses/Details/170">Комуникативни умения</a></li>
+                    <li><a href="/Courses/Courses/Details/176">Бизнес умения за софтуерни инженери 2014</a></li>
+                    <li><a href="/Courses/Courses/Details/232">Умения за работа с хора - 2015</a></li>
+            </ul>
+    </li>
+    <li>
+        Семинари
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/26">Уеб разработка с Python и Django</a></li>
+                    <li><a href="/Courses/Courses/Details/27">Програмиране на онлайн игри с HTML5 и ASP.NET</a></li>
+                    <li><a href="/Courses/Courses/Details/28">Game Design и Level Design</a></li>
+                    <li><a href="/Courses/Courses/Details/70">Практическо програмиране с JavaScript</a></li>
+                    <li><a href="/Courses/Courses/Details/84">Изграждане на web графични интерфейси</a></li>
+                    <li><a href="/Courses/Courses/Details/92">Агентни системи</a></li>
+                    <li><a href="/Courses/Courses/Details/101">Споделяне на знание в стила на Уикипедия</a></li>
+                    <li><a href="/Courses/Courses/Details/180">Хакатон &quot;Приложения за по-добър свят&quot;</a></li>
+                    <li><a href="/Courses/Courses/Details/214">Основи на Source Control системите</a></li>
+                    <li><a href="/Courses/Courses/Details/220">Основи на LINQ</a></li>
+                    <li><a href="/Courses/Courses/Details/224">Методология при решаването на задачи</a></li>
+                    <li><a href="/Courses/Courses/Details/259">Разработка на бизнес приложения с Progress OpenEdge</a></li>
+                    <li><a href="/Courses/Courses/Details/326"> &quot;Source Control Workshop&quot;</a></li>
+            </ul>
+    </li>
+    <li>
+        Други
+
+            <ul>
+                    <li><a href="/Courses/Courses/Details/10">JavaScript 2012</a></li>
+                    <li><a href="/Courses/Courses/Details/14">Мобилни приложения - ФМИ 2012</a></li>
+                    <li><a href="/Courses/Courses/Details/15">ASP.NET MVC - ФМИ 2012</a></li>
+                    <li><a href="/Courses/Courses/Details/13">Конкурс &quot;PC Magazine и Telerik&quot; 2012/2013</a></li>
+                    <li><a href="/Courses/Courses/Details/6">Уеб видео – монтаж и пост продукция 2012</a></li>
+                    <li><a href="/Courses/Courses/Details/9">Photoshop за уеб, печат и видео (на английски)</a></li>
+                    <li><a href="/Courses/Courses/Details/17">3ds Max - анимация, симулация и ефекти</a></li>
+                    <li><a href="/Courses/Courses/Details/25">Photoshop</a></li>
+                    <li><a href="/Courses/Courses/Details/35">Операционни системи 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/73">SEO курс - оптимизация за търсещите машини</a></li>
+                    <li><a href="/Courses/Courses/Details/94">Linux системна администрация 2013</a></li>
+                    <li><a href="/Courses/Courses/Details/104">PHP уеб разработка</a></li>
+                    <li><a href="/Courses/Courses/Details/147">Windows системна администрация</a></li>
+                    <li><a href="/Courses/Courses/Details/226">Design Patterns and SOLID (for Telerik employees)</a></li>
+                    <li><a href="/Courses/Courses/Details/236">ASP.NET and Kendo UI (for Telerik employees)</a></li>
+                    <li><a href="/Courses/Courses/Details/317">Кариерен форум на &quot;Академията на Телерик&quot;</a></li>
+            </ul>
+    </li>
+                                            </ul>
+                                        </li>
+
+                                    <li>
+                                        <span class="hidden-md hidden-lg k-link">
+                                            <span class="glyphicon glyphicon-list" title="Форум"></span>
+                                            Форум
+                                        </span>
+
+                                        <a href="/Forum/Home" class="hidden-sm hidden-xs">
+                                            <span class="glyphicon glyphicon-list" title="Форум"></span>
+                                            Форум
+                                        </a>
+                                            <ul>
+                                                <li class="hidden-md hidden-lg">
+                                                    <a href="/Forum/Home">
+                                                        <span class="glyphicon glyphicon-list" title="Форум"></span>
+                                                        Начало
+                                                    </a>
+
+                                                        <hr />
+                                                </li>
+    <li>
+        <a href="/Forum/Category/14/important-announcements">Важни съобщения</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/10/telerik-software-academy">Софтуерна академия</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/1/csharp-programming">C# Programming</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/18/csharp-part-1">C# Fundamentals</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/17/csharp-part-2">C# Advanced</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/16/csharp-oop">C# OOP</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/71/unit0tesing">Компонентно тестване със C#</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/19/c#-qpc">Качествен Програмен Код</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/72/design-patterns">Шаблони за дизайн</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/15/data-structures-algorithms">Структури данни и алгоритми</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/2/front-end-development">Уеб дизайн и UI технологии</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/27/html-css">HTML/CSS</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/37/photoshop-2015">Photoshop</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/26/ux-design">UX дизайн </a>
+    </li>
+    <li>
+        <a href="/Forum/Category/22/slice-and-dice-2015">Slice and Dice</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/25/javascript-part-1">JavaScript Fundamentals</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/28/javascript-oop">JavaScript OOP</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/24/javascript-part-2">JavaScript UI and DOM</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/23/js-apps">JavaScript Applications</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/73/angular-2">SPA Applications with Angular 2</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/8/web-development">Web Development</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/57/databases">Databases</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/58/web-services-and-cloud">Web services and cloud</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/59/javascript-frameworks">SPA Applications</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/60/web-applications-with-node-js">Web Applications with Node.js</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/56/asp-net-web-forms">ASP.NET Web Forms</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/55/asp-net-mvc">ASP.NET MVC</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/9/mobile-development">Mobile Development</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/61/hybrid-mobile-apps">Hybrid Mobile Apps</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/70/mobile-apps-with-native-script">Mobile Apps with NativeScript</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/63/android-mobile-apps">Android Mobile Apps</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/62/ios-mobile-apps">iOS Mobile Apps</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/64/windows-mobile-apps">Windows Mobile Apps</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/13/qa-academy">QA академия</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/12/telerik-school-academy">School Academy</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/3/algo-academy">Algo Academy (C++)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/11/kids-academy-programirane-za-deca">Kids Academy</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/5/events-and-competitions">Събития и конкурси</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/67/telerik-academy-plus">Семинари Telerik Academy Plus</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/34/international-space-apps-challenge">International Space Apps Challenge</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/33/pc-magazine-and-telerik-contest">Конкурс по програмиране на PC Magazine и Telerik</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/6/external-courses">Външни курсове</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/69/pwc-business-acumen-series">Бизнес умения с Академията на PwC</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/39/3ds-max-анимация">3ds Max анимация</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/38/уеб-видео-монтаж-и-пост-продукция">Уеб видео – монтаж и пост продукция</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/41/operating-systems">Операционни системи</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/45/linux-системна-администрация">Linux системна администрация</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/42/бизнес-умения-за-софтуерни-инженери">Бизнес умения за софтуерни инженери</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/43/google-adwords">Google AdWords</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/44/здрави-и-активни">Здрави и активни</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/46/здравословен-начин-на-живот">Здравословен начин на живот</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/35/seo-course">SEO курс (2013)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/36/php-programming">PHP програмиране</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/40/умения-за-работа-с-хора-изборен-курс">Умения за работа с хора (изборен курс)</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/4/uncategorized">Други</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/32/студентска-система">Студентска система</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/66/bgcoder.com">BGCoder.com</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/30/предложения">Предложения</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/31/games">Игри</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/29/book-programming-algorithms">Книга &quot;Програмиране =++ Алгоритми;&quot;</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/68/spam">Spam</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/7/архив">Архив</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/65/archive-courses-2013">Курсове 2013</a>
+            <ul>
+    <li>
+        <a href="/Forum/Category/54/xaml">XAML (2013)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/51/knowledge-sharing-and-team-working-2013">Споделяне на знания и работа в екип (2013)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/53/windows-8-apps-with-xaml-2013">Windows 8 Apps with XAML (2013)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/52/windows-8-apps-with-html-css-and-js-2013">Windows 8 with HTML, CSS and JS (2013)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/20/photoshop">Photoshop (2013)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/21/cms-systems">CMS системи (2013)</a>
+    </li>
+            </ul>
+    </li>
+    <li>
+        <a href="/Forum/Category/48/high-quality-code-course-fmi">Качествен програмен код (ФМИ)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/47/software-development-in-the-cloud-fmi">Разработка на софтуер в cloud среда (ФМИ)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/50/software-engineering-basics-2012">Software Engineering Basics (2012)</a>
+    </li>
+    <li>
+        <a href="/Forum/Category/49/mobile-development-course-fmi">Разработка на мобилни приложения (ФМИ)</a>
+    </li>
+            </ul>
+    </li>
+                                            </ul>
+                                    </li>
+                                    <li>
+                                        <span class="glyphicon glyphicon-question-sign" title="Помощ"></span>
+                                        Помощ
+                                        <ul>
+                                            <li><a href="/FeedbackReport">Обратна връзка</a></li>
+                                            <li><a href="http://downloads.academy.telerik.com/svn/public/AntiCheatClient/Telerik-Academy-AntiCheat.zip">AntiCheat приложение</a></li>
+                                            <li><a href="https://github.com/TelerikAcademy/Common/raw/master/Telerik-Academy-TestSystem/Telerik-Academy-TestSystem.1.1.zip">Тестова система</a></li>
+                                            <li><a href="/Pages/1/Как%20да%20кандидатствате%20за%20Софтуерната%20академия%20на%20Телерик">Как се кандидатства за Софтуерната академия?</a></li>
+                                            <li><a href="/Pages/2/Как%20да%20запишете%20онлайн%20курс%20в%20Студентската%20система%20на%20Телерик">Как да запиша онлайн курс в студентската система?</a></li>
+                                            <li><a href="/Pages/22/Как%20да%20изпратя%20домашно%20в%20студентската%20система%20на%20Telerik%20Academy?">Как да изпратя домашно в студентската система?</a></li>
+                                            <li><a href="/Pages/21/Как%20да%20запишем%20група%20за%20курса,%20който%20сме%20си%20избрали?">Как да запишем група за курса, който сме си избрали?</a></li>
+                                            <li><a href="/Pages/20/Как%20да%20запишем%20тест%20или%20практически%20изпит?">Как да запишем тест или практически изпит?</a></li>
+                                            <li><a href="/Pages/23/Как да кандидатствате за сертификат?">Как да кандидатствате за сертификат?</a></li>
+                                            <li><a href="http://telerikacademy.com/Files/22f12c2e-c836-4707-96c0-3ab0e3541a29.pdf" target="_blank">Условията и правилата за участие в Академията на Телерик</a></li>
+                                            <li><a href="http://academy.telerik.com/" target="_blank">Уебсайт на академията</a></li>
+                                            <li><a href="http://bgcoder.com/" target="_blank">BGCoder judge system</a></li>
+                                            <!--<li><a href="/Home/About">Информация за сайта</a></li>-->
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="hidden-md hidden-lg">
+<form action="/Search/Results" autocomplete="off" id="SearchMobile" method="get">                                            <input type="text" name="search" id="SearchTermMobile" placeholder="Търси в системата" maxlength="100" />
+                                            <input type="submit" id="SearchButtonMobile" value="" />
+</form>
+                                        <div id="SearchSuggestionsMobile"></div>
+                                    </li>
+                                </ul>
+
+                                <span class="hidden-xs hidden-sm pull-right">
+<form action="/Search/Results" autocomplete="off" id="Search" method="get">                                        <input type="text" name="search" id="SearchTerm" placeholder="Търси в системата" maxlength="100" />
+                                        <input type="submit" id="SearchButton" value="" />
+</form>
+                                    <div id="SearchSuggestions"></div>
+                                </span>
+                            </nav>
+
+                            <div id="MainContainer">
+                                <div class="container">
+                                        <div>
+                                        </div>
+                                </div>
+                                <section id="MainContent">
+                                    <div class="container">
+                                        
+
+<ol class="breadcrumb">
+    <li class="active">Начало</li>
+</ol>
+
+<h1 style="margin-right: 0">
+    Форум
+    <div class="pull-right forum-menu">
+<form action="/Forum/Search/Results" autocomplete="off" class="form-inline pull-right" id="Search-forum" method="get">        <div class="input-group margin4" style="margin-right: 0">
+
+            <input type="text" class="form-control input-sm" placeholder="Търси във форума" name="query" maxlength="100" value="">
+            <div class="input-group-btn">
+                <button class="btn btn-default btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+</form>
+
+    <div class="dropdown pull-right">
+        <a class="btn btn-default btn-sm margin4 dropdown-toggle" id="forum-sub-menu" data-toggle="dropdown" aria-expanded="true">
+            Навигация
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="forum-sub-menu">
+            <li role="presentation">
+                <a class="nonbordered" href="/Forum/Tags" role="menuitem">Тагове</a>
+            </li>
+            <li role="presentation">
+                <a class="nonbordered" href="/Forum/Home/BestUsers" role="menuitem">Класиране</a>
+            </li>
+            <li role="presentation">
+                <a class="nonbordered" href="/Forum/Home/Unanswered" role="menuitem">Неотговорени</a>
+            </li>
+            <li role="presentation">
+                <a class="nonbordered" href="/Forum/Home/BestScoringPosts" role="menuitem">Най-гласувани</a>
+            </li>
+        </ul>
+    </div>
+
+    <a class="btn btn-default btn-sm pull-right margin5" href="/Forum/Questions/Ask"><i class="glyphicon glyphicon-plus"></i> Задай въпрос</a>
+</div>
+</h1>
+<hr />
+<div id="ForumContainer" class="container">
+    <style>
+    div.row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+</style>
+
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+                +
+            
+            2
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            2
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    +2
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">2</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="stickyPostTitle" style="margin-left: 0">
+                    <a href="/Forum/Questions/204022/Изпит-към-курс-CSharp-за-напреднали">Изпит към курс &quot;C# за напреднали&quot;</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204022/Изпит-към-курс-CSharp-за-напреднали#forum-post-204114">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-04T22:47:50.2970000">04/12/2016 22:47:50</time>
+                    в <a href="/Forum/Category/17/csharp-part-2">C# Advanced</a>
+                    от
+                    <img src="/Content/Images/DefaultAvatar/default_32x32.jpg" width="18" />
+                    <a href="/Users/mitkop">mitkop</a> (336 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23exam" class="label label-default">#exam</a>
+                        <a href="/Forum/Tag/c%23exam" class="label label-default">c#exam</a>
+                        <a href="/Forum/Tag/c-sharp-2" class="label label-default">c-sharp-2</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+                +
+            
+            6
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            7
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    +6
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">7</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="stickyPostTitle" style="margin-left: 0">
+                    <a href="/Forum/Questions/204023/Изпит-към-курс-CSS-стилизиране">Изпит към курс &quot;CSS стилизиране&quot;</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204023/Изпит-към-курс-CSS-стилизиране#forum-post-204098">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-04T08:20:47.0800000">04/12/2016 08:20:47</time>
+                    в <a href="/Forum/Category/27/html-css">HTML/CSS</a>
+                    от
+                    <img src="/Content/Avatars/642/37642_747fc6cc_32x32.jpg" width="18" />
+                    <a href="/Users/d.nikolova93">d.nikolova93</a> (5 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23exam" class="label label-default">#exam</a>
+                        <a href="/Forum/Tag/css" class="label label-default">css</a>
+                        <a href="/Forum/Tag/css-exam" class="label label-default">css-exam</a>
+                        <a href="/Forum/Tag/%D0%B8%D0%B7%D0%BF%D0%B8%D1%82" class="label label-default">изпит</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+                +
+            
+            21
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            1
+                отговор
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    +21
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">1</div>
+                <div class="row">
+                        отговор
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="stickyPostTitle" style="margin-left: 0">
+                    <a href="/Forum/Questions/204049/Web-apps-with-Node-js-Часове-и-дати-за-защити-и-правила-за-протичане">[Web apps with Node.js] Часове и дати за защити и правила за протичане</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204049/Web-apps-with-Node-js-Часове-и-дати-за-защити-и-правила-за-протичане#forum-post-204060">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-02T16:37:58.2130000">02/12/2016 16:37:58</time>
+                    в <a href="/Forum/Category/60/web-applications-with-node-js">Web Applications with Node.js</a>
+                    от
+                    <img src="/Content/Avatars/342/38342_b9fd1dae_32x32.jpg" width="18" />
+                    <a href="/Users/yanalukanova">yanalukanova</a> (2287 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B8" class="label label-default">защити</a>
+                        <a href="/Forum/Tag/%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8" class="label label-default">курсови-проекти</a>
+                        <a href="/Forum/Tag/%D0%BE%D1%82%D0%B1%D0%BE%D1%80%D0%B5%D0%BD-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82" class="label label-default">отборен-проект</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+                +
+            
+            133
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            12
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    +133
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">12</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="stickyPostTitle" style="margin-left: 0">
+                    <a href="/Forum/Questions/1870/Форум-правила">Форум - правила</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/1870/Форум-правила?page=2#forum-post-187150">отговорен</a></span>
+                    <time class="timeago" datetime="2016-03-29T16:13:13.0870000">29/03/2016 16:13:13</time>
+                    в <a href="/Forum/Category/14/important-announcements">Важни съобщения</a>
+                    от
+                    <img src="/Content/Avatars/740/35740_86c5091b_32x32.jpg" width="18" />
+                    <a href="/Users/paveld3">paveld3</a> (17418 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/telerik-academy" class="label label-default">telerik-academy</a>
+                        <a href="/Forum/Tag/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0" class="label label-default">правила</a>
+                        <a href="/Forum/Tag/%D1%84%D0%BE%D1%80%D1%83%D0%BC" class="label label-default">форум</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            0
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">0</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204116/CSharp-Advanced-2016-2017-31-May-2016-Evening-3-Harry-Potter-4D">CSharp-Advanced-2016-2017-31-May-2016-Evening/3.Harry Potter 4D</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span>пуснат</span>
+                    <time class="timeago" datetime="2016-12-04T23:33:08.0100000">04/12/2016 23:33:08</time>
+                    в <a href="/Forum/Category/17/csharp-part-2">C# Advanced</a>
+                    от
+                    <img src="/Content/Avatars/040/40040_f73aa521_32x32.jpg" width="18" />
+                    <a href="/Users/Atanas_Drenovichki">Atanas_Drenovichki</a> (5 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/2016" class="label label-default">2016</a>
+                        <a href="/Forum/Tag/3-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" class="label label-default">3-задача</a>
+                        <a href="/Forum/Tag/c%23-%D0%B8%D0%B7%D0%BF%D0%B8%D1%82" class="label label-default">c#-изпит</a>
+                        <a href="/Forum/Tag/%D0%BC%D0%B0%D0%B9" class="label label-default">май</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            2
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">2</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204102/Присъствено-обучение">Присъствено обучение</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204102/Присъствено-обучение#forum-post-204113">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-04T21:12:55.1930000">04/12/2016 21:12:55</time>
+                    в <a href="/Forum/Category/10/telerik-software-academy">Софтуерна академия</a>
+                    от
+                    <img src="/Content/Avatars/557/39557_1aaf4bd1_32x32.jpg" width="18" />
+                    <a href="/Users/Pessinger">Pessinger</a> (15 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/csharp" class="label label-default">csharp</a>
+                        <a href="/Forum/Tag/css" class="label label-default">css</a>
+                        <a href="/Forum/Tag/web" class="label label-default">web</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            2
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">2</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204106/Typescript">Typescript</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204106/Typescript#forum-post-204112">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-04T20:28:12.5230000">04/12/2016 20:28:12</time>
+                    в <a href="/Forum/Category/12/telerik-school-academy">School Academy</a>
+                    от
+                    <img src="/Content/Avatars/057/40057_4469304a_32x32.jpg" width="18" />
+                    <a href="/Users/Cvetan_Banski">Cvetan_Banski</a> (0 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23forum" class="label label-default">#forum</a>
+                        <a href="/Forum/Tag/%23telerik" class="label label-default">#telerik</a>
+                        <a href="/Forum/Tag/%23telerik-academy" class="label label-default">#telerik-academy</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+                +
+            
+            1
+
+                глас
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            0
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    +1
+                </div>
+                <div class="row">
+                        глас
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">0</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204111/CSS-Normalization">CSS Normalization</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span>пуснат</span>
+                    <time class="timeago" datetime="2016-12-04T19:54:38.6930000">04/12/2016 19:54:38</time>
+                    в <a href="/Forum/Category/27/html-css">HTML/CSS</a>
+                    от
+                    <img src="/Content/Images/DefaultAvatar/default_32x32.jpg" width="18" />
+                    <a href="/Users/nchebishev">nchebishev</a> (5 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/browser" class="label label-default">browser</a>
+                        <a href="/Forum/Tag/browsers" class="label label-default">browsers</a>
+                        <a href="/Forum/Tag/css" class="label label-default">css</a>
+                        <a href="/Forum/Tag/reset" class="label label-default">reset</a>
+                        <a href="/Forum/Tag/styles" class="label label-default">styles</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            1
+                отговор
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">1</div>
+                <div class="row">
+                        отговор
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204108/CSS-Layout-Задача-1">CSS Layout Задача 1</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204108/CSS-Layout-Задача-1#forum-post-204109">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-04T19:13:41.4000000">04/12/2016 19:13:41</time>
+                    в <a href="/Forum/Category/27/html-css">HTML/CSS</a>
+                    от
+                    <img src="/Content/Avatars/198/39198_470de778_32x32.jpg" width="18" />
+                    <a href="/Users/maelanka">maelanka</a> (0 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23html" class="label label-default">#html</a>
+                        <a href="/Forum/Tag/css" class="label label-default">css</a>
+                        <a href="/Forum/Tag/html5-css" class="label label-default">html5-css</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            2
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">2</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204082/CSS-изпит-оценяване">CSS изпит оценяване</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204082/CSS-изпит-оценяване#forum-post-204104">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-04T15:31:07.7230000">04/12/2016 15:31:07</time>
+                    в <a href="/Forum/Category/27/html-css">HTML/CSS</a>
+                    от
+                    <img src="/Content/Avatars/481/38481_ff5a71b0_32x32.jpg" width="18" />
+                    <a href="/Users/svrakata">svrakata</a> (150 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23exam" class="label label-default">#exam</a>
+                        <a href="/Forum/Tag/css" class="label label-default">css</a>
+                        <a href="/Forum/Tag/%D0%BE%D1%86%D0%B5%D0%BD%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5" class="label label-default">оценяване</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            2
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">2</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/10187/Сайт-с-Visual-Studio">Сайт с Visual Studio</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/10187/Сайт-с-Visual-Studio#forum-post-204100">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-04T10:45:26.4570000">04/12/2016 10:45:26</time>
+                    в <a href="/Forum/Category/27/html-css">HTML/CSS</a>
+                    от
+                    <img src="/Content/Avatars/051/40051_60f79312_32x32.jpg" width="18" />
+                    <a href="/Users/Inna_Goe">Inna_Goe</a> (-9 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/asp" class="label label-default">asp</a>
+                        <a href="/Forum/Tag/html" class="label label-default">html</a>
+                        <a href="/Forum/Tag/net" class="label label-default">net</a>
+                        <a href="/Forum/Tag/studio" class="label label-default">studio</a>
+                        <a href="/Forum/Tag/visual" class="label label-default">visual</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+                +
+            
+            1
+
+                глас
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            0
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    +1
+                </div>
+                <div class="row">
+                        глас
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">0</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204099/WhatFont-и-WebStorm">WhatFont и WebStorm</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span>пуснат</span>
+                    <time class="timeago" datetime="2016-12-04T09:54:18.5700000">04/12/2016 09:54:18</time>
+                    в <a href="/Forum/Category/58/web-services-and-cloud">Web services and cloud</a>
+                    от
+                    <img src="/Content/Avatars/053/36053_172e3316_32x32.jpg" width="18" />
+                    <a href="/Users/stanly65">stanly65</a> (5 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23html" class="label label-default">#html</a>
+                        <a href="/Forum/Tag/css" class="label label-default">css</a>
+                        <a href="/Forum/Tag/css3" class="label label-default">css3</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            2
+                отговора
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">2</div>
+                <div class="row">
+                        отговора
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204075/Workshop-4-Decode-and-Decrypt">[Workshop] 4. Decode and Decrypt</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204075/Workshop-4-Decode-and-Decrypt#forum-post-204090">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-03T20:33:11.3970000">03/12/2016 20:33:11</time>
+                    в <a href="/Forum/Category/17/csharp-part-2">C# Advanced</a>
+                    от
+                    <img src="/Content/Avatars/325/37325_b1cdeefd_32x32.jpg" width="18" />
+                    <a href="/Users/Procelius">Procelius</a> (20 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23c%232" class="label label-default">#c#2</a>
+                        <a href="/Forum/Tag/c%23-exam" class="label label-default">c#-exam</a>
+                        <a href="/Forum/Tag/strings-and-text-processing" class="label label-default">strings-and-text-processing</a>
+                        <a href="/Forum/Tag/workshop" class="label label-default">workshop</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+                +
+            
+            2
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            1
+                отговор
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    +2
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">1</div>
+                <div class="row">
+                        отговор
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/203734/Оценка-на-липсващ-коментар">Оценка на липсващ коментар</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/203734/Оценка-на-липсващ-коментар#forum-post-204087">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-03T19:02:35.7370000">03/12/2016 19:02:35</time>
+                    в <a href="/Forum/Category/60/web-applications-with-node-js">Web Applications with Node.js</a>
+                    от
+                    <img src="/Content/Avatars/930/35930_16a70702_32x32.jpg" width="18" />
+                    <a href="/Users/david_mavrodiev">david_mavrodiev</a> (4329 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/nodejs" class="label label-default">nodejs</a>
+                        <a href="/Forum/Tag/node-js" class="label label-default">node-js</a>
+                        <a href="/Forum/Tag/%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80" class="label label-default">коментар</a>
+                        <a href="/Forum/Tag/%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8" class="label label-default">коментари</a>
+                        <a href="/Forum/Tag/%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0" class="label label-default">оценка</a>
+                        <a href="/Forum/Tag/%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B8" class="label label-default">оценки</a>
+                        <a href="/Forum/Tag/%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8-%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B8-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8" class="label label-default">полезни-оценки-домашни</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="forumVoteBoxHorizontal">
+            
+            0
+
+                гласа
+        </div>
+        <div class="forumVoteBoxHorizontal">
+            1
+                отговор
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">
+                    0
+                </div>
+                <div class="row">
+                        гласа
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 forum-well hidden-xs">
+            <div class="well text-center forum-well-inside">
+                <div class="row font-size-24">1</div>
+                <div class="row">
+                        отговор
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 listedPost">
+            <div class="row">
+                <h3 class="" style="margin-left: 0">
+                    <a href="/Forum/Questions/204070/02-Kitty-Проблем-с-решениетo-solved">[02] Kitty Проблем с решениетo [solved]</a>
+                </h3>
+            </div>
+            <div class="row">
+                <p>
+                        <span><a href="/Forum/Questions/204070/02-Kitty-Проблем-с-решениетo-solved#forum-post-204083">отговорен</a></span>
+                    <time class="timeago" datetime="2016-12-03T14:20:28.2200000">03/12/2016 14:20:28</time>
+                    в <a href="/Forum/Category/17/csharp-part-2">C# Advanced</a>
+                    от
+                    <img src="/Content/Avatars/740/32740_f250baed_32x32.jpg" width="18" />
+                    <a href="/Users/plmn.tnsv">plmn.tnsv</a> (70 точки)
+                </p>
+            </div>
+                <div class="row">
+                        <a href="/Forum/Tag/%23c%232" class="label label-default">#c#2</a>
+                        <a href="/Forum/Tag/c%23" class="label label-default">c#</a>
+                        <a href="/Forum/Tag/c%23exam" class="label label-default">c#exam</a>
+                        <a href="/Forum/Tag/practical-exam" class="label label-default">practical-exam</a>
+                </div>
+        </div>
+    </div>
+    <hr />
+
+    <div id="paged-list-pager">
+
+
+<div class="pagination-container"><ul class="pagination"><li class="active"><a>1</a></li><li><a href="/Forum/Home?page=2">2</a></li><li><a href="/Forum/Home?page=3">3</a></li><li><a href="/Forum/Home?page=4">4</a></li><li><a href="/Forum/Home?page=5">5</a></li><li><a href="/Forum/Home?page=6">6</a></li><li><a href="/Forum/Home?page=7">7</a></li><li><a href="/Forum/Home?page=8">8</a></li><li><a href="/Forum/Home?page=9">9</a></li><li><a href="/Forum/Home?page=10">10</a></li><li class="disabled PagedList-ellipses"><a>&#8230;</a></li><li class="PagedList-skipToNext"><a href="/Forum/Home?page=2" rel="next">»</a></li><li class="PagedList-skipToLast"><a href="/Forum/Home?page=1136">»»</a></li></ul></div></div>
+</div>
+
+                                    </div>
+                                </section>
+                            </div>
+
+                            <footer id="MainFooter">
+                                <section class="footerLinkContainerWrapper">
+                                    <div class="container">
+                                        <div class="row">
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/#" target="_blank" title="Софтуерна академия">Софтуерна академия</a></h4>
+                                                        <ul>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/academy/about" target="_blank" title="За Софтуерната академия">За Софтуерната академия</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/academy/certificates" target="_blank" title="Сертификати">Сертификати</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/academy/admission" target="_blank" title="Прием">Прием</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/academy/apply" target="_blank" title="Кандидатствай">Кандидатствай</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/academy/entrance-exam" target="_blank" title="Приемен изпит">Приемен изпит</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/academy/faq" target="_blank" title="Често задавани въпроси">Често задавани въпроси</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/#" target="_blank" title="Kурсове">Kурсове</a></h4>
+                                                        <ul>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/about" target="_blank" title="За курсовете">За курсовете</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/programming" target="_blank" title="Програмиране">Програмиране</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/web-design-and-ui" target="_blank" title="Уеб дизайн и UI технологии">Уеб дизайн и UI технологии</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/software-technologies" target="_blank" title="Софтуерни технологии">Софтуерни технологии</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/soft-skills-and-business-skills" target="_blank" title="Личностни и бизнес умения">Личностни и бизнес умения</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/external-courses" target="_blank" title="Външни курсове">Външни курсове</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/archive" target="_blank" title="Архивни курсове">Архивни курсове</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/student-courses/faq" target="_blank" title="Често задавани въпроси">Често задавани въпроси</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/#" target="_blank" title="Училищна академия">Училищна академия</a></h4>
+                                                        <ul>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/about" target="_blank" title="За Училищната академия">За Училищната академия</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/season-2016-2017" target="_blank" title="Сезон 2016-2017">Сезон 2016-2017</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/season-2015-2016" target="_blank" title="Сезон 2015-2016">Сезон 2015-2016</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/season-2014-2015" target="_blank" title="Сезон 2014-2015">Сезон 2014-2015</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/season-2013-2014" target="_blank" title="Сезон 2013-2014">Сезон 2013-2014</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/2012-2013" target="_blank" title="Сезон 2012-2013">Сезон 2012-2013</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/season-2011-2012" target="_blank" title="Сезон 2011-2012">Сезон 2011-2012</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/season-2010-2011" target="_blank" title="Сезон 2010-2011">Сезон 2010-2011</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/faq" target="_blank" title="Често задавани въпроси">Често задавани въпроси</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/school-academy/makes-students-software-developers" target="_blank" title="Инфографика">Инфографика</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/#" target="_blank" title="Семинари">Семинари</a></h4>
+                                                        <ul>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/seminars/about" target="_blank" title="За семинарите">За семинарите</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/seminars/software-engineering" target="_blank" title="Софтуерно инженерство">Софтуерно инженерство</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/seminars/others" target="_blank" title="Други">Други</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/seminars/competitions" target="_blank" title="Състезания">Състезания</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/#" target="_blank" title="За нас">За нас</a></h4>
+                                                        <ul>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/about/news" target="_blank" title="Новини">Новини</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/about/telerik-academy" target="_blank" title="За Академията на Телерик">За Академията на Телерик</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/about/licenses" target="_blank" title="Лицензи">Лицензи</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/about/gallery" target="_blank" title="Галерия">Галерия</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://telerikacademy.com/Forum/Home" target="_blank" title="Форум">Форум</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://telerikacademy.com" target="_blank" title="Студентска система">Студентска система</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/about/website-terms-of-use" target="_blank" title="Условия за ползване на сайта">Условия за ползване на сайта</a></li>
+                                                                <li><span class="glyphicon glyphicon-link"></span> <a href="http://academy.telerik.com/about/contact-us" target="_blank" title="Контакти">Контакти</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/http://www.telerik-kids.com/" target="_blank" title="Детска академия">Детска академия</a></h4>
+                                                        <ul>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/http://telerikacademy.com" target="_blank" title="Вход">Вход</a></h4>
+                                                        <ul>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="footerLinkContainer col-md-2 col-sm-3 col-xs-6">
+                                                        <h4><a href="http://academy.telerik.com/http://www.telerik.com/company/telerik-academy" target="_blank" title="En">En</a></h4>
+                                                        <ul>
+                                                        </ul>
+                                                    </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section id="FooterBar">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <div class="versionAndTerms">
+                                                    <p>Всички права запазени © Telerik Academy 2012-2016 </p>
+                                                    <p>
+                                                        <a href="/Home/About">
+                                                            Telerik Academy Learning System 5.7 (build 20160514.1dfa2d3
+                                                        </a>
+                                                    </p>
+                                                    <p class="termsAndConditions">
+                                                        <a href="http://telerikacademy.com/Files/1cf99863-2163-4c99-8e82-a667a2814924.pdf" target="_blank">Правила и условия</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div id="FooterLogo"></div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <ul id="SocialNetworks">
+                                                    <li>
+                                                        <a href="http://www.facebook.com/TelerikAcademy" style="background-position:0 0;" target="_blank"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.youtube.com/user/TelerikAcademy" style="background-position:0 175px;" target="_blank"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://twitter.com/#!/TelerikAcademy" style="background-position:0 140px;" target="_blank"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://plus.google.com/u/0/b/105769630299292709719/" style="background-position:0 105px;" target="_blank"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/Rss/LatestCourses" style="background-position: 0 70px;" target="_blank"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.linkedin.com/groups?gid=3161033&amp;trk=hb_side_g" style="background-position:0 35px;" target="_blank"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </footer>
+                        </div>
+                        
+                    </body>
+                </html>

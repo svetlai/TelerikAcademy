@@ -1,0 +1,4 @@
+Note: You need to run the Create-ATM-Database.sql script to create the database and add Entity Framework in order for this project to work.
+Also, if you're using SQL Server Express, be sure to change the connection string in the app.config.
+
+Thank you.

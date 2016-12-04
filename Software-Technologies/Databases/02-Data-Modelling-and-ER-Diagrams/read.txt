@@ -1,0 +1,7 @@
+1, 2, 3, 5 and 6 are scripts for creating the corresponding databases in MS SQL Server. If you already have a DB with the same name it won't execute.
+
+4. You can open --Universities Model.mwb-- in MySQL Workbench - that is the model file, and inside there's an EER Diagram.
+
+I've added screenshots of the diagrams if for some reason the sripts don't execute correctly.
+
+Thank you.

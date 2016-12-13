@@ -87,7 +87,7 @@
 
 ### Mobile Applications for iOS
 
-1. [ObjectiveC OOP Homework](./Mobile Applications for iOS/01-Objective-C-OOP)
+1. [ObjectiveC OOP Homework](./Mobile-Applications-for-iOS/01-Objective-C-OOP)
 
 #### Individual Project ####
 
@@ -95,4 +95,4 @@
 
 ### Mobile Applications with NativeScript
 
-* [Team Project - Challenge Accepted - A mobile app for doing and sharing real life challenges](https://github.com/NativeScriptHybrids/ChallengeAcceptede)
+* [Team Project - Challenge Accepted - A mobile app for doing and sharing real life challenges](https://github.com/NativeScriptHybrids/ChallengeAccepted)

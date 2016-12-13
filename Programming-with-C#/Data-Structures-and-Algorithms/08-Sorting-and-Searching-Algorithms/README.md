@@ -1,6 +1,5 @@
 ## Sorting Algorithms
 ### _Homework_
-- Open [project](./project) and:
 
 1.  Implement `SelectionSorter.Sort()` method using selection sort algorithm
 2.  Implement `Quicksorter.Sort()` method using quicksort algorithm
@@ -8,7 +7,6 @@
 	
 ## Searching Algorithms
 ### _Homework_
-- Open [project](./project) and:
 
 4.  Implement `SortableCollection.LinearSearch()` method using linear search
     - Don’t use built-in methods. Write your own.

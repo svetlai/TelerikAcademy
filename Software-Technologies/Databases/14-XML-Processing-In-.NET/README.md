@@ -24,9 +24,6 @@
 1.  Rewrite the previous using LINQ query.
 1.  Create an XSL stylesheet, which transforms the file `catalog.xml` into HTML document, formatted for viewing in a standard Web-browser.
 1.  Write a C# program to apply the XSLT stylesheet transformation on the file `catalog.xml` using the class `XslTransform`.
-1.  *Read some tutorial about the `XQuery` language.
-  * Implement the XML to HTML transformation with XQuery (instead of XSLT).
-  * Download some open source XQuery library for .NET and execute the XQuery to transform the `catalog.xml` to HTML.
 1.  Using Visual Studio generate an XSD schema for the file `catalog.xml`.
   * Write a C# program that takes an XML file and an XSD file (schema) and validates the XML file against the schema.
   * Test it with valid XML catalogs and invalid XML catalogs.

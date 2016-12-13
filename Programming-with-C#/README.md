@@ -46,13 +46,13 @@
 * [High-Quality Classes Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/07-High-Quality-Classes)
 * [Defensive Programming and Exceptions Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/08-Defensive-Programming)
 * [Code Tuning and Optimization Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/09-Code-Tuning-and-Optimization)
-* [Unit Testing Homework](/10-Unit-Testing)
-* [Test Driven Development Homework](/11-Test-Driven-Development)
+* [Unit Testing Homework](./High-Quality-Code/10-Unit-Testing)
+* [Test Driven Development Homework](./High-Quality-Code/11-Test-Driven-Development)
 * [Refactoring Homework](/12-Refactoring)
-* [Creational Design Patterns Homework](/14-Creational-Design-Patterns)
-* [Structural Design Patterns Homework](/15-Structural-Design-Patterns)
-* [Behavioral Design Patterns Homework](/16-Behavioral-Design-Patterns)
-* [Mocking with Moq and JustMock Homework](/17-Mocking-with-Moq-and-JustMock)
+* [Creational Design Patterns Homework](./High-Quality-Code/13-Creational-Design-Patterns)
+* [Structural Design Patterns Homework](./High-Quality-Code/14-Structural-Design-Patterns)
+* [Behavioral Design Patterns Homework](./High-Quality-Code/15-Behavioral-Design-Patterns)
+* [Mocking with Moq and JustMock Homework](./High-Quality-Code/16-Mocking-with-Moq-and-JustMock)
 
 ### Data Structures and Algorithms
 

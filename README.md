@@ -49,27 +49,27 @@ Homework and projects for Telerik Software Academy
 * [High-Quality Classes Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/07-High-Quality-Classes)
 * [Defensive Programming and Exceptions Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/08-Defensive-Programming)
 * [Code Tuning and Optimization Homework](https://github.com/svetlai/TelerikAcademy/tree/master/Programming-with-C%23/High-Quality-Code/09-Code-Tuning-and-Optimization)
-* [Unit Testing Homework](/10-Unit-Testing)
-* [Test Driven Development Homework](/11-Test-Driven-Development)
-* [Refactoring Homework](/12-Refactoring)
-* [Creational Design Patterns Homework](/14-Creational-Design-Patterns)
-* [Structural Design Patterns Homework](/15-Structural-Design-Patterns)
-* [Behavioral Design Patterns Homework](/16-Behavioral-Design-Patterns)
-* [Mocking with Moq and JustMock Homework](/17-Mocking-with-Moq-and-JustMock)
+* [Unit Testing Homework](./Software-Technologies/High-Quality-Code/10-Unit-Testing)
+* [Test Driven Development Homework](./Software-Technologies/High-Quality-Code/11-Test-Driven-Development)
+* [Refactoring Homework](./Software-Technologies/High-Quality-Code/12-Refactoring)
+* [Creational Design Patterns Homework](./Software-Technologies/High-Quality-Code/13-Creational-Design-Patterns)
+* [Structural Design Patterns Homework](./Software-Technologies/High-Quality-Code/14-Structural-Design-Patterns)
+* [Behavioral Design Patterns Homework](./Software-Technologies/High-Quality-Code/15-Behavioral-Design-Patterns)
+* [Mocking with Moq and JustMock Homework](./Software-Technologies/High-Quality-Code/16-Mocking-with-Moq-and-JustMock)
 
 ### Data Structures and Algorithms
 
-1. [Data Structure Algorithms and Complexity](./Data-Structures-and-Algorithms/01-DSA-and-Complexity)
-* [Linear Data Structures](./Data-Structures-and-Algorithms/02-Linear-Data-Structures)
-* [Trees and Traversals](./Data-Structures-and-Algorithms/03-Trees-and-Traversals)
-* [Dictionaries Hash Tables and Sets](./Data-Structures-and-Algorithms/04-Dictionaries-and-HashTables)
-* [Advanced Data Structures](./Data-Structures-and-Algorithms/05-Advanced-Data-Structures)
-* [Data Structures Efficiency](./Data-Structures-and-Algorithms/06-Data-Structures-Efficiency)
-* [Recursion](./Data-Structures-and-Algorithms/07-Recursion)
-* [Sorting and Searching Algorithms](./Data-Structures-and-Algorithms/08-Sorting-and-Searching-Algorithms)
-* [Combinatorics](./Data-Structures-and-Algorithms/09-Combinatorics)
-* [Dynamic Programming](./Data-Structures-and-Algorithms/10-Dynamic-Programming)
-* [Graphs](./Data-Structures-and-Algorithms/11-Graphs)
+1. [Data Structure Algorithms and Complexity](./Software-Technologies/Data-Structures-and-Algorithms/01-DSA-and-Complexity)
+* [Linear Data Structures](./Software-Technologies/Data-Structures-and-Algorithms/02-Linear-Data-Structures)
+* [Trees and Traversals](./Software-Technologies/Data-Structures-and-Algorithms/03-Trees-and-Traversals)
+* [Dictionaries Hash Tables and Sets](./Software-Technologies/Data-Structures-and-Algorithms/04-Dictionaries-and-HashTables)
+* [Advanced Data Structures](./Software-Technologies/Data-Structures-and-Algorithms/05-Advanced-Data-Structures)
+* [Data Structures Efficiency](./Software-Technologies/Data-Structures-and-Algorithms/06-Data-Structures-Efficiency)
+* [Recursion](./Software-Technologies/Data-Structures-and-Algorithms/07-Recursion)
+* [Sorting and Searching Algorithms](./Software-Technologies/Data-Structures-and-Algorithms/08-Sorting-and-Searching-Algorithms)
+* [Combinatorics](./Software-Technologies/Data-Structures-and-Algorithms/09-Combinatorics)
+* [Dynamic Programming](./Software-Technologies/Data-Structures-and-Algorithms/10-Dynamic-Programming)
+* [Graphs](./Software-Technologies/Data-Structures-and-Algorithms/11-Graphs)
 
 #### Team Project ####
 
@@ -217,7 +217,7 @@ Homework and projects for Telerik Software Academy
 
 ### Mobile Applications for iOS
 
-1. [ObjectiveC OOP Homework](./Software-Technologies/Mobile Applications for iOS/01-Objective-C-OOP)
+1. [ObjectiveC OOP Homework](./Software-Technologies/Mobile-Applications-for-iOS/01-Objective-C-OOP)
 
 #### Individual Project ####
 
@@ -225,4 +225,4 @@ Homework and projects for Telerik Software Academy
 
 ### Mobile Applications with NativeScript
 
-* [Team Project - Challenge Accepted - A mobile app for doing and sharing real life challenges](https://github.com/NativeScriptHybrids/ChallengeAcceptede)
+* [Team Project - Challenge Accepted - A mobile app for doing and sharing real life challenges](https://github.com/NativeScriptHybrids/ChallengeAccepted)

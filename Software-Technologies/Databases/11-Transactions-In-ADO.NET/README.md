@@ -1,15 +1,20 @@
+## Transactions in ADO.NET
+### _Homework_
+
 1. Suppose you are creating a simple engine for an ATM
 machine. Create a new database "ATM" in SQL Server
 to hold the accounts of the card holders and the
 balance (money) for each account. Add a new table
-CardAccounts with the following fields:
+```CardAccounts``` with the following fields:
+```
 Id (int)
 CardNumber (char(10))
 CardPIN (char(4))
 CardCash (money)
+```
 Add a few sample records in the table.
 
-2. Using transactions write a method which retrieves
+* Using transactions write a method which retrieves
 some money (for example $200) from certain
 account. The retrieval is successful when the
 following sequence of sub-operations is completed
@@ -25,12 +30,12 @@ amount (CardCash = CardCash - 200).
 Why does the isolation level need to be set to
 “repeatable read”?
 
-3. Extend the project from the previous exercise and
+* Extend the project from the previous exercise and
 add a new table TransactionsHistory with fields
 (Id, CardNumber, TransactionDate, Ammount)
 containing information about all money retrievals on
 all accounts.
-Modify the program logic so that it saves historical
+* Modify the program logic so that it saves historical
 information (logs) in the new table after each
 successful money withdrawal.
 What should the isolation level be for the

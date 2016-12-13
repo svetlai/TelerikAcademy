@@ -1,9 +1,8 @@
 # ASP.NET Identity
 
-Create a Chat canal web application.
+1. Create a Chat canal web application.
 * Users must have First name, Last name and email
-fields. Display name should be First name
-+ Last Name
+fields. Display name should be First name + Last Name
 * There is only one canal where every registered
 user can only post (create) a message
 * There must be Moderator role, which can post

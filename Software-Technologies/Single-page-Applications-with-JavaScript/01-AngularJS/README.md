@@ -1,3 +1,6 @@
+## AngularJS
+### _Homework_
+
 1. Create AngularJS SPA client for the Tic-Tac-Toe Web
 API project used in the "Web Services and Cloud"
 course in lecture "Web API Architecture"

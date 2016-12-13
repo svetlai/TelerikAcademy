@@ -1,3 +1,6 @@
+## Grunt
+### _Homework_
+
 1. Create a project with a Gruntfile.js and three
 folders – DEV folder, APP folder and DIST folder
 * Write some CoffeeScript, Jade and Stylus in APP
